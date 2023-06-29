@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<CameraParam xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CamInterface>
+    <string>采集卡0</string>
+    <string>采集卡1</string>
+    <string>采集卡2</string>
+  </CamInterface>
+  <CamDeviceID>
+    <string>Cam0</string>
+    <string>Cam1</string>
+    <string>Cam2</string>
+  </CamDeviceID>
+  <CamShutter>
+    <double>1000</double>
+    <double>1000</double>
+    <double>1000</double>
+  </CamShutter>
+  <CamGain>
+    <double>1</double>
+    <double>1</double>
+    <double>1</double>
+  </CamGain>
+  <CamSoftwareMode>false</CamSoftwareMode>
+  <CamContinuesMode>false</CamContinuesMode>
+</CameraParam>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<appSettings>
+	<!--日志文件参数设置-->
+	<!--日志等级-->
+	<LogLevel>0</LogLevel>
+	<!--日志目录-->
+	<LogFilePath>D:/Log</LogFilePath>
+	<!--日志存在天数-->
+	<LogFileExistDay>30</LogFileExistDay>
+
+</appSettings>

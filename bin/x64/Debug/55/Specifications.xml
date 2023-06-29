@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Specifications xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SaveOrigalImage>false</SaveOrigalImage>
+  <SaveDefeatImage>false</SaveDefeatImage>
+  <SaveCropImage>false</SaveCropImage>
+  <CropImagelength>500</CropImagelength>
+  <MeanImageEnabled>false</MeanImageEnabled>
+  <meanImageEnum>4</meanImageEnum>
+</Specifications>

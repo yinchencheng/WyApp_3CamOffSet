@@ -1,0 +1,2157 @@
+D:\WyApp\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\WyApp\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\WyApp\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\WyApp\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\WyApp\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\WyApp\bin\x64\Debug\Properties\App.config
+D:\WyApp\bin\x64\Debug\WY-App.exe.config
+D:\WyApp\bin\x64\Debug\WY-App.exe
+D:\WyApp\bin\x64\Debug\WY-App.pdb
+D:\WyApp\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\WyApp\bin\x64\Debug\netstandard.dll
+D:\WyApp\bin\x64\Debug\System.AppContext.dll
+D:\WyApp\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\WyApp\bin\x64\Debug\System.Collections.dll
+D:\WyApp\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\WyApp\bin\x64\Debug\System.Collections.Specialized.dll
+D:\WyApp\bin\x64\Debug\System.ComponentModel.dll
+D:\WyApp\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\WyApp\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\WyApp\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\WyApp\bin\x64\Debug\System.Console.dll
+D:\WyApp\bin\x64\Debug\System.Data.Common.dll
+D:\WyApp\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\WyApp\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\WyApp\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\WyApp\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\WyApp\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\WyApp\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\WyApp\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\WyApp\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\WyApp\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\WyApp\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\WyApp\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\WyApp\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\WyApp\bin\x64\Debug\System.Globalization.dll
+D:\WyApp\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\WyApp\bin\x64\Debug\System.IO.Compression.dll
+D:\WyApp\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\WyApp\bin\x64\Debug\System.IO.dll
+D:\WyApp\bin\x64\Debug\System.IO.FileSystem.dll
+D:\WyApp\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\WyApp\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\WyApp\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\WyApp\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\WyApp\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\WyApp\bin\x64\Debug\System.IO.Pipes.dll
+D:\WyApp\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\WyApp\bin\x64\Debug\System.Linq.dll
+D:\WyApp\bin\x64\Debug\System.Linq.Expressions.dll
+D:\WyApp\bin\x64\Debug\System.Linq.Parallel.dll
+D:\WyApp\bin\x64\Debug\System.Linq.Queryable.dll
+D:\WyApp\bin\x64\Debug\System.Net.Http.dll
+D:\WyApp\bin\x64\Debug\System.Net.NameResolution.dll
+D:\WyApp\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\WyApp\bin\x64\Debug\System.Net.Ping.dll
+D:\WyApp\bin\x64\Debug\System.Net.Primitives.dll
+D:\WyApp\bin\x64\Debug\System.Net.Requests.dll
+D:\WyApp\bin\x64\Debug\System.Net.Security.dll
+D:\WyApp\bin\x64\Debug\System.Net.Sockets.dll
+D:\WyApp\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\WyApp\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\WyApp\bin\x64\Debug\System.Net.WebSockets.dll
+D:\WyApp\bin\x64\Debug\System.ObjectModel.dll
+D:\WyApp\bin\x64\Debug\System.Reflection.dll
+D:\WyApp\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\WyApp\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\WyApp\bin\x64\Debug\System.Resources.Reader.dll
+D:\WyApp\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\WyApp\bin\x64\Debug\System.Resources.Writer.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.Handles.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\WyApp\bin\x64\Debug\System.Security.Claims.dll
+D:\WyApp\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\WyApp\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\WyApp\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\WyApp\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\WyApp\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\WyApp\bin\x64\Debug\System.Security.Principal.dll
+D:\WyApp\bin\x64\Debug\System.Security.SecureString.dll
+D:\WyApp\bin\x64\Debug\System.Text.Encoding.dll
+D:\WyApp\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\WyApp\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\WyApp\bin\x64\Debug\System.Threading.dll
+D:\WyApp\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\WyApp\bin\x64\Debug\System.Threading.Tasks.dll
+D:\WyApp\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\WyApp\bin\x64\Debug\System.Threading.Thread.dll
+D:\WyApp\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\WyApp\bin\x64\Debug\System.Threading.Timer.dll
+D:\WyApp\bin\x64\Debug\System.ValueTuple.dll
+D:\WyApp\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\WyApp\bin\x64\Debug\System.Xml.XDocument.dll
+D:\WyApp\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\WyApp\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\WyApp\bin\x64\Debug\System.Xml.XPath.dll
+D:\WyApp\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\WyApp\bin\x64\Debug\Bunifu.Charts.WinForms.dll
+D:\WyApp\bin\x64\Debug\Bunifu.Core.dll
+D:\WyApp\bin\x64\Debug\Bunifu.Licensing.dll
+D:\WyApp\bin\x64\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\WyApp\bin\x64\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\WyApp\bin\x64\Debug\Bunifu_UI_v1.5.3.dll
+D:\WyApp\bin\x64\Debug\EasyTabs.dll
+D:\WyApp\bin\x64\Debug\halcondotnet.dll
+D:\WyApp\bin\x64\Debug\HslCommunication.dll
+D:\WyApp\bin\x64\Debug\Newtonsoft.Json.dll
+D:\WyApp\bin\x64\Debug\Ninject.dll
+D:\WyApp\bin\x64\Debug\ODT.Common.dll
+D:\WyApp\bin\x64\Debug\ODT.PowerPmacComLib.dll
+D:\WyApp\bin\x64\Debug\OpenCvSharp.dll
+D:\WyApp\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\WyApp\bin\x64\Debug\SunnyUI.Common.dll
+D:\WyApp\bin\x64\Debug\SunnyUI.dll
+D:\WyApp\bin\x64\Debug\System.Buffers.dll
+D:\WyApp\bin\x64\Debug\System.Drawing.Common.dll
+D:\WyApp\bin\x64\Debug\System.Memory.dll
+D:\WyApp\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\WyApp\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\WyApp\bin\x64\Debug\Prism.dll
+D:\WyApp\bin\x64\Debug\HslCommunication.xml
+D:\WyApp\bin\x64\Debug\Newtonsoft.Json.xml
+D:\WyApp\bin\x64\Debug\OpenCvSharp.xml
+D:\WyApp\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\WyApp\bin\x64\Debug\System.Buffers.xml
+D:\WyApp\bin\x64\Debug\System.Memory.xml
+D:\WyApp\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\WyApp\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\WyApp\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\WyApp\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\WyApp\obj\x64\Debug\WY-App.exe.config
+D:\WyApp\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\WyApp\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\WyApp\obj\x64\Debug\WY_App.FormMVCameraTest.resources
+D:\WyApp\obj\x64\Debug\WY_App.FormLogin.resources
+D:\WyApp\obj\x64\Debug\WY_App.FormSpecificationsSettings.resources
+D:\WyApp\obj\x64\Debug\WY_App.FormParamSettings.resources
+D:\WyApp\obj\x64\Debug\WY_App.FormMain.resources
+D:\WyApp\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\WyApp\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\WyApp\obj\x64\Debug\WY-App.exe.licenses
+D:\WyApp\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\WyApp\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\WyApp\obj\x64\Debug\WY-App.exe
+D:\WyApp\obj\x64\Debug\WY-App.pdb
+D:\WyApp\obj\x64\Debug\WY_App.FormCamera.resources
+D:\WyApp\obj\x64\Debug\WY_App.FormModel.resources
+D:\WyApp\obj\x64\Debug\WY_App.基准框.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Properties\App.config
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\WY-App.exe
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\netstandard.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.AppContext.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Collections.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Collections.Specialized.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.ComponentModel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Console.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Data.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Globalization.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.Compression.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.FileSystem.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.Pipes.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Linq.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Linq.Expressions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Linq.Parallel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Linq.Queryable.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.Http.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.NameResolution.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.Ping.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.Requests.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.Security.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.Sockets.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Net.WebSockets.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.ObjectModel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Reflection.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Resources.Reader.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Resources.Writer.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.Handles.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Security.Claims.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Security.Principal.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Security.SecureString.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Text.Encoding.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Threading.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Threading.Tasks.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Threading.Thread.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Threading.Timer.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.ValueTuple.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Xml.XDocument.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Xml.XPath.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Bunifu.Charts.WinForms.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Bunifu.Core.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Bunifu.Licensing.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Bunifu_UI_v1.5.3.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\EasyTabs.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\halcondotnet.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\HslCommunication.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Newtonsoft.Json.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Ninject.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\ODT.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\ODT.PowerPmacComLib.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\OpenCvSharp.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\SunnyUI.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\SunnyUI.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Buffers.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Drawing.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Memory.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Prism.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\HslCommunication.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\Newtonsoft.Json.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\OpenCvSharp.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Buffers.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Memory.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY_App.检测设置.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY_App.FormModel.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY_App.FormCamera.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY_App.FormMVCameraTest.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY_App.FormLogin.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY_App.规格设置.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY_App.FormParamSettings.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY_App.FormMain.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY_App.基准框.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY-App.exe.licenses
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY-App.exe
+D:\Softwares\单相机\霸王纸带检测\WyApp\obj\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Properties\App.config
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\WY-App.exe
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\netstandard.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.AppContext.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Collections.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Collections.Specialized.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.ComponentModel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Console.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Data.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Globalization.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.Compression.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.Pipes.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Linq.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Linq.Expressions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Linq.Parallel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Linq.Queryable.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.Http.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.NameResolution.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.Ping.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.Requests.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.Security.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.Sockets.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Net.WebSockets.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.ObjectModel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Reflection.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Resources.Reader.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Resources.Writer.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Handles.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Security.Claims.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Security.Principal.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Security.SecureString.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Text.Encoding.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Threading.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Threading.Tasks.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Threading.Thread.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Threading.Timer.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.ValueTuple.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Xml.XDocument.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Xml.XPath.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Bunifu.Charts.WinForms.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Bunifu.Core.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Bunifu.Licensing.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Bunifu_UI_v1.5.3.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\EasyTabs.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\halcondotnet.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\HslCommunication.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Newtonsoft.Json.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Ninject.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\NSoup.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\ODT.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\ODT.PowerPmacComLib.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\OpenCvSharp.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\SunnyUI.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\SunnyUI.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Buffers.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Drawing.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Memory.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Prism.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\HslCommunication.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\Newtonsoft.Json.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\OpenCvSharp.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Buffers.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Memory.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY_App.检测设置.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY_App.FormModel.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY_App.FormCamera.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY_App.FormMVCameraTest.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY_App.FormLogin.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY_App.规格设置.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY_App.FormParamSettings.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY_App.FormMain.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY_App.基准框.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY-App.exe.licenses
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY-App.exe
+D:\Softwares\单相机\霸王纸带检测\WyApp - 副本\obj\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY_App.检测设置.resources
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY_App.FormModel.resources
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY_App.FormCamera.resources
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY_App.FormMVCameraTest.resources
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY_App.FormLogin.resources
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY_App.规格设置.resources
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY_App.FormParamSettings.resources
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY_App.FormMain.resources
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY_App.基准框.resources
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY-App.exe.licenses
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Properties\App.config
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\WY-App.exe
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\netstandard.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.AppContext.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Collections.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Collections.Specialized.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.ComponentModel.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Console.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Data.Common.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Globalization.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.Compression.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.Pipes.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Linq.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Linq.Expressions.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Linq.Parallel.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Linq.Queryable.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.Http.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.NameResolution.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.Ping.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.Primitives.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.Requests.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.Security.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.Sockets.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Net.WebSockets.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.ObjectModel.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Reflection.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Resources.Reader.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Resources.Writer.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.Handles.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Security.Claims.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Security.Principal.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Security.SecureString.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Text.Encoding.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Threading.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Threading.Tasks.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Threading.Thread.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Threading.Timer.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.ValueTuple.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Xml.XDocument.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Xml.XPath.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Bunifu.Charts.WinForms.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Bunifu.Core.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Bunifu.Licensing.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Bunifu_UI_v1.5.3.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\EasyTabs.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\halcondotnet.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\HslCommunication.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Newtonsoft.Json.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Ninject.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\NSoup.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\ODT.Common.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\ODT.PowerPmacComLib.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\OpenCvSharp.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\SunnyUI.Common.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\SunnyUI.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Buffers.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Drawing.Common.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Memory.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Prism.dll
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\HslCommunication.xml
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\Newtonsoft.Json.xml
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\OpenCvSharp.xml
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Buffers.xml
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Memory.xml
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\Softwares\单相机\WyApp - 副本\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY-App.exe
+D:\Softwares\单相机\WyApp - 副本\obj\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Properties\App.config
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\WY-App.exe
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\netstandard.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.AppContext.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Collections.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Collections.Specialized.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.ComponentModel.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Console.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Data.Common.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Globalization.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.Compression.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.Pipes.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Linq.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Linq.Expressions.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Linq.Parallel.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Linq.Queryable.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.Http.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.NameResolution.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.Ping.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.Requests.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.Security.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.Sockets.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Net.WebSockets.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.ObjectModel.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Reflection.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Resources.Reader.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Resources.Writer.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Handles.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Security.Claims.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Security.Principal.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Security.SecureString.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Text.Encoding.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Threading.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Threading.Tasks.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Threading.Thread.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Threading.Timer.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.ValueTuple.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Xml.XDocument.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Xml.XPath.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Bunifu.Charts.WinForms.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Bunifu.Core.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Bunifu.Licensing.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Bunifu_UI_v1.5.3.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\EasyTabs.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\halcondotnet.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\HslCommunication.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Newtonsoft.Json.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Ninject.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\NSoup.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\ODT.Common.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\ODT.PowerPmacComLib.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\OpenCvSharp.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\SunnyUI.Common.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\SunnyUI.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Buffers.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Drawing.Common.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Memory.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Prism.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\HslCommunication.xml
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\Newtonsoft.Json.xml
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\OpenCvSharp.xml
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Buffers.xml
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Memory.xml
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\Softwares\单相机\极耳检测\WyApp - 副本\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY_App.检测设置.resources
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY_App.FormModel.resources
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY_App.FormCamera.resources
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY_App.FormMVCameraTest.resources
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY_App.FormLogin.resources
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY_App.规格设置.resources
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY_App.FormParamSettings.resources
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY_App.FormMain.resources
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY_App.基准框.resources
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY-App.exe.licenses
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY-App.exe
+D:\Softwares\单相机\极耳检测\WyApp - 副本\obj\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY_App.检测设置.resources
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY_App.FormModel.resources
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY_App.FormCamera.resources
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY_App.FormLogin.resources
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY_App.规格设置.resources
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY_App.FormMain.resources
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY_App.基准框.resources
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY-App.exe.licenses
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Properties\App.config
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\WY-App.exe
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\netstandard.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.AppContext.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Collections.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Collections.Specialized.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.ComponentModel.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Console.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Data.Common.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Globalization.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.Compression.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.FileSystem.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.Pipes.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Linq.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Linq.Expressions.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Linq.Parallel.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Linq.Queryable.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.Http.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.NameResolution.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.Ping.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.Requests.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.Security.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.Sockets.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Net.WebSockets.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.ObjectModel.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Reflection.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Resources.Reader.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Resources.Writer.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.Handles.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Security.Claims.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Security.Principal.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Security.SecureString.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Text.Encoding.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Threading.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Threading.Tasks.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Threading.Thread.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Threading.Timer.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.ValueTuple.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Xml.XDocument.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Xml.XPath.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Bunifu.Charts.WinForms.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Bunifu.Core.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Bunifu.Licensing.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Bunifu_UI_v1.5.3.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\EasyTabs.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\halcondotnet.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\HslCommunication.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Newtonsoft.Json.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Ninject.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\NSoup.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\ODT.Common.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\ODT.PowerPmacComLib.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\OpenCvSharp.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\SunnyUI.Common.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\SunnyUI.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Buffers.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Drawing.Common.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Memory.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Prism.dll
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\HslCommunication.xml
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\Newtonsoft.Json.xml
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\OpenCvSharp.xml
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Buffers.xml
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Memory.xml
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY-App.exe
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\极耳检测\WyApp-极耳胶检测\obj\x64\Debug\WY_App.通讯设置.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Properties\App.config
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\WY-App.exe
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\WY-App.pdb
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\netstandard.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.AppContext.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Collections.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Collections.Specialized.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ComponentModel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Console.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Data.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Globalization.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.Compression.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.FileSystem.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.Pipes.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Linq.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Linq.Expressions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Linq.Parallel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Linq.Queryable.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Http.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.NameResolution.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Ping.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Requests.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Security.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Sockets.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.WebSockets.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ObjectModel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Reflection.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Resources.Reader.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Resources.Writer.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Handles.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Claims.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Principal.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.SecureString.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Text.Encoding.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.Tasks.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.Thread.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.Timer.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ValueTuple.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.XDocument.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.XPath.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu.Charts.WinForms.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu.Core.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu.Licensing.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu_UI_v1.5.3.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\EasyTabs.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\halcondotnet.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\HslCommunication.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Newtonsoft.Json.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Ninject.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\NSoup.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\ODT.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\ODT.PowerPmacComLib.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\OpenCvSharp.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\SunnyUI.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\SunnyUI.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Buffers.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Drawing.Common.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Memory.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Prism.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\HslCommunication.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Newtonsoft.Json.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\OpenCvSharp.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Buffers.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Memory.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.exe.config
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.模板匹配.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.检测设置.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.FormModel.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.FormCamera.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.FormLogin.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.规格设置.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.通讯设置.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.主界面.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.基准框.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.exe.licenses
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.exe
+D:\Softwares\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.pdb
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Properties\App.config
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\WY-App.exe.config
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\WY-App.exe
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\WY-App.pdb
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\netstandard.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.AppContext.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Collections.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Collections.Specialized.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ComponentModel.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Console.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Data.Common.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Globalization.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.Compression.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.FileSystem.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.Pipes.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Linq.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Linq.Expressions.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Linq.Parallel.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Linq.Queryable.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Http.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.NameResolution.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Ping.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Primitives.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Requests.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Security.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.Sockets.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Net.WebSockets.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ObjectModel.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Reflection.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Resources.Reader.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Resources.Writer.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Handles.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Claims.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.Principal.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Security.SecureString.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Text.Encoding.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.Tasks.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.Thread.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Threading.Timer.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.ValueTuple.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.XDocument.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.XPath.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu.Charts.WinForms.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu.Core.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu.Licensing.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Bunifu_UI_v1.5.3.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\EasyTabs.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\halcondotnet.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\HslCommunication.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Newtonsoft.Json.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Ninject.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\NSoup.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\ODT.Common.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\ODT.PowerPmacComLib.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\OpenCvSharp.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\SunnyUI.Common.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\SunnyUI.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Buffers.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Drawing.Common.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Memory.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Prism.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\HslCommunication.xml
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\Newtonsoft.Json.xml
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\OpenCvSharp.xml
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Buffers.xml
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Memory.xml
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.exe.config
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.模板匹配.resources
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.检测设置.resources
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.FormModel.resources
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.FormCamera.resources
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.FormLogin.resources
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.规格设置.resources
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.通讯设置.resources
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.主界面.resources
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.基准框.resources
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.exe.licenses
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.exe
+D:\领先光学\单相机\霸王纸带检测\WyApp-纸带检测\obj\x64\Debug\WY-App.pdb
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\Properties\App.config
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\WY-App.exe.config
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\WY-App.exe
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\WY-App.pdb
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\netstandard.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.AppContext.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Collections.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Collections.Specialized.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.ComponentModel.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Console.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Data.Common.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Globalization.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.Compression.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.FileSystem.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.Pipes.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Linq.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Linq.Expressions.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Linq.Parallel.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Linq.Queryable.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.Http.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.NameResolution.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.Ping.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.Primitives.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.Requests.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.Security.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.Sockets.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Net.WebSockets.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.ObjectModel.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Reflection.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Resources.Reader.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Resources.Writer.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.Handles.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Security.Claims.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Security.Principal.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Security.SecureString.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Text.Encoding.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Threading.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Threading.Tasks.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Threading.Thread.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Threading.Timer.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.ValueTuple.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Xml.XDocument.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Xml.XPath.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\HslCommunication.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\MvFGCtrlC.Net.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\Newtonsoft.Json.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\NSoup.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\OpenCvSharp.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Buffers.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Drawing.Common.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Memory.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\Prism.dll
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\HslCommunication.xml
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\MvFGCtrlC.Net.xml
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\Newtonsoft.Json.xml
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\OpenCvSharp.xml
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Buffers.xml
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Memory.xml
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\领先光学\偏贴前检测\WyApp\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY-App.exe.config
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.切换产品.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.瑕疵检测气泡.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.相机检测设置.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.FormModel.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.FormCamera.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.登陆界面.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.通讯设置.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.UserControls.MessageShow.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.MainForm.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.卡尺工具设置.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY_App.UserControls.卡尺参数设置.resources
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY-App.exe.licenses
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY-App.exe
+D:\领先光学\偏贴前检测\WyApp\obj\x64\Debug\WY-App.pdb
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY-App.exe.config
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.切换产品.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.瑕疵检测气泡.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.相机检测设置.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.FormModel.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.FormCamera.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.登陆界面.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.相机配置界面.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.通讯设置.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.UserControls.MessageShow.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.MainForm.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.卡尺工具设置.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY_App.UserControls.卡尺参数设置.resources
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY-App.exe.licenses
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY-App.exe
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY-App.pdb
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\Properties\App.config
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\WY-App.exe.config
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\WY-App.exe
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\WY-App.pdb
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\netstandard.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.AppContext.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Collections.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Collections.Specialized.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.ComponentModel.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Console.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Data.Common.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Globalization.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.Compression.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.FileSystem.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.Pipes.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Linq.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Linq.Expressions.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Linq.Parallel.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Linq.Queryable.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.Http.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.NameResolution.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.Ping.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.Primitives.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.Requests.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.Security.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.Sockets.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Net.WebSockets.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.ObjectModel.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Reflection.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Resources.Reader.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Resources.Writer.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.Handles.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Security.Claims.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Security.Principal.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Security.SecureString.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Text.Encoding.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Threading.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Threading.Tasks.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Threading.Thread.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Threading.Timer.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.ValueTuple.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Xml.XDocument.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Xml.XPath.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\HslCommunication.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\Newtonsoft.Json.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\NSoup.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\OpenCvSharp.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Buffers.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Drawing.Common.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Memory.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\Prism.dll
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\HslCommunication.xml
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\MvFGCtrlC.Net.xml
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\Newtonsoft.Json.xml
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\OpenCvSharp.xml
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Buffers.xml
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Memory.xml
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\领先光学\偏贴检测\WyApp-3Cam\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\领先光学\偏贴检测\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\WyApp-3Cam\obj\x64\Debug\WY-App.exe.config
+D:\WyApp-3Cam\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.切换产品.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.瑕疵检测气泡.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.相机检测设置.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.FormModel.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.FormCamera.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.登陆界面.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.相机配置界面.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.通讯设置.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.UserControls.MessageShow.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.MainForm.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.卡尺工具设置.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY_App.UserControls.卡尺参数设置.resources
+D:\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\WyApp-3Cam\obj\x64\Debug\WY-App.exe.licenses
+D:\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\WyApp-3Cam\obj\x64\Debug\WY-App.exe
+D:\WyApp-3Cam\obj\x64\Debug\WY-App.pdb
+D:\WyApp-3Cam\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\WyApp-3Cam\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\WyApp-3Cam\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\WyApp-3Cam\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\WyApp-3Cam\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\WyApp-3Cam\bin\x64\Debug\Properties\App.config
+D:\WyApp-3Cam\bin\x64\Debug\WY-App.exe.config
+D:\WyApp-3Cam\bin\x64\Debug\WY-App.exe
+D:\WyApp-3Cam\bin\x64\Debug\WY-App.pdb
+D:\WyApp-3Cam\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\WyApp-3Cam\bin\x64\Debug\netstandard.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.AppContext.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Collections.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Collections.Specialized.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.ComponentModel.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Console.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Data.Common.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Globalization.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.Compression.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.FileSystem.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.Pipes.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Linq.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Linq.Expressions.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Linq.Parallel.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Linq.Queryable.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.Http.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.NameResolution.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.Ping.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.Primitives.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.Requests.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.Security.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.Sockets.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Net.WebSockets.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.ObjectModel.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Reflection.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Resources.Reader.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Resources.Writer.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.Handles.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Security.Claims.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Security.Principal.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Security.SecureString.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Text.Encoding.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Threading.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Threading.Tasks.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Threading.Thread.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Threading.Timer.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.ValueTuple.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Xml.XDocument.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Xml.XPath.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\WyApp-3Cam\bin\x64\Debug\HslCommunication.dll
+D:\WyApp-3Cam\bin\x64\Debug\MvFGCtrlC.Net.dll
+D:\WyApp-3Cam\bin\x64\Debug\Newtonsoft.Json.dll
+D:\WyApp-3Cam\bin\x64\Debug\NSoup.dll
+D:\WyApp-3Cam\bin\x64\Debug\OpenCvSharp.dll
+D:\WyApp-3Cam\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Buffers.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Drawing.Common.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Memory.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\WyApp-3Cam\bin\x64\Debug\Prism.dll
+D:\WyApp-3Cam\bin\x64\Debug\HslCommunication.xml
+D:\WyApp-3Cam\bin\x64\Debug\MvFGCtrlC.Net.xml
+D:\WyApp-3Cam\bin\x64\Debug\Newtonsoft.Json.xml
+D:\WyApp-3Cam\bin\x64\Debug\OpenCvSharp.xml
+D:\WyApp-3Cam\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\WyApp-3Cam\bin\x64\Debug\System.Buffers.xml
+D:\WyApp-3Cam\bin\x64\Debug\System.Memory.xml
+D:\WyApp-3Cam\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\WyApp-3Cam\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\WyApp-3Cam\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\Properties\App.config
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\WY-App.exe.config
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\WY-App.exe
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\WY-App.pdb
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\netstandard.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.AppContext.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.Specialized.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Console.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Data.Common.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Globalization.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.Compression.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.Pipes.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.Expressions.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.Parallel.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.Queryable.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Http.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.NameResolution.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Ping.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Primitives.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Requests.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Security.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Sockets.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Net.WebSockets.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.ObjectModel.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Reflection.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Resources.Reader.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Resources.Writer.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Handles.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Claims.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Principal.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Security.SecureString.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Text.Encoding.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Tasks.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Thread.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Timer.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.ValueTuple.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XDocument.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XPath.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\HslCommunication.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\MvFGCtrlC.Net.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\Newtonsoft.Json.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\NSoup.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Buffers.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Drawing.Common.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Memory.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\Prism.dll
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\HslCommunication.xml
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\MvFGCtrlC.Net.xml
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\Newtonsoft.Json.xml
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.xml
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Buffers.xml
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Memory.xml
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY-App.exe.config
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.切换产品.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.瑕疵检测气泡.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.相机检测设置.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.FormModel.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.FormCamera.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.登陆界面.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.相机配置界面.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.通讯设置.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.UserControls.MessageShow.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.MainForm.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.卡尺工具设置.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.UserControls.卡尺参数设置.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY-App.exe.licenses
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY-App.exe
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY-App.pdb
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\Properties\AssemblyInfo.cs
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\Properties\App.config
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\WY-App.exe.config
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\WY-App.exe
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\WY-App.pdb
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\netstandard.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.AppContext.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.Concurrent.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.NonGeneric.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.Specialized.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.Primitives.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Console.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Data.Common.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Contracts.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Debug.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Process.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Tools.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Tracing.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Drawing.Primitives.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Dynamic.Runtime.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Globalization.Calendars.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Globalization.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Globalization.Extensions.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.Compression.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.IsolatedStorage.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.Pipes.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.Expressions.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.Parallel.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.Queryable.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Http.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.NameResolution.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.NetworkInformation.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Ping.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Primitives.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Requests.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Security.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Sockets.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.WebSockets.Client.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Net.WebSockets.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.ObjectModel.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Reflection.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Reflection.Extensions.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Reflection.Primitives.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Resources.Reader.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Resources.ResourceManager.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Resources.Writer.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Extensions.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Handles.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.InteropServices.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Numerics.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Claims.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Principal.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Security.SecureString.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Text.Encoding.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Text.RegularExpressions.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Overlapped.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Tasks.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Thread.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.ThreadPool.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Timer.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.ValueTuple.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.ReaderWriter.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XDocument.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XmlDocument.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XmlSerializer.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XPath.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\HslCommunication.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\MvFGCtrlC.Net.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\Newtonsoft.Json.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\NSoup.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.Extensions.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Buffers.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Drawing.Common.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Memory.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\HslCommunication.xml
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\MvFGCtrlC.Net.xml
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\Newtonsoft.Json.xml
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.xml
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.Extensions.xml
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Buffers.xml
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Memory.xml
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY-App.exe.config
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.切换产品.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.瑕疵检测气泡.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.相机检测设置.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.FormModel.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.FormCamera.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.登陆界面.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.相机配置界面.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.通讯设置.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.UserControls.MessageShow.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.MainForm.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.卡尺工具设置.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.Properties.Resources.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY_App.UserControls.卡尺参数设置.resources
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY-App.exe.licenses
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.CopyComplete
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY-App.exe
+D:\c#项目\偏贴3.1\WyApp_3CamOffSet\obj\x64\Debug\WY-App.pdb
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\Properties\AssemblyInfo.cs
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\Properties\App.config
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\WY-App.exe.config
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\WY-App.exe
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\WY-App.pdb
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\Microsoft.Win32.Primitives.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\netstandard.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.AppContext.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.Concurrent.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.NonGeneric.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Collections.Specialized.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.Primitives.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.ComponentModel.TypeConverter.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Console.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Data.Common.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Contracts.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Debug.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Process.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.StackTrace.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Tools.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.TraceSource.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Diagnostics.Tracing.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Drawing.Primitives.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Dynamic.Runtime.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Globalization.Calendars.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Globalization.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Globalization.Extensions.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.Compression.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.FileSystem.Watcher.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.IsolatedStorage.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.MemoryMappedFiles.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.Pipes.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.Expressions.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.Parallel.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Linq.Queryable.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Http.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.NameResolution.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.NetworkInformation.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Ping.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Primitives.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Requests.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Security.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.Sockets.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.WebHeaderCollection.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.WebSockets.Client.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Net.WebSockets.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.ObjectModel.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Reflection.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Reflection.Extensions.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Reflection.Primitives.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Resources.Reader.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Resources.ResourceManager.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Resources.Writer.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Extensions.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Handles.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.InteropServices.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Numerics.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Json.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.Serialization.Xml.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Claims.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Csp.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Security.Principal.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Security.SecureString.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Text.Encoding.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Text.Encoding.Extensions.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Text.RegularExpressions.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Overlapped.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Tasks.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Tasks.Parallel.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Thread.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.ThreadPool.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Threading.Timer.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.ValueTuple.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.ReaderWriter.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XDocument.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XmlDocument.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XmlSerializer.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XPath.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Xml.XPath.XDocument.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\HslCommunication.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\MvFGCtrlC.Net.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\Newtonsoft.Json.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\NSoup.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.Extensions.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Buffers.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Drawing.Common.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Memory.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\HslCommunication.xml
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\MvFGCtrlC.Net.xml
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\Newtonsoft.Json.xml
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.xml
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\OpenCvSharp.Extensions.xml
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Buffers.xml
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Memory.xml
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Numerics.Vectors.xml
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.AssemblyReference.cache
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.SuggestedBindingRedirects.cache
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY-App.exe.config
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.ResolveComReference.cache
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.切换产品.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.瑕疵检测气泡.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.相机检测设置.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.FormModel.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.FormCamera.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.登陆界面.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.相机配置界面.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.通讯设置.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.UserControls.MessageShow.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.MainForm.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.卡尺工具设置.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.Properties.Resources.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY_App.UserControls.卡尺参数设置.resources
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.GenerateResource.cache
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY-App.exe.licenses
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.CoreCompileInputs.cache
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY-App.csproj.CopyComplete
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY-App.exe
+C:\Users\NTE\Desktop\新建文件夹 (8)\WyApp_3CamOffSet\obj\x64\Debug\WY-App.pdb
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.注册机器.resources

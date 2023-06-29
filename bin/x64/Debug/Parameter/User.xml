@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User>
+    <Name>开发员1</Name>
+    <Password></Password>
+    <Permission>开发员</Permission>
+  </User>
+  <User>
+    <Name>管理员1</Name>
+    <Password>1234</Password>
+    <Permission>管理员</Permission>
+  </User>
+  <User>
+    <Name>操作员1</Name>
+    <Password>1234</Password>
+    <Permission>操作员</Permission>
+  </User>
+  <User>
+    <Name>访客</Name>
+    <Password>
+    </Password>
+    <Permission>访客</Permission>
+  </User>
+</Users>
