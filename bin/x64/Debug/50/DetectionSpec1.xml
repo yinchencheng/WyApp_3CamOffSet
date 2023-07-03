@@ -1,47 +1,47 @@
 <?xml version="1.0"?>
 <DetectionSpec xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <PixelResolutionRow>1</PixelResolutionRow>
-  <PixelResolutionColum>1</PixelResolutionColum>
+  <PixelResolutionRow>0.05</PixelResolutionRow>
+  <PixelResolutionColum>0.05</PixelResolutionColum>
   <RowBase>
     <double>0</double>
-    <double>0</double>
+    <double>-500</double>
     <double>0</double>
     <double>0</double>
   </RowBase>
   <ColumBase>
     <double>0</double>
-    <double>0</double>
+    <double>500</double>
     <double>0</double>
     <double>0</double>
   </ColumBase>
   <Row1>
     <double>0</double>
-    <double>1</double>
-    <double>2</double>
-    <double>3</double>
+    <double>6280.3349146110058</double>
+    <double>33870.467741935485</double>
+    <double>34216.9721673656</double>
   </Row1>
   <Colum1>
     <double>0</double>
-    <double>1</double>
-    <double>2</double>
-    <double>3</double>
+    <double>1551.2269624573378</double>
+    <double>3005.0972696245735</double>
+    <double>2395.2659443591947</double>
   </Colum1>
   <Row2>
     <double>500</double>
-    <double>500</double>
-    <double>500</double>
-    <double>500</double>
+    <double>6356.2362428842507</double>
+    <double>34022.270398481975</double>
+    <double>34277.520793560368</double>
   </Row2>
   <Colum2>
     <double>1000</double>
-    <double>1000</double>
-    <double>1000</double>
-    <double>1000</double>
+    <double>7143.0358361774743</double>
+    <double>8401.1928327645055</double>
+    <double>6523.06159666705</double>
   </Colum2>
   <OffSet>
     <unsignedInt>0</unsignedInt>
-    <unsignedInt>0</unsignedInt>
-    <unsignedInt>0</unsignedInt>
+    <unsignedInt>270</unsignedInt>
+    <unsignedInt>300</unsignedInt>
     <unsignedInt>0</unsignedInt>
   </OffSet>
   <MeasureLength1>
@@ -69,16 +69,20 @@
     <unsignedInt>40</unsignedInt>
   </MeasureThreshold>
   <MeasureTransition>
-    <string>all</string>
-    <string>all</string>
-    <string>all</string>
-    <string>all</string>
+    <string />
+    <string />
+    <string />
+    <string />
   </MeasureTransition>
   <lengthWidthRatio>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>0</double>
+    <double>0</double>
+    <double>0</double>
+    <double>0.1</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
@@ -101,6 +105,10 @@
     <double>0</double>
   </lengthWidthRatio>
   <min>
+    <double>0</double>
+    <double>0</double>
+    <double>0</double>
+    <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
@@ -151,6 +159,10 @@
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>0</double>
+    <double>0</double>
+    <double>0</double>
+    <double>0</double>
   </max>
   <adjust>
     <double>0</double>
@@ -177,12 +189,20 @@
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>0</double>
+    <double>0</double>
+    <double>0</double>
+    <double>0</double>
   </adjust>
   <ThresholdLow>
+    <double>150</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>0</double>
+    <double>0</double>
+    <double>150</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
@@ -205,11 +225,15 @@
     <double>0</double>
   </ThresholdLow>
   <ThresholdHigh>
+    <double>200</double>
+    <double>80</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>200</double>
+    <double>80</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
@@ -231,11 +255,15 @@
     <double>0</double>
   </ThresholdHigh>
   <AreaLow>
+    <double>10</double>
+    <double>10</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>10</double>
+    <double>10</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
@@ -257,11 +285,15 @@
     <double>0</double>
   </AreaLow>
   <AreaHigh>
+    <double>1000000</double>
+    <double>100000</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>1000000</double>
+    <double>1000000</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>

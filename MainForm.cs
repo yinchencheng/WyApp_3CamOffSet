@@ -382,7 +382,7 @@ namespace WY_App
                         DateTime dtNow = System.DateTime.Now;  // 获取系统当前时间
                         strDateTime = dtNow.ToString("yyyyMMddHHmmss");
                         strDateTimeDay = dtNow.ToString("yyyy-MM-dd");
-                        productSN = HslCommunication._NetworkTcpDevice.ReadString(Parameters.plcParams.SNReadAdd, 2).Content;
+                        //productSN = HslCommunication._NetworkTcpDevice.ReadString(Parameters.plcParams.SNReadAdd, 2).Content;
                         System.Diagnostics.Stopwatch stopwatch = new Stopwatch();
                         stopwatch.Start(); //  开始监视代码运行时间
                         LogHelper.WriteInfo("线程1开始");
@@ -431,28 +431,14 @@ namespace WY_App
 
 						this.Invoke((EventHandler)delegate 
                         {
-                            for (int i = 0; i < 2; i++)
-                            {
-                                hWindows0[i + 1].ClearWindow();
-                                HOperatorSet.SetPart(hWindows0[i + 1], 0, 0, 1000, 1000);//设置窗体的规格
-                            }
-                            messageShow0.lab_Timer.Text = "";
-                            messageShow0.lab_Column.Text = "";
-                            messageShow0.lab_Row.Text = "";
-                            messageShow0.lab_Size.Text = "";
-                            messageShow0.lab_Kind.Text = "";
-                            messageShow0.lab_Level.Text = "";
-                            messageShow0.lab_Gray.Text = "";
-                            messageShow1.lab_Timer.Text = "";
-                            messageShow1.lab_Column.Text = "";
-                            messageShow1.lab_Row.Text = "";
-                            messageShow1.lab_Size.Text = "";
-                            messageShow1.lab_Kind.Text = "";
-                            messageShow1.lab_Level.Text = "";
-                            messageShow1.lab_Gray.Text = "";
                             if (detectionResults.Count == 1)
                             {
+                                HOperatorSet.SetPart(hWindows0[1], 0, 0, 1000, 1000);//设置窗体的规格
+                                HOperatorSet.SetPart(hWindows0[2], 0, 0, 1000, 1000);//设置窗体的规格
+                                hWindows0[1].ClearWindow();
+                                hWindows0[2].ClearWindow();
                                 hWindows0[1].DispObj(detectionResults[0].NGAreahObject);
+
                                 messageShow0.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
                                 messageShow0.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
                                 messageShow0.lab_Row.Text = detectionResults[0].ResultYPosition.ToString();
@@ -472,11 +458,17 @@ namespace WY_App
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[6], detectionResults[0].ResultSize);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[7], detectionResults[0].ResultXPosition);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[8], detectionResults[0].ResultYPosition);
-                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[9], detectionResults[0].ResultLevel);                              
+                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[9], detectionResults[0].ResultLevel+1);
                             }
                             if (detectionResults.Count > 1)
                             {
-                                hWindows0[1].DispObj(detectionResults[0].NGAreahObject);
+                                for (int i = 0; i < 2; i++)
+                                {
+                                    hWindows0[i + 1].ClearWindow();
+                                    HOperatorSet.SetPart(hWindows0[1], 0, 0, 1000, 1000);//设置窗体的规格
+                                    HOperatorSet.SetPart(hWindows0[2], 0, 0, 1000, 1000);//设置窗体的规格
+                                    hWindows0[i + 1].DispObj(detectionResults[i].NGAreahObject);
+                                }
                                 messageShow0.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
                                 messageShow0.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
                                 messageShow0.lab_Row.Text = detectionResults[0].ResultYPosition.ToString();
@@ -484,6 +476,7 @@ namespace WY_App
                                 messageShow0.lab_Kind.Text = detectionResults[0].ResultKind.ToString();
                                 messageShow0.lab_Level.Text = detectionResults[0].ResultLevel.ToString();
                                 messageShow0.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
+
                                 if (DetectionResult)
                                 {
                                     HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[5], 1);
@@ -495,10 +488,8 @@ namespace WY_App
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[6], detectionResults[0].ResultSize);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[7], detectionResults[0].ResultXPosition);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[8], detectionResults[0].ResultYPosition);
-                                //写入ResultLevel即可
-                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[9], detectionResults[0].ResultLevel);
-                               
-                                hWindows0[2].DispObj(detectionResults[1].NGAreahObject);
+                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[8], detectionResults[0].ResultLevel + 1);
+                          
                                 messageShow1.lab_Timer.Text = detectionResults[1].ResultdateTime.ToString();
                                 messageShow1.lab_Column.Text = detectionResults[1].ResultXPosition.ToString();
                                 messageShow1.lab_Row.Text = detectionResults[1].ResultYPosition.ToString();
@@ -518,7 +509,7 @@ namespace WY_App
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[11], detectionResults[1].ResultSize);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[12], detectionResults[1].ResultXPosition);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[13], detectionResults[1].ResultYPosition);
-                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[14], detectionResults[1].ResultLevel);
+                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[9], detectionResults[0].ResultLevel + 1);
                             }
                         });
 
@@ -589,27 +580,12 @@ namespace WY_App
                       
                         this.Invoke((EventHandler)delegate
                         {
-                            for (int i = 0; i < 2; i++)
-                            {
-                                hWindows1[i + 1].ClearWindow();
-                                HOperatorSet.SetPart(hWindows1[i + 1], 0, 0, 1000, 1000);//设置窗体的规格
-                            }
-                            messageShow2.lab_Timer.Text = "";
-                            messageShow2.lab_Column.Text = "";
-                            messageShow2.lab_Row.Text = "";
-                            messageShow2.lab_Size.Text = "";
-                            messageShow2.lab_Kind.Text = "";
-                            messageShow2.lab_Level.Text = "";
-                            messageShow2.lab_Gray.Text = "";
-                            messageShow3.lab_Timer.Text = "";
-                            messageShow3.lab_Column.Text = "";
-                            messageShow3.lab_Row.Text = "";
-                            messageShow3.lab_Size.Text = "";
-                            messageShow3.lab_Kind.Text = "";
-                            messageShow3.lab_Level.Text = "";
-                            messageShow3.lab_Gray.Text = "";
                             if (detectionResults.Count == 1)
-                            { 
+                            {
+                                HOperatorSet.SetPart(hWindows1[1], 0, 0, 1000, 1000);//设置窗体的规格
+                                HOperatorSet.SetPart(hWindows1[2], 0, 0, 1000, 1000);//设置窗体的规格
+                                hWindows1[1].ClearWindow();
+                                hWindows1[2].ClearWindow();
                                 hWindows1[1].DispObj(detectionResults[0].NGAreahObject);
                                 messageShow2.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
                                 messageShow2.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
@@ -630,11 +606,18 @@ namespace WY_App
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[16], detectionResults[0].ResultSize);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[17], detectionResults[0].ResultXPosition);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[18], detectionResults[0].ResultYPosition);
-                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[19], detectionResults[0].ResultLevel);                              
+                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[19], detectionResults[0].ResultLevel + 1);
+
                             }
                             if (detectionResults.Count > 1)
                             {
-                                hWindows1[1].DispObj(detectionResults[0].NGAreahObject);
+                                for (int i = 0; i < 2; i++)
+                                {
+                                    hWindows1[i + 1].ClearWindow();
+                                    HOperatorSet.SetPart(hWindows1[1], 0, 0, 1000, 1000);//设置窗体的规格
+                                    HOperatorSet.SetPart(hWindows1[2], 0, 0, 1000, 1000);//设置窗体的规格
+                                    hWindows1[i + 1].DispObj(detectionResults[i].NGAreahObject);
+                                }
                                 messageShow2.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
                                 messageShow2.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
                                 messageShow2.lab_Row.Text = detectionResults[0].ResultYPosition.ToString();
@@ -642,6 +625,8 @@ namespace WY_App
                                 messageShow2.lab_Kind.Text = detectionResults[0].ResultKind.ToString();
                                 messageShow2.lab_Level.Text = detectionResults[0].ResultLevel.ToString();
                                 messageShow2.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
+
+
                                 if (DetectionResult)
                                 {
                                     HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[15], 1);
@@ -653,8 +638,8 @@ namespace WY_App
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[16], detectionResults[0].ResultSize);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[17], detectionResults[0].ResultXPosition);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[18], detectionResults[0].ResultYPosition);
-                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[19], detectionResults[0].ResultLevel);                              
-                                hWindows1[2].DispObj(detectionResults[1].NGAreahObject);
+                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[19], detectionResults[0].ResultLevel + 1);
+                              
                                 messageShow3.lab_Timer.Text = detectionResults[1].ResultdateTime.ToString();
                                 messageShow3.lab_Column.Text = detectionResults[1].ResultXPosition.ToString();
                                 messageShow3.lab_Row.Text = detectionResults[1].ResultYPosition.ToString();
@@ -674,7 +659,8 @@ namespace WY_App
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[21], detectionResults[1].ResultSize);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[22], detectionResults[1].ResultXPosition);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[23], detectionResults[1].ResultYPosition);
-                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[24], detectionResults[0].ResultLevel);                              
+                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[19], detectionResults[0].ResultLevel + 1);
+
                             }
                         });
                         if (Parameters.specifications.SaveOrigalImage)
@@ -754,27 +740,12 @@ namespace WY_App
                        
                         this.Invoke((EventHandler)delegate
                         {
-                            for (int i = 0; i < 2; i++)
-                            {
-                                hWindows2[i + 1].ClearWindow();
-                                HOperatorSet.SetPart(hWindows2[i + 1], 0, 0, 1000, 1000);//设置窗体的规格
-                            }
-                            messageShow4.lab_Timer.Text = "";
-                            messageShow4.lab_Column.Text = "";
-                            messageShow4.lab_Row.Text = "";
-                            messageShow4.lab_Size.Text = "";
-                            messageShow4.lab_Kind.Text = "";
-                            messageShow4.lab_Level.Text = "";
-                            messageShow4.lab_Gray.Text = "";
-                            messageShow5.lab_Timer.Text = "";
-                            messageShow5.lab_Column.Text = "";
-                            messageShow5.lab_Row.Text = "";
-                            messageShow5.lab_Size.Text = "";
-                            messageShow5.lab_Kind.Text = "";
-                            messageShow5.lab_Level.Text = "";
-                            messageShow5.lab_Gray.Text = "";
                             if (detectionResults.Count == 1)
                             {
+                                HOperatorSet.SetPart(hWindows2[1], 0, 0, 1000, 1000);//设置窗体的规格
+                                HOperatorSet.SetPart(hWindows2[2], 0, 0, 1000, 1000);//设置窗体的规格
+                                hWindows2[1].ClearWindow();
+                                hWindows2[2].ClearWindow();
                                 hWindows2[1].DispObj(detectionResults[0].NGAreahObject);
                                 messageShow4.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
                                 messageShow4.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
@@ -782,7 +753,8 @@ namespace WY_App
                                 messageShow4.lab_Size.Text = detectionResults[0].ResultSize.ToString();
                                 messageShow4.lab_Kind.Text = detectionResults[0].ResultKind.ToString();
                                 messageShow4.lab_Level.Text = detectionResults[0].ResultLevel.ToString();
-                                messageShow4.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
+                                messageShow0.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
+
                                 if (DetectionResult)
                                 {
                                     HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[25], 1);
@@ -794,11 +766,19 @@ namespace WY_App
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[26], detectionResults[0].ResultSize);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[27], detectionResults[0].ResultXPosition);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[28], detectionResults[0].ResultYPosition);
-                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[29], detectionResults[0].ResultLevel);                                
+                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[29], detectionResults[0].ResultLevel + 1);
+
+                               
                             }
                             if (detectionResults.Count > 1)
-                            { 
-                                hWindows2[1].DispObj(detectionResults[0].NGAreahObject);
+                            {
+                                for (int i = 0; i < 2; i++)
+                                {
+                                    hWindows2[i + 1].ClearWindow();
+                                    HOperatorSet.SetPart(hWindows2[1], 0, 0, 1000, 1000);//设置窗体的规格
+                                    HOperatorSet.SetPart(hWindows2[2], 0, 0, 1000, 1000);//设置窗体的规格
+                                    hWindows2[i + 1].DispObj(detectionResults[i].NGAreahObject);
+                                }
                                 messageShow4.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
                                 messageShow4.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
                                 messageShow4.lab_Row.Text = detectionResults[0].ResultYPosition.ToString();
@@ -806,6 +786,8 @@ namespace WY_App
                                 messageShow4.lab_Kind.Text = detectionResults[0].ResultKind.ToString();
                                 messageShow4.lab_Level.Text = detectionResults[0].ResultLevel.ToString();
                                 messageShow4.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
+
+
                                 if (DetectionResult)
                                 {
                                     HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[25], 1);
@@ -817,8 +799,8 @@ namespace WY_App
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[26], detectionResults[0].ResultSize);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[27], detectionResults[0].ResultXPosition);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[28], detectionResults[0].ResultYPosition);
-                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[29], detectionResults[0].ResultLevel);
-                                hWindows2[2].DispObj(detectionResults[1].NGAreahObject);
+                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[29], detectionResults[0].ResultLevel + 1);
+                               
                                 messageShow5.lab_Timer.Text = detectionResults[1].ResultdateTime.ToString();
                                 messageShow5.lab_Column.Text = detectionResults[1].ResultXPosition.ToString();
                                 messageShow5.lab_Row.Text = detectionResults[1].ResultYPosition.ToString();
@@ -838,7 +820,8 @@ namespace WY_App
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[31], detectionResults[1].ResultSize);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[32], detectionResults[1].ResultXPosition);
                                 HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[33], detectionResults[1].ResultYPosition);
-                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[34], detectionResults[1].ResultLevel);
+                                HslCommunication._NetworkTcpDevice.Write(Parameters.plcParams.预留地址[29], detectionResults[0].ResultLevel + 1);
+                               
                             }
                         });
                         if (Parameters.specifications.SaveOrigalImage)

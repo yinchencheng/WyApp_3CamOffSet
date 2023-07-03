@@ -1,7 +1,6 @@
 ﻿using HalconDotNet;
 using OpenCvSharp;
 using SevenZip.Compression.LZ;
-using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -422,7 +421,7 @@ namespace WY_App.Utility
                 HOperatorSet.ApplyMetrologyModel(hImage, hv_MetrologyHandle);
                 hv_Row.Dispose(); hv_Column.Dispose();
                 HOperatorSet.GetMetrologyObjectMeasures(out ho_Contours, hv_MetrologyHandle, "all", "all", out hv_Row, out hv_Column);
-                HOperatorSet.DispObj(ho_Contours, hWindow);
+                //HOperatorSet.DispObj(ho_Contours, hWindow);
                 HOperatorSet.SetColor(hWindow, "red");
                 HOperatorSet.GenCrossContourXld(out ho_Cross, hv_Row, hv_Column, 1, 0.785398);
                 //获取最终测量数据和轮廓线
@@ -462,20 +461,27 @@ namespace WY_App.Utility
                 hv_Row.Dispose();
                 hv_Column.Dispose();
                 hv_Parameter.Dispose();
+
+
                 return false;
             }
+            
+            
         }
 
 
         public static bool DetectionHalconRegion(int CamNum, int BaseNum, HWindow[] hWindow, HObject hImage, Parameters.DetectionSpec spec , HObject hObject ,ref List<DetectionResult>  detectionResult)
         {
             if (Parameters.detectionSpec[CamNum].ThresholdLow[BaseNum] == 0 && Parameters.detectionSpec[CamNum].ThresholdHigh[BaseNum] == 0
-                || Parameters.detectionSpec[CamNum].AreaLow[BaseNum] == 0 && Parameters.detectionSpec[CamNum].AreaHigh[BaseNum] == 0)
+               || Parameters.detectionSpec[CamNum].AreaLow[BaseNum] == 0 && Parameters.detectionSpec[CamNum].AreaHigh[BaseNum] == 0
+               ||(Parameters.detectionSpec[CamNum].ThresholdLow[BaseNum] != 0 || Parameters.detectionSpec[CamNum].ThresholdHigh[BaseNum]!= 0)&& 
+               (Parameters.detectionSpec[CamNum].AreaLow[BaseNum] == 0 || Parameters.detectionSpec[CamNum].AreaHigh[BaseNum] == 0))
             {
+                LogHelper.WriteWarn("检测参数未设定，请检查");
                 return true;
             }
-                // Local iconic variables             
-                HObject ho_ImageReduced, ho_Region, ho_ConnectedRegions;
+            // Local iconic variables             
+            HObject ho_ImageReduced, ho_Region, ho_ConnectedRegions;
             HObject ho_SelectedRegions1, ho_ObjectSelected, ho_SelectedRegions;
             HObject ho_Rectangle;
 
@@ -535,7 +541,7 @@ namespace WY_App.Utility
                 HOperatorSet.GrayFeatures(ho_SelectedRegions1, hImage, "mean", out Mean);
                 detectionResult1.ResultdateTime = DateTime.Now;
                 detectionResult1.ResultGray = Mean.D;
-                detectionResult1.ResultLevel = BaseNum%8+1;
+                detectionResult1.ResultLevel = BaseNum;
                 detectionResult1.ResultKind = (ImageErrorKind)BaseNum;
                 detectionResult1.ResultSize = hv_Value.TupleSelect(0).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum;
                 detectionResult1.ResultYPosition = hv_Value.TupleSelect(1).D * Parameters.detectionSpec[CamNum].PixelResolutionRow - Parameters.detectionSpec[CamNum].RowBase[0] + Parameters.detectionSpec[CamNum].RowBase[1]; ;
@@ -607,7 +613,7 @@ namespace WY_App.Utility
                     HOperatorSet.GrayFeatures(ho_SelectedRegions, hImage, "mean", out Mean);
                     detectionResult1.ResultdateTime = DateTime.Now;
                     detectionResult1.ResultGray = Mean.TupleSelect(i).D;
-                    detectionResult1.ResultLevel = BaseNum%8+1;
+                    detectionResult1.ResultLevel = BaseNum;
                     detectionResult1.ResultKind = (ImageErrorKind)BaseNum;
                     detectionResult1.ResultSize = hv_Value.TupleSelect(0).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum;
                     detectionResult1.ResultYPosition = hv_Value.TupleSelect(1).D * Parameters.detectionSpec[CamNum].PixelResolutionRow - Parameters.detectionSpec[CamNum].RowBase[0]+ Parameters.detectionSpec[CamNum].RowBase[1];

@@ -144,14 +144,14 @@ namespace WY_App
         {
             HOperatorSet.DispObj(MainForm.hImage[MainForm.CamNum], hWindows[0]);
             bool resuult = Halcon.DetectionHalconLine(MainForm.CamNum,2, hWindows[0], MainForm.hImage[MainForm.CamNum], Parameters.detectionSpec[MainForm.CamNum], ref BaseReault[MainForm.CamNum,2]);
-            if(resuult)
-            {
-                Parameters.detectionSpec[MainForm.CamNum].Row1[3] = BaseReault[MainForm.CamNum, 2].Row1 + 300;
-                Parameters.detectionSpec[MainForm.CamNum].Colum1[3] = BaseReault[MainForm.CamNum, 2].Colum1;
-                Parameters.detectionSpec[MainForm.CamNum].Row2[3] = BaseReault[MainForm.CamNum, 2].Row2 + 300;
-                Parameters.detectionSpec[MainForm.CamNum].Colum2[3] = BaseReault[MainForm.CamNum, 2].Colum2;
-                Halcon.DetectionHalconLine(MainForm.CamNum, 3, hWindows[0], MainForm.hImage[MainForm.CamNum], Parameters.detectionSpec[MainForm.CamNum], ref BaseReault[MainForm.CamNum, 3]);
-            }
+            //if(resuult)
+            //{
+            //    Parameters.detectionSpec[MainForm.CamNum].Row1[3] = BaseReault[MainForm.CamNum, 2].Row1 + 300;
+            //    Parameters.detectionSpec[MainForm.CamNum].Colum1[3] = BaseReault[MainForm.CamNum, 2].Colum1;
+            //    Parameters.detectionSpec[MainForm.CamNum].Row2[3] = BaseReault[MainForm.CamNum, 2].Row2 + 300;
+            //    Parameters.detectionSpec[MainForm.CamNum].Colum2[3] = BaseReault[MainForm.CamNum, 2].Colum2;
+            //    Halcon.DetectionHalconLine(MainForm.CamNum, 3, hWindows[0], MainForm.hImage[MainForm.CamNum], Parameters.detectionSpec[MainForm.CamNum], ref BaseReault[MainForm.CamNum, 3]);
+            //}
             
         }
         List<DetectionResult> detectionResults;
@@ -166,28 +166,35 @@ namespace WY_App
             Detection(MainForm.CamNum, hWindows, MainForm.hImage[MainForm.CamNum], ref detectionResults);
             this.Invoke((EventHandler)delegate
             {
-                for (int i = 0; i < 2; i++)
+                if (detectionResults.Count == 0)
                 {
-                    hWindows[i + 1].ClearWindow();
-                    HOperatorSet.SetPart(hWindows[i + 1], 0, 0, 1000, 1000);//设置窗体的规格
+                    for (int i = 0; i < 2; i++)
+                    {
+                        hWindows[i + 1].ClearWindow();
+                        
+                    }
+                    messageShow3.lab_Timer.Text = "";
+                    messageShow3.lab_Column.Text = "";
+                    messageShow3.lab_Row.Text = "";
+                    messageShow3.lab_Size.Text = "";
+                    messageShow3.lab_Kind.Text = "";
+                    messageShow3.lab_Level.Text = "";
+                    messageShow3.lab_Gray.Text = "";
+                    messageShow4.lab_Timer.Text = "";
+                    messageShow4.lab_Column.Text = "";
+                    messageShow4.lab_Row.Text =    "";
+                    messageShow4.lab_Size.Text =   "";
+                    messageShow4.lab_Kind.Text =   "";
+                    messageShow4.lab_Level.Text =  "";
+                    messageShow4.lab_Gray.Text =   "";
                 }
-                messageShow3.lab_Timer.Text = "";
-                messageShow3.lab_Column.Text = "";
-                messageShow3.lab_Row.Text = "";
-                messageShow3.lab_Size.Text = "";
-                messageShow3.lab_Kind.Text = "";
-                messageShow3.lab_Level.Text = "";
-                messageShow3.lab_Gray.Text = "";
-                messageShow4.lab_Timer.Text = "";
-                messageShow4.lab_Column.Text = "";
-                messageShow4.lab_Row.Text = "";
-                messageShow4.lab_Size.Text = "";
-                messageShow4.lab_Kind.Text = "";
-                messageShow4.lab_Level.Text = "";
-                messageShow4.lab_Gray.Text = "";
-                if (detectionResults.Count == 1)
+                 else   if (detectionResults.Count == 1)
                 {
 					AreahObject = detectionResults[0].NGAreahObject;
+					HOperatorSet.SetPart(hWindows[1], 0, 0, 1000, 1000);//设置窗体的规格
+                    HOperatorSet.SetPart(hWindows[2], 0, 0, 1000, 1000);//设置窗体的规格
+                    hWindows[1].ClearWindow();
+                    hWindows[2].ClearWindow();
                     hWindows[1].DispObj(detectionResults[0].NGAreahObject);
                     messageShow3.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
                     messageShow3.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
@@ -201,6 +208,9 @@ namespace WY_App
                 {
                     for (int i = 0; i < 2; i++)
                     {
+                        hWindows[i + 1].ClearWindow();
+                        HOperatorSet.SetPart(hWindows[1], 0, 0, 1000, 1000);//设置窗体的规格
+                        HOperatorSet.SetPart(hWindows[2], 0, 0, 1000, 1000);//设置窗体的规格
                         hWindows[i + 1].DispObj(detectionResults[i].NGAreahObject);
                     }
 					AreahObject = detectionResults[0].NGAreahObject;
@@ -240,6 +250,13 @@ namespace WY_App
                 {
                     Halcon.DetectionHalconLine(indexCam, 0, hWindows[0], hImage, Parameters.detectionSpec[indexCam], ref BaseReault[indexCam, 0]);
                 }
+                else
+                {
+                    BaseReault[indexCam, 0].Row1 = 0;
+                    BaseReault[indexCam, 0].Colum1 = 0;
+                    BaseReault[indexCam, 0].Row2 = 20000;
+                    BaseReault[indexCam, 0].Colum2 = 0;
+                }
                 Halcon.DetectionHalconLine(indexCam, 1, hWindows[0], hImage, Parameters.detectionSpec[indexCam], ref BaseReault[indexCam, 1]);
 
                 Halcon.DetectionHalconLine(indexCam, 2, hWindows[0], hImage, Parameters.detectionSpec[indexCam], ref BaseReault[indexCam, 2]);                        
@@ -277,10 +294,10 @@ namespace WY_App
                     Parameters.detectionSpec[indexCam].ColumBase[0] = hColumn * Parameters.detectionSpec[indexCam].PixelResolutionColum;
                     Row[0] = hRow + (HTuple)Parameters.detectionSpec[indexCam].OffSet[1]+20;
                     Column[0] = hColumn + (HTuple)Parameters.detectionSpec[indexCam].OffSet[0]+20;
-                    Row1[0] = hRow + 20;
-                    Col1[0] = hColumn + 20;
+                    Row1[0] = hRow + 10;
+                    Col1[0] = hColumn + 10;
                     Row1[3] = hRow + (HTuple)Parameters.detectionSpec[indexCam].OffSet[1]-20;
-                    Col1[3] = hColumn + 20;
+                    Col1[3] = hColumn + 10;
                     Row2[0] = hRow +(HTuple)Parameters.detectionSpec[indexCam].OffSet[1] +20;
                     Col2[0] = hColumn + 20;
                     Row2[1] = hRow + (HTuple)Parameters.detectionSpec[indexCam].OffSet[1] +20;
@@ -291,9 +308,9 @@ namespace WY_App
                     BaseReault[indexCam, 1].Row1, BaseReault[indexCam, 1].Colum1, BaseReault[indexCam, 1].Row2, BaseReault[indexCam, 1].Colum2, out hRow, out hColumn, out IsOverlapping);
                     Row[1] = hRow + (HTuple)Parameters.detectionSpec[indexCam].OffSet[1]+20;
                     Column[1] = hColumn;
-                    Row1[1] = hRow + 20;
+                    Row1[1] = hRow + 00;
                     Col1[1] = hColumn;
-                    Row1[2] = hRow + (HTuple)Parameters.detectionSpec[indexCam].OffSet[1]-20;
+                    Row1[2] = hRow + (HTuple)Parameters.detectionSpec[indexCam].OffSet[1]-10;
                     Col1[2] = hColumn ;
                     HOperatorSet.DispCross(hWindows[0], hRow, hColumn, 600, 0);
                     HOperatorSet.IntersectionLines(0, Halcon.hv_Width[0], Halcon.hv_Height[0], Halcon.hv_Width[0],
@@ -499,9 +516,9 @@ namespace WY_App
                 {
                     Halcon.DetectionMeanImageint((MeanImageEnum)Parameters.specifications.meanImageEnum, hImage, ref hImage);
                 }
-                catch (Exception ex)
+                catch
                 {
-                    LogHelper.WriteError("滤波处理异常:" + ex.Message);
+                    //MessageBox.Show("滤波处理异常，请联系软件工程师","严重错误提示");
                     return;
                 }               
             }
@@ -511,9 +528,9 @@ namespace WY_App
             {
                 DetectionBase(indexCam, hWindows, hImage);
             }
-            catch (Exception ex)
+            catch
             {
-                LogHelper.WriteError("基准点寻找异常:" + ex.Message);
+                //MessageBox.Show("基准线查找异常，请联系软件工程师", "严重错误提示");
                 return;
             }
             HTuple Row, Column, IsOverlapping;
@@ -530,40 +547,41 @@ namespace WY_App
                     BaseReault[indexCam, 2].Row1, BaseReault[indexCam, 2].Colum1, BaseReault[indexCam, 2].Row2, BaseReault[indexCam, 2].Colum2, out Row, out Column, out IsOverlapping);
                 HOperatorSet.DispCross(hWindows[0], Row, Column, 60, 0);
             }
-            catch (Exception ex)
+            catch
             {
-                LogHelper.WriteError("基准点寻找异常:" + ex.Message);
+                //MessageBox.Show("基准点寻找异常，请联系软件工程师", "严重错误提示");
                 return;
             }
-            HTuple HomMat2DIdentity = new HTuple();
-            HTuple HomMat2DRotate = new HTuple();
-            HObject ImageAffineTran = new HObject();
+            //HTuple HomMat2DIdentity = new HTuple();
+            //HTuple HomMat2DRotate = new HTuple();
+            //HObject ImageAffineTran = new HObject();
             try
             {
-                HOperatorSet.HomMat2dIdentity(out HomMat2DIdentity);
-                HOperatorSet.HomMat2dRotate(HomMat2DIdentity, 0, Row, Column, out HomMat2DRotate);
-                HOperatorSet.AffineTransImage(MainForm.hoRegions[indexCam], out ImageAffineTran, HomMat2DRotate, "constant", "false");
+                //HOperatorSet.HomMat2dIdentity(out HomMat2DIdentity);
+                //HOperatorSet.HomMat2dRotate(HomMat2DIdentity, 0, Row, Column, out HomMat2DRotate);
+                //HOperatorSet.AffineTransImage(MainForm.hoRegions[indexCam], out ImageAffineTran, HomMat2DRotate, "constant", "false");
 
                 for (int indexKind = 0; indexKind < 7; indexKind++)
                 {
-                    Halcon.DetectionHalconRegion(indexCam, indexKind, hWindows, hImage, Parameters.detectionSpec[indexCam * 4], MainForm.hoRegions[indexCam], ref detectionResult);
-                    Halcon.DetectionHalconRegion(indexCam, indexKind, hWindows, hImage, Parameters.detectionSpec[indexCam * 4+1], MainForm.hoRegions[indexCam * 3+1], ref detectionResult);
-                    Halcon.DetectionHalconRegion(indexCam, indexKind, hWindows, hImage, Parameters.detectionSpec[indexCam * 4 + 3], MainForm.hoRegions[indexCam * 3 + 3], ref detectionResult);
+                    Halcon.DetectionHalconRegion(indexCam, indexKind, hWindows, hImage, Parameters.detectionSpec[indexCam], MainForm.hoRegions[indexCam*4], ref detectionResult);
+                    Halcon.DetectionHalconRegion(indexCam, 7+indexKind, hWindows, hImage, Parameters.detectionSpec[indexCam], MainForm.hoRegions[indexCam * 4+1], ref detectionResult);
+                    Halcon.DetectionHalconRegion(indexCam, 21+indexKind, hWindows, hImage, Parameters.detectionSpec[indexCam], MainForm.hoRegions[indexCam * 4 + 3], ref detectionResult);
                     if (indexCam!=1)
                     {
-                        Halcon.DetectionHalconRegion(indexCam, indexKind, hWindows, hImage, Parameters.detectionSpec[indexCam * 4 + 2], MainForm.hoRegions[indexCam * 3 + 2], ref detectionResult);                      
+                        Halcon.DetectionHalconRegion(indexCam, 14+indexKind, hWindows, hImage, Parameters.detectionSpec[indexCam], MainForm.hoRegions[indexCam * 4 + 2], ref detectionResult);
+                        
                     }                 
                 }                
             }
-            catch
+            catch (Exception ex)
             {
-                HomMat2DIdentity.Dispose();
-                HomMat2DRotate.Dispose();
-                //MessageBox.Show("瑕疵检测处理异常，请联系软件工程师", "严重错误提示");
+                //HomMat2DIdentity.Dispose();
+                //HomMat2DRotate.Dispose();
+                MessageBox.Show("瑕疵检测处理异常，请联系软件工程师", "严重错误提示");
                 //return;
             }
-            HomMat2DIdentity.Dispose();
-            HomMat2DRotate.Dispose();
+            //HomMat2DIdentity.Dispose();
+            //HomMat2DRotate.Dispose();
             Row.Dispose();
             Column.Dispose();
             IsOverlapping.Dispose();
@@ -624,9 +642,17 @@ namespace WY_App
 
         private void btn_ShowAOI_Click(object sender, EventArgs e)
         {
-            HOperatorSet.DispObj(MainForm.hImage[MainForm.CamNum], hWindows[0]);
-            HOperatorSet.SetDraw(hWindows[0], "margin");
-            HOperatorSet.DispObj(MainForm.hoRegions[MainForm.CamNum * 4 + uiComboBox1.SelectedIndex], hWindows[0]);
+            try
+            {
+                HOperatorSet.DispObj(MainForm.hImage[MainForm.CamNum], hWindows[0]);
+                HOperatorSet.SetDraw(hWindows[0], "margin");
+                HOperatorSet.DispObj(MainForm.hoRegions[MainForm.CamNum * 4 + uiComboBox1.SelectedIndex], hWindows[0]);
+            }
+            catch
+            {
+                MessageBox.Show("请先获取基准点");
+            }
+            
         }
 
         private void btnn_IndicationTest_Click(object sender, EventArgs e)
@@ -638,75 +664,69 @@ namespace WY_App
             {
                 Halcon.DetectionMeanImageint((MeanImageEnum)Parameters.specifications.meanImageEnum, MainForm.hImage[MainForm.CamNum], ref MainForm.hImage[MainForm.CamNum]);
             }
-            HOperatorSet.DispObj(MainForm.hImage[MainForm.CamNum], hWindows[0]);
-            HOperatorSet.DispObj(MainForm.hoRegions[MainForm.CamNum * 4 + uiComboBox1.SelectedIndex], hWindows[0]);
-            if (Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] == 0 && Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] == 0
-                || Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] == 0 && Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] == 0
-                )
+            try
             {
-                MessageBox.Show("检测参数为空，请检查!");
-                return;
-            }
-            detectionResults = new List<DetectionResult>();
-            Halcon.DetectionHalconRegion(MainForm.CamNum, cmb_Indication.SelectedIndex, hWindows, MainForm.hImage[MainForm.CamNum], Parameters.detectionSpec[MainForm.CamNum], MainForm.hoRegions[MainForm.CamNum * 4 + uiComboBox1.SelectedIndex], ref detectionResults);
-            for (int i = 0; i < 2; i++)
-            {
-                hWindows[i + 1].ClearWindow();
-                HOperatorSet.SetPart(hWindows[i + 1], 0, 0, 1000, 1000);//设置窗体的规格
-            }
-            messageShow3.lab_Timer.Text = "";
-            messageShow3.lab_Column.Text = "";
-            messageShow3.lab_Row.Text = "";
-            messageShow3.lab_Size.Text = "";
-            messageShow3.lab_Kind.Text = "";
-            messageShow3.lab_Level.Text = "";
-            messageShow3.lab_Gray.Text = "";
-            messageShow4.lab_Timer.Text = "";
-            messageShow4.lab_Column.Text = "";
-            messageShow4.lab_Row.Text = "";
-            messageShow4.lab_Size.Text = "";
-            messageShow4.lab_Kind.Text = "";
-            messageShow4.lab_Level.Text = "";
-            messageShow4.lab_Gray.Text = "";
-            if (detectionResults.Count == 1)
-            {
-                HOperatorSet.SetPart(hWindows[1], 0, 0, 1000, 1000);//设置窗体的规格
-                HOperatorSet.SetPart(hWindows[2], 0, 0, 1000, 1000);//设置窗体的规格
-                hWindows[1].ClearWindow();
-                hWindows[2].ClearWindow();
-                hWindows[1].DispObj(detectionResults[0].NGAreahObject);
-                messageShow3.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
-                messageShow3.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
-                messageShow3.lab_Row.Text = detectionResults[0].ResultYPosition.ToString();
-                messageShow3.lab_Size.Text = detectionResults[0].ResultSize.ToString();
-                messageShow3.lab_Kind.Text = detectionResults[0].ResultKind.ToString();
-                messageShow3.lab_Level.Text = detectionResults[0].ResultLevel.ToString();
-                messageShow3.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
-            }
-            if (detectionResults.Count > 1)
-            {
-                for (int i = 0; i < 2; i++)
+                HOperatorSet.DispObj(MainForm.hImage[MainForm.CamNum], hWindows[0]);
+                HOperatorSet.DispObj(MainForm.hoRegions[MainForm.CamNum * 4 + uiComboBox1.SelectedIndex], hWindows[0]);
+                if (Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] == 0 
+                    && Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] == 0
+                    || Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] == 0 
+                    && Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] == 0
+                    || (Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] == 0
+                    || Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] == 0)
+                    && (Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] == 0
+                    || Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] == 0))
                 {
-                    hWindows[i+1].ClearWindow();
+                    MessageBox.Show("检测参数为空，请检查!");
+                    return;
+                }
+                detectionResults = new List<DetectionResult>();
+                Halcon.DetectionHalconRegion(MainForm.CamNum, uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex, hWindows, MainForm.hImage[MainForm.CamNum], Parameters.detectionSpec[MainForm.CamNum], MainForm.hoRegions[MainForm.CamNum * 4 + uiComboBox1.SelectedIndex], ref detectionResults);
+                if (detectionResults.Count == 1)
+                {
                     HOperatorSet.SetPart(hWindows[1], 0, 0, 1000, 1000);//设置窗体的规格
                     HOperatorSet.SetPart(hWindows[2], 0, 0, 1000, 1000);//设置窗体的规格
-                    hWindows[i + 1].DispObj(detectionResults[i].NGAreahObject);
+                    hWindows[1].ClearWindow();
+                    hWindows[2].ClearWindow();
+                    hWindows[1].DispObj(detectionResults[0].NGAreahObject);
+                    messageShow3.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
+                    messageShow3.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
+                    messageShow3.lab_Row.Text = detectionResults[0].ResultYPosition.ToString();
+                    messageShow3.lab_Size.Text = detectionResults[0].ResultSize.ToString();
+                    messageShow3.lab_Kind.Text = detectionResults[0].ResultKind.ToString();
+                    messageShow3.lab_Level.Text = detectionResults[0].ResultLevel.ToString();
+                    messageShow3.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
                 }
-                messageShow3.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
-                messageShow3.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
-                messageShow3.lab_Row.Text = detectionResults[0].ResultYPosition.ToString();
-                messageShow3.lab_Size.Text = detectionResults[0].ResultSize.ToString();
-                messageShow3.lab_Kind.Text = detectionResults[0].ResultKind.ToString();
-                messageShow3.lab_Level.Text = detectionResults[0].ResultLevel.ToString();
-                messageShow3.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
-                messageShow4.lab_Timer.Text = detectionResults[1].ResultdateTime.ToString();
-                messageShow4.lab_Column.Text = detectionResults[1].ResultXPosition.ToString();
-                messageShow4.lab_Row.Text = detectionResults[1].ResultYPosition.ToString();
-                messageShow4.lab_Size.Text = detectionResults[1].ResultSize.ToString();
-                messageShow4.lab_Kind.Text = detectionResults[1].ResultKind.ToString();
-                messageShow4.lab_Level.Text = detectionResults[1].ResultLevel.ToString();
-                messageShow4.lab_Gray.Text = detectionResults[1].ResultGray.ToString();
+                if (detectionResults.Count > 1)
+                {
+                    for (int i = 0; i < 2; i++)
+                    {
+                        hWindows[i + 1].ClearWindow();
+                        HOperatorSet.SetPart(hWindows[1], 0, 0, 1000, 1000);//设置窗体的规格
+                        HOperatorSet.SetPart(hWindows[2], 0, 0, 1000, 1000);//设置窗体的规格
+                        hWindows[i + 1].DispObj(detectionResults[i].NGAreahObject);
+                    }
+                    messageShow3.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
+                    messageShow3.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
+                    messageShow3.lab_Row.Text = detectionResults[0].ResultYPosition.ToString();
+                    messageShow3.lab_Size.Text = detectionResults[0].ResultSize.ToString();
+                    messageShow3.lab_Kind.Text = detectionResults[0].ResultKind.ToString();
+                    messageShow3.lab_Level.Text = detectionResults[0].ResultLevel.ToString();
+                    messageShow3.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
+                    messageShow4.lab_Timer.Text = detectionResults[1].ResultdateTime.ToString();
+                    messageShow4.lab_Column.Text = detectionResults[1].ResultXPosition.ToString();
+                    messageShow4.lab_Row.Text = detectionResults[1].ResultYPosition.ToString();
+                    messageShow4.lab_Size.Text = detectionResults[1].ResultSize.ToString();
+                    messageShow4.lab_Kind.Text = detectionResults[1].ResultKind.ToString();
+                    messageShow4.lab_Level.Text = detectionResults[1].ResultLevel.ToString();
+                    messageShow4.lab_Gray.Text = detectionResults[1].ResultGray.ToString();
+                }
             }
+            catch  (Exception ex)
+            {
+                MessageBox.Show("请先获取基准点"+ ex.Message);
+            }
+
         }
 
         private void btn_AddKind_Click(object sender, EventArgs e)
@@ -716,62 +736,62 @@ namespace WY_App
 
         private void cmb_Indication_SelectedIndexChanged(object sender, EventArgs e)
         {
-            num_lengthWidthRatio.Value = Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex*4+cmb_Indication.SelectedIndex];
-            num_ThresholdLow.Value = Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex];
-            num_ThresholdHigh.Value = Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex];
-            num_AreaLow.Value = Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex];
-            num_AreaHigh.Value = Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex];
+            num_lengthWidthRatio.Value = Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex*7+cmb_Indication.SelectedIndex];
+            num_ThresholdLow.Value = Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex];
+            num_ThresholdHigh.Value = Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex];
+            num_AreaLow.Value = Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex];
+            num_AreaHigh.Value = Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex];
         }
 
         private void num_lengthWidthRatio_ValueChanged(object sender, double value)
         {
-			if (Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] != num_lengthWidthRatio.Value)
+			if (Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] != num_lengthWidthRatio.Value)
 			{
-				LogHelper.WriteWarn(" "+MainForm.UserName + "lengthWidthRatio:" + Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] + "  第" + Convert.ToString(uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex) + "号缺陷" + "=>" + num_lengthWidthRatio.Value);
-				Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] = num_lengthWidthRatio.Value;
+				LogHelper.WriteWarn(" "+MainForm.UserName + "lengthWidthRatio:" + Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] + "  第" + Convert.ToString(uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex) + "号缺陷" + "=>" + num_lengthWidthRatio.Value);
+				Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] = num_lengthWidthRatio.Value;
 			}
 
-			Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] = num_lengthWidthRatio.Value;
+			Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] = num_lengthWidthRatio.Value;
         }
 
         private void num_ThresholdLow_ValueChanged(object sender, double value)
         {
-			if (Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] != num_ThresholdLow.Value)
+			if (Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] != num_ThresholdLow.Value)
 			{
-				LogHelper.WriteWarn(" " + MainForm.UserName + "ThresholdLow:" + Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] + "  第" + Convert.ToString(uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex) + "号缺陷" + "=>" + num_ThresholdLow.Value);
-				Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] = num_ThresholdLow.Value;
+				LogHelper.WriteWarn(" " + MainForm.UserName + "ThresholdLow:" + Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] + "  第" + Convert.ToString(uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex) + "号缺陷" + "=>" + num_ThresholdLow.Value);
+				Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] = num_ThresholdLow.Value;
 			}
-			Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] = num_ThresholdLow.Value;
+			Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] = num_ThresholdLow.Value;
         }
 
         private void num_ThresholdHigh_ValueChanged(object sender, double value)
         {
-			if (Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] != num_ThresholdHigh.Value)
+			if (Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] != num_ThresholdHigh.Value)
 			{
-				LogHelper.WriteWarn(" " + MainForm.UserName + "ThresholdHigh:" + Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] + "  第" + Convert.ToString(uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex) + "号缺陷" + "=>" + num_ThresholdHigh.Value);
-				Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] = num_ThresholdHigh.Value;
+				LogHelper.WriteWarn(" " + MainForm.UserName + "ThresholdHigh:" + Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] + "  第" + Convert.ToString(uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex) + "号缺陷" + "=>" + num_ThresholdHigh.Value);
+				Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] = num_ThresholdHigh.Value;
 			}
-			Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] = num_ThresholdHigh.Value;
+			Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] = num_ThresholdHigh.Value;
         }
 
         private void num_AreaLow_ValueChanged(object sender, double value)
         {
-			if (Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] != num_AreaLow.Value)
+			if (Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] != num_AreaLow.Value)
 			{
-				LogHelper.WriteWarn(" " + MainForm.UserName + "AreaLow:" + Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] + "  第" + Convert.ToString(uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex) + "号缺陷" + "=>" + num_AreaLow.Value);
-				Parameters.detectionSpec[MainForm.CamNum].AreaLow[cmb_Indication.SelectedIndex] = num_AreaLow.Value;
+				LogHelper.WriteWarn(" " + MainForm.UserName + "AreaLow:" + Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] + "  第" + Convert.ToString(uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex) + "号缺陷" + "=>" + num_AreaLow.Value);
+				Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] = num_AreaLow.Value;
 			}
-			Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] = num_AreaLow.Value ;
+			Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] = num_AreaLow.Value ;
         }
 
         private void num_AreaHigh_ValueChanged(object sender, double value)
         {
-			if (Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] != num_AreaHigh.Value)
+			if (Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] != num_AreaHigh.Value)
 			{
-				LogHelper.WriteWarn(" " + MainForm.UserName + "AreaHigh:" + Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] + "  第" + Convert.ToString(uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex) + "号缺陷" + "=>" + num_AreaHigh.Value);
-				Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] = num_AreaHigh.Value;
+				LogHelper.WriteWarn(" " + MainForm.UserName + "AreaHigh:" + Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] + "  第" + Convert.ToString(uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex) + "号缺陷" + "=>" + num_AreaHigh.Value);
+				Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] = num_AreaHigh.Value;
 			}
-			Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 4 + cmb_Indication.SelectedIndex] = num_AreaHigh.Value;
+			Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex] = num_AreaHigh.Value;
         }
 
         private void btn_MeanImageTest_Click(object sender, EventArgs e)
@@ -1079,11 +1099,11 @@ namespace WY_App
         private void uiComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmb_Indication.SelectedIndex = 0;
-            num_lengthWidthRatio.Value = Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex * 4];
-            num_ThresholdLow.Value = Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 4];
-            num_ThresholdHigh.Value = Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex * 4];
-            num_AreaLow.Value = Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex * 4];
-            num_AreaHigh.Value = Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 4];
+            num_lengthWidthRatio.Value = Parameters.detectionSpec[MainForm.CamNum].lengthWidthRatio[uiComboBox1.SelectedIndex * 7];
+            num_ThresholdLow.Value = Parameters.detectionSpec[MainForm.CamNum].ThresholdLow[uiComboBox1.SelectedIndex * 7];
+            num_ThresholdHigh.Value = Parameters.detectionSpec[MainForm.CamNum].ThresholdHigh[uiComboBox1.SelectedIndex *7];
+            num_AreaLow.Value = Parameters.detectionSpec[MainForm.CamNum].AreaLow[uiComboBox1.SelectedIndex *7];
+            num_AreaHigh.Value = Parameters.detectionSpec[MainForm.CamNum].AreaHigh[uiComboBox1.SelectedIndex * 7];
         }
     }
 }

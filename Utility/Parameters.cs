@@ -148,14 +148,14 @@ namespace WY_App.Utility
             public uint[] MeasureThreshold = new uint[4];
             public string[] MeasureTransition = new string[4];
 
-            public double[] lengthWidthRatio = new double[32];
-            public double[] min = new double[32];
-            public double[] max = new double[32];
-            public double[] adjust = new double[32];
-            public double[] ThresholdLow = new double[32];
-            public double[] ThresholdHigh = new double[32];
-            public double[] AreaLow = new double[32];
-            public double[] AreaHigh = new double[32];
+            public double[] lengthWidthRatio = new double[28];
+            public double[] min = new double[28];
+            public double[] max = new double[28];
+            public double[] adjust = new double[28];
+            public double[] ThresholdLow = new double[28];
+            public double[] ThresholdHigh = new double[25];
+            public double[] AreaLow = new double[28];
+            public double[] AreaHigh = new double[28];
 
             public DetectionSpec()
             {
