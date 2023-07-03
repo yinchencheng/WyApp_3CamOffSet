@@ -399,6 +399,16 @@ namespace WY_App.Utility
 
         public static Commministion commministion = new Commministion();
 
+        public class DeviceName
+        {
+            public string DeviceID; 
+            public DeviceName()
+            {
+                DeviceID = "";
+            }
+        }
+        public static DeviceName deviceName = new DeviceName();
+
         public class PLCParams
         {
             public string Trigger_Detection0;

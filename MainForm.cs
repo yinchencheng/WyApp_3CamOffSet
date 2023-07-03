@@ -78,6 +78,27 @@ namespace WY_App
         {
             InitializeComponent();
             #region 读取配置文件
+            
+            try
+            {
+                Parameters.deviceName = XMLHelper.BackSerialize<Parameters.DeviceName>(@"D:\\DeviceName.xml");
+            }
+            catch
+            {
+                Parameters.deviceName = new Parameters.DeviceName();
+                XMLHelper.serialize<Parameters.DeviceName>(Parameters.deviceName, @"D:\\DeviceName.xml");
+            }
+            if (!EnumDivice(Parameters.deviceName.DeviceID))
+            {
+                注册机器 flg = new 注册机器();
+                flg.TransfEvent += DeviceID_TransfEvent;
+                flg.ShowDialog();
+                if (!EnumDivice(DeviceID))
+                {
+                    Environment.Exit(1);
+                    return;
+                }
+            }
             try
             {
                 Parameters.commministion = XMLHelper.BackSerialize<Parameters.Commministion>("Parameter/Commministion.xml");
@@ -86,17 +107,6 @@ namespace WY_App
             {
                 Parameters.commministion = new Parameters.Commministion();
                 XMLHelper.serialize<Parameters.Commministion>(Parameters.commministion, "Parameter/Commministion.xml");
-            }
-            if (!EnumDivice(Parameters.commministion.DeviceID))
-            {
-                注册机器 flg = new 注册机器();
-                flg.TransfEvent += DeviceID_TransfEvent;
-                flg.ShowDialog();
-                if (!EnumDivice(DeviceID))
-                {
-                    this.Close();
-                    return;
-                }
             }
             try
             {
