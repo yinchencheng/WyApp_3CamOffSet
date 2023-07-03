@@ -15,6 +15,6 @@
   <TcpServerIpPort>580</TcpServerIpPort>
   <ImagePath>D:\VisionDetect\InspectImage\</ImagePath>
   <ImageSavePath>D:\Image\</ImageSavePath>
-  <productName>50</productName>
+  <productName>初始化</productName>
   <DeviceID>955A54B7DE2A0866AAA5F99EE136F07E9076E479E27F5DDD23A084DDFED82795</DeviceID>
 </Commministion>

@@ -541,7 +541,7 @@ namespace WY_App.Utility
                 HOperatorSet.GrayFeatures(ho_SelectedRegions1, hImage, "mean", out Mean);
                 detectionResult1.ResultdateTime = DateTime.Now;
                 detectionResult1.ResultGray = Mean.D;
-                detectionResult1.ResultLevel = BaseNum;
+                detectionResult1.ResultLevel = BaseNum&7+1;
                 detectionResult1.ResultKind = (ImageErrorKind)BaseNum;
                 detectionResult1.ResultSize = hv_Value.TupleSelect(0).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum;
                 detectionResult1.ResultYPosition = hv_Value.TupleSelect(1).D * Parameters.detectionSpec[CamNum].PixelResolutionRow - Parameters.detectionSpec[CamNum].RowBase[0] + Parameters.detectionSpec[CamNum].RowBase[1]; ;
@@ -613,7 +613,7 @@ namespace WY_App.Utility
                     HOperatorSet.GrayFeatures(ho_SelectedRegions, hImage, "mean", out Mean);
                     detectionResult1.ResultdateTime = DateTime.Now;
                     detectionResult1.ResultGray = Mean.TupleSelect(i).D;
-                    detectionResult1.ResultLevel = BaseNum;
+                    detectionResult1.ResultLevel = BaseNum%7+1;
                     detectionResult1.ResultKind = (ImageErrorKind)BaseNum;
                     detectionResult1.ResultSize = hv_Value.TupleSelect(0).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum;
                     detectionResult1.ResultYPosition = hv_Value.TupleSelect(1).D * Parameters.detectionSpec[CamNum].PixelResolutionRow - Parameters.detectionSpec[CamNum].RowBase[0]+ Parameters.detectionSpec[CamNum].RowBase[1];

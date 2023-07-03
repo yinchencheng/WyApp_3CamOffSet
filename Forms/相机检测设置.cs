@@ -166,35 +166,27 @@ namespace WY_App
             Detection(MainForm.CamNum, hWindows, MainForm.hImage[MainForm.CamNum], ref detectionResults);
             this.Invoke((EventHandler)delegate
             {
-                if (detectionResults.Count == 0)
+                for (int i = 0; i < 2; i++)
                 {
-                    for (int i = 0; i < 2; i++)
-                    {
-                        hWindows[i + 1].ClearWindow();
-                        
-                    }
-                    messageShow3.lab_Timer.Text = "";
-                    messageShow3.lab_Column.Text = "";
-                    messageShow3.lab_Row.Text = "";
-                    messageShow3.lab_Size.Text = "";
-                    messageShow3.lab_Kind.Text = "";
-                    messageShow3.lab_Level.Text = "";
-                    messageShow3.lab_Gray.Text = "";
-                    messageShow4.lab_Timer.Text = "";
-                    messageShow4.lab_Column.Text = "";
-                    messageShow4.lab_Row.Text =    "";
-                    messageShow4.lab_Size.Text =   "";
-                    messageShow4.lab_Kind.Text =   "";
-                    messageShow4.lab_Level.Text =  "";
-                    messageShow4.lab_Gray.Text =   "";
+                    hWindows[i + 1].ClearWindow();
+                    HOperatorSet.SetPart(hWindows[i + 1], 0, 0, 1000, 1000);//设置窗体的规格
                 }
-                 else   if (detectionResults.Count == 1)
+                messageShow4.lab_Timer.Text = "";
+                messageShow4.lab_Column.Text = "";
+                messageShow4.lab_Row.Text = "";
+                messageShow4.lab_Size.Text = "";
+                messageShow4.lab_Kind.Text = "";
+                messageShow4.lab_Level.Text = "";
+                messageShow4.lab_Gray.Text = "";
+                messageShow3.lab_Timer.Text = "";
+                messageShow3.lab_Column.Text = "";
+                messageShow3.lab_Row.Text = "";
+                messageShow3.lab_Size.Text = "";
+                messageShow3.lab_Kind.Text = "";
+                messageShow3.lab_Level.Text = "";
+                messageShow3.lab_Gray.Text = "";
+                if (detectionResults.Count != 0)
                 {
-					AreahObject = detectionResults[0].NGAreahObject;
-					HOperatorSet.SetPart(hWindows[1], 0, 0, 1000, 1000);//设置窗体的规格
-                    HOperatorSet.SetPart(hWindows[2], 0, 0, 1000, 1000);//设置窗体的规格
-                    hWindows[1].ClearWindow();
-                    hWindows[2].ClearWindow();
                     hWindows[1].DispObj(detectionResults[0].NGAreahObject);
                     messageShow3.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
                     messageShow3.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
@@ -206,21 +198,7 @@ namespace WY_App
                 }
                 if (detectionResults.Count > 1)
                 {
-                    for (int i = 0; i < 2; i++)
-                    {
-                        hWindows[i + 1].ClearWindow();
-                        HOperatorSet.SetPart(hWindows[1], 0, 0, 1000, 1000);//设置窗体的规格
-                        HOperatorSet.SetPart(hWindows[2], 0, 0, 1000, 1000);//设置窗体的规格
-                        hWindows[i + 1].DispObj(detectionResults[i].NGAreahObject);
-                    }
-					AreahObject = detectionResults[0].NGAreahObject;
-					messageShow3.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
-                    messageShow3.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
-                    messageShow3.lab_Row.Text = detectionResults[0].ResultYPosition.ToString();
-                    messageShow3.lab_Size.Text = detectionResults[0].ResultSize.ToString();
-                    messageShow3.lab_Kind.Text = detectionResults[0].ResultKind.ToString();
-                    messageShow3.lab_Level.Text = detectionResults[0].ResultLevel.ToString();
-                    messageShow3.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
+                    hWindows[2].DispObj(detectionResults[1].NGAreahObject);
                     messageShow4.lab_Timer.Text = detectionResults[1].ResultdateTime.ToString();
                     messageShow4.lab_Column.Text = detectionResults[1].ResultXPosition.ToString();
                     messageShow4.lab_Row.Text = detectionResults[1].ResultYPosition.ToString();
@@ -682,12 +660,28 @@ namespace WY_App
                 }
                 detectionResults = new List<DetectionResult>();
                 Halcon.DetectionHalconRegion(MainForm.CamNum, uiComboBox1.SelectedIndex * 7 + cmb_Indication.SelectedIndex, hWindows, MainForm.hImage[MainForm.CamNum], Parameters.detectionSpec[MainForm.CamNum], MainForm.hoRegions[MainForm.CamNum * 4 + uiComboBox1.SelectedIndex], ref detectionResults);
-                if (detectionResults.Count == 1)
+
+                for (int i = 0; i < 2; i++)
                 {
-                    HOperatorSet.SetPart(hWindows[1], 0, 0, 1000, 1000);//设置窗体的规格
-                    HOperatorSet.SetPart(hWindows[2], 0, 0, 1000, 1000);//设置窗体的规格
-                    hWindows[1].ClearWindow();
-                    hWindows[2].ClearWindow();
+                    hWindows[i + 1].ClearWindow();
+                    HOperatorSet.SetPart(hWindows[i + 1], 0, 0, 1000, 1000);//设置窗体的规格
+                }
+                messageShow4.lab_Timer.Text = "";
+                messageShow4.lab_Column.Text = "";
+                messageShow4.lab_Row.Text = "";
+                messageShow4.lab_Size.Text = "";
+                messageShow4.lab_Kind.Text = "";
+                messageShow4.lab_Level.Text = "";
+                messageShow4.lab_Gray.Text = "";
+                messageShow3.lab_Timer.Text = "";
+                messageShow3.lab_Column.Text = "";
+                messageShow3.lab_Row.Text = "";
+                messageShow3.lab_Size.Text = "";
+                messageShow3.lab_Kind.Text = "";
+                messageShow3.lab_Level.Text = "";
+                messageShow3.lab_Gray.Text = "";
+                if (detectionResults.Count != 0)
+                {
                     hWindows[1].DispObj(detectionResults[0].NGAreahObject);
                     messageShow3.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
                     messageShow3.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
@@ -698,21 +692,8 @@ namespace WY_App
                     messageShow3.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
                 }
                 if (detectionResults.Count > 1)
-                {
-                    for (int i = 0; i < 2; i++)
-                    {
-                        hWindows[i + 1].ClearWindow();
-                        HOperatorSet.SetPart(hWindows[1], 0, 0, 1000, 1000);//设置窗体的规格
-                        HOperatorSet.SetPart(hWindows[2], 0, 0, 1000, 1000);//设置窗体的规格
-                        hWindows[i + 1].DispObj(detectionResults[i].NGAreahObject);
-                    }
-                    messageShow3.lab_Timer.Text = detectionResults[0].ResultdateTime.ToString();
-                    messageShow3.lab_Column.Text = detectionResults[0].ResultXPosition.ToString();
-                    messageShow3.lab_Row.Text = detectionResults[0].ResultYPosition.ToString();
-                    messageShow3.lab_Size.Text = detectionResults[0].ResultSize.ToString();
-                    messageShow3.lab_Kind.Text = detectionResults[0].ResultKind.ToString();
-                    messageShow3.lab_Level.Text = detectionResults[0].ResultLevel.ToString();
-                    messageShow3.lab_Gray.Text = detectionResults[0].ResultGray.ToString();
+                {                   
+                    hWindows[2].DispObj(detectionResults[1].NGAreahObject);
                     messageShow4.lab_Timer.Text = detectionResults[1].ResultdateTime.ToString();
                     messageShow4.lab_Column.Text = detectionResults[1].ResultXPosition.ToString();
                     messageShow4.lab_Row.Text = detectionResults[1].ResultYPosition.ToString();
@@ -726,11 +707,6 @@ namespace WY_App
             {
                 MessageBox.Show("请先获取基准点"+ ex.Message);
             }
-
-        }
-
-        private void btn_AddKind_Click(object sender, EventArgs e)
-        {
 
         }
 

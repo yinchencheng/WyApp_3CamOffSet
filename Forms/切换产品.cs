@@ -88,7 +88,7 @@ namespace WY_App
             else
             {
                 MessageBox.Show("PLC未连接，数据写入失败");
-                return;
+                //return;
             }
             Parameters.commministion.productName = cmb_ProductList.Text;
             TransfEvent(cmb_ProductList.Text);
@@ -184,7 +184,7 @@ namespace WY_App
             //最后把book结点挂接在跟结点上，并保存整个文件
             root.AppendChild(xelKey);
             doc.Save("Parameter/ProductList.xml");
-            GetFilesAndDirs("55", productName);
+            GetFilesAndDirs("初始化", productName);
             MessageBox.Show("保存成功！", "温馨提示");
             this.Close();
         }
