@@ -20,6 +20,7 @@ using System.Collections.Generic;
 using static WY_App.Utility.Parameters;
 using static OpenCvSharp.FileStorage;
 using static System.Collections.Specialized.BitVector32;
+using System.Xml;
 
 namespace WY_App
 {
@@ -35,8 +36,10 @@ namespace WY_App
 
         public static bool plc_connect_result = false;
         public static ModbusRtu busRtuClient;
+		public static string STRproduct;                    //接收PLC发送料号
+		public static List<string> userList = new List<string>();                                  //已存在料号列表
 
-        public HslCommunication()
+		public HslCommunication()
         {
             try
             {
@@ -265,36 +268,205 @@ namespace WY_App
                 }
             }             
         }
-        public void ini_PLC_Read()
-        { 
-            while(true)
-            {
-                if(plc_connect_result)
-                {
-                    if ("Omron.PMAC.CK3M".Equals(Parameters.commministion.PlcType))
-                    {
+		public void ini_PLC_Read()
+		{
+			while (true)
+			{
+				if (plc_connect_result)
+				{
+					if ("Omron.PMAC.CK3M".Equals(Parameters.commministion.PlcType))
+					{
 
-                    }
-                    else if ("ModbusRut".Equals(Parameters.commministion.PlcType))
-                    {
+					}
+					else if ("ModbusRut".Equals(Parameters.commministion.PlcType))
+					{
+						ReadProductXml(userList);
+						if (userList.Contains(STRproduct))
+						{
+							if (MainForm.Product != STRproduct)
+							{
+								if (MessageBox.Show("是否切换物料？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
+								{
+									MainForm.Product = STRproduct;
+									ChangeProduct(STRproduct);
+								}
 
-                    }
-                    else
-                    {
-                        
-                    }
-                }
-                else
-                {
-                    Thread.Sleep(1000);
-                  
-                }                
-            }
-        }
+							}
+						}
+						else
+						{
+
+							AddProductXml(MainForm.Product, STRproduct);
+							ChangeProduct(STRproduct);
+							MainForm.Product = STRproduct;
+						}
+						Thread.Sleep(1000);
+					}
+					else
+					{
+						ReadProductXml(userList);
+						if (userList.Contains(STRproduct))
+						{
+							if (MainForm.Product != STRproduct)
+							{
+								if (MessageBox.Show("是否切换物料？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
+								{
+									MainForm.Product = STRproduct;
+									ChangeProduct(STRproduct);
+								}
+
+							}
+						}
+						else
+						{
+
+							AddProductXml(MainForm.Product, STRproduct);
+							ChangeProduct(STRproduct);
+							MainForm.Product = STRproduct;
+						}
+					}
+				}
+				else
+				{
+					Thread.Sleep(1000);
+
+				}
+			}
+		}
+
+		//新增产品XML
+		public static void AddProductXml(string StrProductFile, string StrProduct)
+		{
+			StrProductFile = MainForm.Product;
+			XmlDocument doc = new XmlDocument();
+			doc.Load("Parameter/ProductList.xml");
+			XmlNode root = doc.SelectSingleNode("Products");
+			//创建一个结点，并设置结点的名称
+			XmlElement xelKey = doc.CreateElement("Product");
+			//创建子结点
+			XmlElement xelUser = doc.CreateElement("Name");
+			xelUser.InnerText = StrProduct;
+
+			//将子结点挂靠在相应的父节点
+			xelKey.AppendChild(xelUser);
+			//最后把book结点挂接在跟结点上，并保存整个文件
+			root.AppendChild(xelKey);
+			doc.Save("Parameter/ProductList.xml");
+			GetFilesAndDirs(StrProductFile, StrProduct);
+			MessageBox.Show("保存成功！", "温馨提示");
+		}
+
+		//切换产品
+		public static void ChangeProduct(string StrProduct)
+		{
+			Parameters.commministion.productName = StrProduct;
+			XMLHelper.serialize<Parameters.Commministion>(Parameters.commministion, "Parameter/Commministion.xml");
+			try
+			{
+				Parameters.counts = XMLHelper.BackSerialize<Parameters.Counts>(Parameters.commministion.productName + "/CountsParams.xml");
+			}
+			catch
+			{
+				Parameters.counts = new Parameters.Counts();
+				XMLHelper.serialize<Parameters.Counts>(Parameters.counts, Parameters.commministion.productName + "/CountsParams.xml");
+			}
+			try
+			{
+				Parameters.counts = XMLHelper.BackSerialize<Parameters.Counts>(Parameters.commministion.productName + "/CountsParams.xml");
+			}
+			catch
+			{
+				Parameters.cameraParam = new Parameters.CameraParam();
+				XMLHelper.serialize<Parameters.CameraParam>(Parameters.cameraParam, Parameters.commministion.productName + "/CameraParam.xml");
+			}
+			try
+			{
+				Parameters.specifications = XMLHelper.BackSerialize<Parameters.Specifications>(Parameters.commministion.productName + "/Specifications.xml");
+			}
+			catch
+			{
+				Parameters.specifications = new Parameters.Specifications();
+				XMLHelper.serialize<Parameters.Specifications>(Parameters.specifications, Parameters.commministion.productName + "/Specifications.xml");
+			}
+
+			try
+			{
+				Constructor.cameraParams = XMLHelper.BackSerialize<Constructor.CameraParams>(Parameters.commministion.productName + "/CameraParams.xml");
+			}
+			catch
+			{
+				Constructor.cameraParams = new Constructor.CameraParams();
+				XMLHelper.serialize<Constructor.CameraParams>(Constructor.cameraParams, Parameters.commministion.productName + "/CameraParams.xml");
+			}
+
+			for (int i = 0; i < 3; i++)
+			{
+				try
+				{
+					Parameters.detectionSpec[i] = XMLHelper.BackSerialize<Parameters.DetectionSpec>(Parameters.commministion.productName + "/DetectionSpec" + i + ".xml");
+				}
+				catch
+				{
+					Parameters.detectionSpec[i] = new Parameters.DetectionSpec();
+					XMLHelper.serialize<Parameters.DetectionSpec>(Parameters.detectionSpec[i], Parameters.commministion.productName + "/DetectionSpec" + i + ".xml");
+				}
+			}
+		}
+
+		public static void GetFilesAndDirs(string srcDir, string destDir)
+		{
+			if (!Directory.Exists(destDir))//若目标文件夹不存在
+			{
+				string newPath;
+				FileInfo fileInfo;
+				Directory.CreateDirectory(destDir);//创建目标文件夹                                                  
+				string[] files = Directory.GetFiles(srcDir);//获取源文件夹中的所有文件完整路径
+				foreach (string path in files)          //遍历文件     
+				{
+					fileInfo = new FileInfo(path);
+					newPath = destDir + "/" + fileInfo.Name;
+					File.Copy(path, newPath, true);
+				}
+				string[] dirs = Directory.GetDirectories(srcDir);
+				foreach (string path in dirs)        //遍历文件夹
+				{
+					DirectoryInfo directory = new DirectoryInfo(path);
+					string newDir = destDir + "/" + directory.Name;
+					GetFilesAndDirs(path + "\\", newDir + "\\");
+				}
+			}
+		}
+
+		//读取产品XML文件
+		public static void ReadProductXml(List<string> listProduct)
+		{
+			//加载指定路径的xml文件
+			XmlDocument xmlDoc = new XmlDocument();
+			XmlReaderSettings settings = new XmlReaderSettings();
+			string StrProduct;
+			settings.IgnoreComments = true; //忽略文档里面的注释
+			XmlReader reader = XmlReader.Create("Parameter/ProductList.xml");
+			xmlDoc.Load(reader);
+			//得到根节点
+			XmlNode xn = xmlDoc.SelectSingleNode("Products");
+			//得到根节点的所有子节点
+			XmlNodeList xnl = xn.ChildNodes;
+
+			foreach (XmlNode item in xnl)
+			{
+				//将节点转换为元素，便于得到节点的属性值
+				XmlElement xe = (XmlElement)item;
+				//得到Name和Password两个属性的属性值
+				XmlNodeList xmlnl = xe.ChildNodes;
+				StrProduct = xmlnl.Item(0).InnerText;
+				listProduct.Add(StrProduct);
+			}
+			reader.Close(); //读取完数据后需关闭
+		}
 
 
-        //对终端操作的通用方法/
-        public static bool ReadWritePmacVariables(string command)
+		//对终端操作的通用方法/
+		public static bool ReadWritePmacVariables(string command)
         {
             var commads = new List<string>();
             List<string> responses;

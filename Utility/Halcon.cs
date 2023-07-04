@@ -615,13 +615,13 @@ namespace WY_App.Utility
                     detectionResult1.ResultGray = Mean.TupleSelect(i).D;
                     detectionResult1.ResultLevel = BaseNum%7+1;
                     detectionResult1.ResultKind = (ImageErrorKind)BaseNum;
-                    detectionResult1.ResultSize = hv_Value.TupleSelect(0).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum;
-                    detectionResult1.ResultYPosition = hv_Value.TupleSelect(1).D * Parameters.detectionSpec[CamNum].PixelResolutionRow - Parameters.detectionSpec[CamNum].RowBase[0]+ Parameters.detectionSpec[CamNum].RowBase[1];
-                    detectionResult1.ResultXPosition = hv_Value.TupleSelect(2).D * Parameters.detectionSpec[CamNum].PixelResolutionColum - Parameters.detectionSpec[CamNum].ColumBase[0]+ Parameters.detectionSpec[CamNum].ColumBase[1];
-                    detectionResult1.ResultWidth = hv_Value.TupleSelect(3).D * Parameters.detectionSpec[CamNum].PixelResolutionColum;
-                    detectionResult1.ResultHeight = hv_Value.TupleSelect(4).D * Parameters.detectionSpec[CamNum].PixelResolutionRow;
-                    detectionResult1.ResultRa = hv_Value.TupleSelect(5).D;
-                    detectionResult1.ResultRb = hv_Value.TupleSelect(6).D;
+                    detectionResult1.ResultSize = hv_Value.TupleSelect(0 + i * 7).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum;
+                    detectionResult1.ResultYPosition = hv_Value.TupleSelect(1 + i * 7).D * Parameters.detectionSpec[CamNum].PixelResolutionRow - Parameters.detectionSpec[CamNum].RowBase[0]+ Parameters.detectionSpec[CamNum].RowBase[1];
+                    detectionResult1.ResultXPosition = hv_Value.TupleSelect(2 + i * 7).D * Parameters.detectionSpec[CamNum].PixelResolutionColum - Parameters.detectionSpec[CamNum].ColumBase[0]+ Parameters.detectionSpec[CamNum].ColumBase[1];
+                    detectionResult1.ResultWidth = hv_Value.TupleSelect(3 + i * 7).D * Parameters.detectionSpec[CamNum].PixelResolutionColum;
+                    detectionResult1.ResultHeight = hv_Value.TupleSelect(4 + i * 7).D * Parameters.detectionSpec[CamNum].PixelResolutionRow;
+                    detectionResult1.ResultRa = hv_Value.TupleSelect(5 + i * 7).D;
+                    detectionResult1.ResultRb = hv_Value.TupleSelect(6 + i * 7).D;
                     if (hv_Row12[i] < 500)
                     {
                         hv_Row12[i] = 500;

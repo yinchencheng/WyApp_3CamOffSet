@@ -511,25 +511,25 @@ namespace WY_App
                 //MessageBox.Show("基准线查找异常，请联系软件工程师", "严重错误提示");
                 return;
             }
-            HTuple Row, Column, IsOverlapping;
-            try
-            {
-                HOperatorSet.IntersectionLines(BaseReault[indexCam, 0].Row1, BaseReault[indexCam, 0].Colum1, BaseReault[indexCam, 0].Row2, BaseReault[indexCam, 0].Colum2,
-                BaseReault[indexCam, 1].Row1, BaseReault[indexCam, 1].Colum1, BaseReault[indexCam, 1].Row2, BaseReault[indexCam, 1].Colum2, out Row, out Column, out IsOverlapping);
-                Parameters.detectionSpec[indexCam].RowBase[0] = Row;
-                Parameters.detectionSpec[indexCam].ColumBase[0] = Column;
-                HOperatorSet.SetColor(hWindows[0], "red");
-                HOperatorSet.DispCross(hWindows[0], Row, Column, 60, 0);
+            //HTuple Row, Column, IsOverlapping;
+            //try
+            //{
+            //    HOperatorSet.IntersectionLines(BaseReault[indexCam, 0].Row1, BaseReault[indexCam, 0].Colum1, BaseReault[indexCam, 0].Row2, BaseReault[indexCam, 0].Colum2,
+            //    BaseReault[indexCam, 1].Row1, BaseReault[indexCam, 1].Colum1, BaseReault[indexCam, 1].Row2, BaseReault[indexCam, 1].Colum2, out Row, out Column, out IsOverlapping);
+            //    Parameters.detectionSpec[indexCam].RowBase[0] = Row;
+            //    Parameters.detectionSpec[indexCam].ColumBase[0] = Column;
+            //    HOperatorSet.SetColor(hWindows[0], "red");
+            //    HOperatorSet.DispCross(hWindows[0], Row, Column, 60, 0);
 
-                HOperatorSet.IntersectionLines(BaseReault[indexCam, 0].Row1, BaseReault[indexCam, 0].Colum1, BaseReault[indexCam, 0].Row2, BaseReault[indexCam, 0].Colum2,
-                    BaseReault[indexCam, 2].Row1, BaseReault[indexCam, 2].Colum1, BaseReault[indexCam, 2].Row2, BaseReault[indexCam, 2].Colum2, out Row, out Column, out IsOverlapping);
-                HOperatorSet.DispCross(hWindows[0], Row, Column, 60, 0);
-            }
-            catch
-            {
-                //MessageBox.Show("基准点寻找异常，请联系软件工程师", "严重错误提示");
-                return;
-            }
+            //    HOperatorSet.IntersectionLines(BaseReault[indexCam, 0].Row1, BaseReault[indexCam, 0].Colum1, BaseReault[indexCam, 0].Row2, BaseReault[indexCam, 0].Colum2,
+            //        BaseReault[indexCam, 2].Row1, BaseReault[indexCam, 2].Colum1, BaseReault[indexCam, 2].Row2, BaseReault[indexCam, 2].Colum2, out Row, out Column, out IsOverlapping);
+            //    HOperatorSet.DispCross(hWindows[0], Row, Column, 60, 0);
+            //}
+            //catch
+            //{
+            //    //MessageBox.Show("基准点寻找异常，请联系软件工程师", "严重错误提示");
+            //    return;
+            //}
             //HTuple HomMat2DIdentity = new HTuple();
             //HTuple HomMat2DRotate = new HTuple();
             //HObject ImageAffineTran = new HObject();
@@ -560,9 +560,9 @@ namespace WY_App
             }
             //HomMat2DIdentity.Dispose();
             //HomMat2DRotate.Dispose();
-            Row.Dispose();
-            Column.Dispose();
-            IsOverlapping.Dispose();
+            //Row.Dispose();
+            //Column.Dispose();
+            //IsOverlapping.Dispose();
         }
 
         private void btn_DrawAOI_Click(object sender, EventArgs e)
@@ -635,7 +635,16 @@ namespace WY_App
 
         private void btnn_IndicationTest_Click(object sender, EventArgs e)
         {
-            DateTime dtNow = System.DateTime.Now;  // 获取系统当前时间
+			try
+			{
+				DetectionBase(MainForm.CamNum, hWindows, MainForm.hImage[MainForm.CamNum]);
+			}
+			catch
+			{
+				MessageBox.Show("基准线查找异常", "严重错误提示");
+			}
+
+			DateTime dtNow = System.DateTime.Now;  // 获取系统当前时间
             MainForm.strDateTime = dtNow.ToString("HHmmss");
             MainForm.strDateTimeDay = dtNow.ToString("yyyy-MM-dd");
             if (Parameters.specifications.MeanImageEnabled)
