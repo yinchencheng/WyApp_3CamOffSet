@@ -359,7 +359,8 @@ namespace WY_App
                             lab_Cam3.Text = "等待";
                             lab_Cam3.BackColor = Color.Red;
                         }
-                        //lab_Product.Text = Parameters.commministion.productName;
+
+                        lab_Product.Text = Product;
                     });
                     this.BeginInvoke(start);
                 });
