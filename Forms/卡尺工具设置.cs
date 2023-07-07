@@ -54,16 +54,18 @@ namespace WY_App
 
 			if (Parameters.detectionSpec[MainForm.CamNum].MeasureThreshold[MainForm.baseNum] != (uint)num_MeasureThreshold.Value)
 			{
-				LogHelper.WriteWarn(" " + MainForm.UserName + "MeasureSigma:" + Parameters.detectionSpec[MainForm.CamNum].MeasureThreshold[MainForm.baseNum] + "=>" + (uint)num_MeasureThreshold.Value);
+				LogHelper.WriteWarn(" " + MainForm.UserName + "MeasureThreshold:" + Parameters.detectionSpec[MainForm.CamNum].MeasureThreshold[MainForm.baseNum] + "=>" + (uint)num_MeasureThreshold.Value);
 				Parameters.detectionSpec[MainForm.CamNum].MeasureThreshold[MainForm.baseNum] = (uint)num_MeasureThreshold.Value;
 			}
 
-			if (Parameters.detectionSpec[MainForm.CamNum].MeasureTransition[MainForm.baseNum] != num_MeasureTransition.SelectedText)
+			if (Parameters.detectionSpec[MainForm.CamNum].MeasureTransition[MainForm.baseNum] != num_MeasureTransition.SelectedItem.ToString())
 			{
-				LogHelper.WriteWarn(" " + MainForm.UserName + "MeasureSigma:" + Parameters.detectionSpec[MainForm.CamNum].MeasureTransition[MainForm.baseNum] + "=>" + num_MeasureTransition.SelectedText);
-				Parameters.detectionSpec[MainForm.CamNum].MeasureTransition[MainForm.baseNum] = num_MeasureTransition.SelectedText;
+				LogHelper.WriteWarn(" " + MainForm.UserName + "MeasureTransition:" + Parameters.detectionSpec[MainForm.CamNum].MeasureTransition[MainForm.baseNum] + "=>" + num_MeasureTransition.SelectedText);
+				Parameters.detectionSpec[MainForm.CamNum].MeasureTransition[MainForm.baseNum] = num_MeasureTransition.SelectedItem.ToString();
 			}
+            
             XMLHelper.serialize<Parameters.DetectionSpec>(Parameters.detectionSpec[MainForm.CamNum], Parameters.commministion.productName + "/DetectionSpec" + MainForm.CamNum + ".xml");
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -36,6 +36,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.num_OffSet = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.num_MeasureTransition = new System.Windows.Forms.ComboBox();
             this.极性 = new System.Windows.Forms.Label();
             this.num_MeasureThreshold = new System.Windows.Forms.NumericUpDown();
@@ -49,17 +51,15 @@
             this.保存 = new System.Windows.Forms.Button();
             this.修改 = new System.Windows.Forms.Button();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.num_OffSet = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_OffSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_MeasureThreshold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_MeasureSigma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_MeasureLength2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_MeasureLength1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_OffSet)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -189,6 +189,36 @@
             this.groupBox1.TabIndex = 56;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "卡尺模型设置";
+            // 
+            // num_OffSet
+            // 
+            this.num_OffSet.Enabled = false;
+            this.num_OffSet.Location = new System.Drawing.Point(71, 158);
+            this.num_OffSet.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.num_OffSet.Minimum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            -2147483648});
+            this.num_OffSet.Name = "num_OffSet";
+            this.num_OffSet.Size = new System.Drawing.Size(101, 21);
+            this.num_OffSet.TabIndex = 58;
+            this.num_OffSet.ValueChanged += new System.EventHandler(this.num_OffSet_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(17, 160);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 57;
+            this.label1.Text = "相移";
             // 
             // num_MeasureTransition
             // 
@@ -405,31 +435,6 @@
             this.bunifuElipse1.ElipseRadius = 5;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // num_OffSet
-            // 
-            this.num_OffSet.Enabled = false;
-            this.num_OffSet.Location = new System.Drawing.Point(71, 158);
-            this.num_OffSet.Maximum = new decimal(new int[] {
-            6000,
-            0,
-            0,
-            0});
-            this.num_OffSet.Name = "num_OffSet";
-            this.num_OffSet.Size = new System.Drawing.Size(101, 21);
-            this.num_OffSet.TabIndex = 58;
-            this.num_OffSet.ValueChanged += new System.EventHandler(this.num_OffSet_ValueChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(17, 160);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "相移";
-            // 
             // 卡尺工具设置
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -448,11 +453,11 @@
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_OffSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_MeasureThreshold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_MeasureSigma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_MeasureLength2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_MeasureLength1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_OffSet)).EndInit();
             this.ResumeLayout(false);
 
         }

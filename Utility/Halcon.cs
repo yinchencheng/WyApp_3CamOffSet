@@ -415,13 +415,14 @@ namespace WY_App.Utility
                 HOperatorSet.SetMetrologyModelImageSize(hv_MetrologyHandle, hv_Width[CamNum], hv_Height[CamNum]);
                 hv_Index.Dispose();
                 HOperatorSet.AddMetrologyObjectGeneric(hv_MetrologyHandle, "line", hv_shapeParam, rect1.MeasureLength1[BaseNum], rect1.MeasureLength2[BaseNum], rect1.MeasureSigma[BaseNum], rect1.MeasureThreshold[BaseNum], new HTuple(), new HTuple(), out hv_Index);
-
+                HOperatorSet.SetMetrologyObjectParam(hv_MetrologyHandle,"all", "measure_transition", rect1.MeasureTransition[BaseNum]);
+                HOperatorSet.SetMetrologyObjectParam(hv_MetrologyHandle, "all", "num_measures", 30);
                 //执行测量，获取边缘点集
                 HOperatorSet.SetColor(hWindow, "yellow");
                 HOperatorSet.ApplyMetrologyModel(hImage, hv_MetrologyHandle);
                 hv_Row.Dispose(); hv_Column.Dispose();
                 HOperatorSet.GetMetrologyObjectMeasures(out ho_Contours, hv_MetrologyHandle, "all", "all", out hv_Row, out hv_Column);
-                //HOperatorSet.DispObj(ho_Contours, hWindow);
+                HOperatorSet.DispObj(ho_Contours, hWindow);
                 HOperatorSet.SetColor(hWindow, "red");
                 HOperatorSet.GenCrossContourXld(out ho_Cross, hv_Row, hv_Column, 1, 0.785398);
                 //获取最终测量数据和轮廓线
