@@ -64,13 +64,13 @@
   </MeasureSigma>
   <MeasureThreshold>
     <unsignedInt>20</unsignedInt>
-    <unsignedInt>40</unsignedInt>
+    <unsignedInt>20</unsignedInt>
     <unsignedInt>40</unsignedInt>
     <unsignedInt>40</unsignedInt>
   </MeasureThreshold>
   <MeasureTransition>
-    <string />
-    <string />
+    <string>all</string>
+    <string>negative</string>
     <string />
     <string>all</string>
   </MeasureTransition>
