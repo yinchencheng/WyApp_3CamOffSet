@@ -110,11 +110,24 @@ namespace WY_App
             txt_Trigger_Detection2.Text = Parameters.plcParams.Trigger_Detection2;
             txt_Completion_Add2.Text = Parameters.plcParams.Completion2;
 
+			ImageUploadPath1.Text = Parameters.commministion.ImageUploadOne;
+			ImageUploadPath2.Text = Parameters.commministion.ImageUploadTwo;
+			ImageUploadPath3.Text = Parameters.commministion.ImageUploadThree;
+
+			check_ImagePath1.Checked = Parameters.commministion.UploadOneEnable;
+			check_ImagePath1.Checked = Parameters.commministion.UploadTwoEnable;
+			check_ImagePath1.Checked = Parameters.commministion.UploadThreeEnable;
+
+			
+			check_ImageTestPath1.Checked = Parameters.commministion.UploadOneTestEnable;
+			check_ImageTestPath1.Checked = Parameters.commministion.UploadTwoTestEnable;
+			check_ImageTestPath1.Checked = Parameters.commministion.UploadThreeTestEnable;
+
 			uiTextBox25.Text = Parameters.plcParams.预留地址[0];
 			uiTextBox24.Text = Parameters.plcParams.预留地址[1];
 			uiTextBox23.Text = Parameters.plcParams.预留地址[2];
-			uiTextBox22.Text = Parameters.plcParams.预留地址[1];
-			uiTextBox21.Text = Parameters.plcParams.预留地址[2];
+			uiTextBox22.Text = Parameters.plcParams.预留地址[3];
+			uiTextBox21.Text = Parameters.plcParams.预留地址[4];
 
             uiTextBox13.Text = Parameters.plcParams.预留地址[5] ;
             uiTextBox15.Text = Parameters.plcParams.预留地址[6] ;
@@ -156,7 +169,13 @@ namespace WY_App
             uiTextBox37.Text = Parameters.plcParams.预留地址[38] ;
             uiTextBox41.Text = Parameters.plcParams.预留地址[39] ;
             uiTextBox40.Text = Parameters.plcParams.预留地址[40] ;
-        }
+
+			uiTextBox16.Text = Parameters.plcParams.预留地址[41];
+			uiTextBox36.Text = Parameters.plcParams.预留地址[42];
+
+			uiTextBox25.Text = Parameters.plcParams.预留地址[0];
+			uiTextBox39.Text = Parameters.plcParams.预留地址[43];
+		}
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -237,9 +256,26 @@ namespace WY_App
             uiTextBox41.Enabled = true;
             uiTextBox40.Enabled = true;
 
-            txt_ImageSavePath.Enabled = true;
+			uiTextBox16.Enabled = true;
+			uiTextBox36.Enabled = true;
+
+			txt_ImageSavePath.Enabled = true;
             btn_Save.Enabled = true;
-        }
+
+			ImageUploadPath1.Enabled = true;
+			ImageUploadPath2.Enabled = true;
+			ImageUploadPath3.Enabled = true;
+
+			check_ImagePath1.Enabled = true;
+			check_ImagePath2.Enabled = true;
+			check_ImagePath3.Enabled = true;
+
+			uiTextBox39.Enabled = true;
+
+			check_ImageTestPath1.Enabled = true;
+			check_ImageTestPath2.Enabled = true;
+			check_ImageTestPath3.Enabled = true;
+		}
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
@@ -259,7 +295,20 @@ namespace WY_App
             Parameters.commministion.TcpClientEnable = chk_ClientEnabled.Checked;
             Parameters.commministion.LogFileExistDay = (int)num_LogSaveDays.Value;
 
-            XMLHelper.serialize<Parameters.Commministion>(Parameters.commministion, "Parameter/Commministion.xml");
+			Parameters.commministion.ImageUploadOne = ImageUploadPath1.Text;
+			Parameters.commministion.ImageUploadTwo = ImageUploadPath2.Text;
+			Parameters.commministion.ImageUploadThree = ImageUploadPath3.Text;
+
+			Parameters.commministion.UploadOneEnable = check_ImagePath1.Checked;
+			Parameters.commministion.UploadTwoEnable = check_ImagePath2.Checked;
+			Parameters.commministion.UploadThreeEnable = check_ImagePath3.Checked;
+
+			Parameters.commministion.UploadOneTestEnable = check_ImageTestPath1.Checked;
+			Parameters.commministion.UploadTwoTestEnable = check_ImageTestPath2.Checked;
+			Parameters.commministion.UploadThreeTestEnable = check_ImageTestPath3.Checked;
+
+
+			XMLHelper.serialize<Parameters.Commministion>(Parameters.commministion, "Parameter/Commministion.xml");
 
             Parameters.plcParams.HeartBeatAdd = txt_HeartBeat_Add.Text;
             Parameters.plcParams.StartAdd = txt_StartAdd.Text;
@@ -270,7 +319,7 @@ namespace WY_App
             Parameters.plcParams.Trigger_Detection2 = txt_Trigger_Detection2.Text;
             Parameters.plcParams.Completion2 = txt_Completion_Add2.Text;
 
-			Parameters.plcParams.预留地址[0] = uiTextBox25.Text;
+			
 			Parameters.plcParams.预留地址[1] = uiTextBox24.Text;
 			Parameters.plcParams.预留地址[2] = uiTextBox23.Text;
 			Parameters.plcParams.预留地址[3] = uiTextBox22.Text;
@@ -317,8 +366,13 @@ namespace WY_App
             Parameters.plcParams.预留地址[39] = uiTextBox41.Text;
             Parameters.plcParams.预留地址[40] = uiTextBox40.Text;
 
+			Parameters.plcParams.预留地址[41] = uiTextBox16.Text;
+			Parameters.plcParams.预留地址[42] = uiTextBox36.Text;
 
-            XMLHelper.serialize<Parameters.PLCParams>(Parameters.plcParams, "Parameter/PLCParams.xml");
+			Parameters.plcParams.预留地址[0] = uiTextBox25.Text;
+			Parameters.plcParams.预留地址[43] = uiTextBox39.Text;
+
+			XMLHelper.serialize<Parameters.PLCParams>(Parameters.plcParams, "Parameter/PLCParams.xml");
 
 
 
@@ -339,5 +393,10 @@ namespace WY_App
         {
 
         }
-    }
+
+		private void panel3_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+	}
 }

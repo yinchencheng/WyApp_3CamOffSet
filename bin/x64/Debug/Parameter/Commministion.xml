@@ -2,19 +2,28 @@
 <Commministion xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <LogLevel>Debug</LogLevel>
   <LogFileExistDay>0</LogFileExistDay>
-  <PlcEnable>false</PlcEnable>
-  <PlcType>Omron.OmronFinsNet</PlcType>
-  <PlcIpAddress>127.0.0.1</PlcIpAddress>
-  <PlcIpPort>9600</PlcIpPort>
-  <PlcDevice>200</PlcDevice>
-  <TcpClientEnable>true</TcpClientEnable>
+  <PlcEnable>true</PlcEnable>
+  <PlcType>Melsec.MelsecMcNet</PlcType>
+  <PlcIpAddress>192.168.3.39</PlcIpAddress>
+  <PlcIpPort>1027</PlcIpPort>
+  <PlcDevice>1</PlcDevice>
+  <TcpClientEnable>false</TcpClientEnable>
   <TcpClientIpAddress>127.0.0.1</TcpClientIpAddress>
   <TcpClientIpPort>9600</TcpClientIpPort>
   <TcpServerEnable>false</TcpServerEnable>
   <TcpServerIpAddress>127.0.0.1</TcpServerIpAddress>
   <TcpServerIpPort>9600</TcpServerIpPort>
   <ImagePath>D:\VisionDetect\InspectImage\</ImagePath>
-  <ImageSavePath>D:\Image\</ImageSavePath>
-  <productName>初始化</productName>
+  <ImageSavePath>G:\Image\</ImageSavePath>
+  <ImageUploadOne>D:\Image\</ImageUploadOne>
+  <ImageUploadTwo>D:\Image\</ImageUploadTwo>
+  <ImageUploadThree>D:\Image\</ImageUploadThree>
+  <UploadOneEnable>false</UploadOneEnable>
+  <UploadTwoEnable>false</UploadTwoEnable>
+  <UploadThreeEnable>false</UploadThreeEnable>
+  <UploadOneTestEnable>false</UploadOneTestEnable>
+  <UploadTwoTestEnable>false</UploadTwoTestEnable>
+  <UploadThreeTestEnable>false</UploadThreeTestEnable>
+  <productName>04.1...F.0011</productName>
   <DeviceID>955A54B7DE2A0866AAA5F99EE136F07E9076E479E27F5DDD23A084DDFED82795</DeviceID>
 </Commministion>

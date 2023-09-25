@@ -57,15 +57,6 @@
             <param name="cInterface">采集卡控制类</param>
             <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
         </member>
-        <member name="M:MvFGCtrlC.NET.CSystem.OpenInterfaceByID(System.String,System.Int32,MvFGCtrlC.NET.CInterface@)">
-            <summary>
-            通过采集卡ID打开采集卡，可指定权限
-            </summary>
-            <param name="strInterfaceID">采集卡ID</param>
-            <param name="nAccess">权限</param>
-            <param name="cInterface">采集卡控制类</param>
-            <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
-        </member>
         <member name="M:MvFGCtrlC.NET.CSystem.ReleaseTLayerResource(System.UInt32)">
             <summary>
             释放指定类型的采集卡资源
@@ -155,73 +146,9 @@
         </member>
         <member name="M:MvFGCtrlC.NET.CBuffer.QueueBuffer">
             <summary>
-            将队列外的缓存句柄放回输入队列
+            将缓存句柄放回输入队列
             </summary>
             <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
-        </member>
-        <member name="T:MvFGCtrlC.NET.CCallback">
-            <summary>
-            CCallback模块
-            </summary>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CCallback.#ctor">
-            <summary>
-            初始化
-            </summary>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CCallback.#ctor(MvFGCtrlC.NET.CInterface)">
-            <summary>
-            初始化
-            </summary>
-            <param name="cInterface">采集卡类</param>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CCallback.#ctor(MvFGCtrlC.NET.CDevice)">
-            <summary>
-            初始化
-            </summary>
-            <param name="cDevice">相机类</param>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CCallback.#ctor(MvFGCtrlC.NET.CStream)">
-            <summary>
-            初始化
-            </summary>
-            <param name="cStream">流类</param>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CCallback.Finalize">
-            <summary>
-            析构函数
-            </summary>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CCallback.RegisterEventCallBack(System.String,MvFGCtrlC.NET.CCallback.EventDelegate,System.IntPtr)">
-            <summary>
-            注册事件回调函数
-            </summary>
-            <param name="strEventName">事件名称</param>
-            <param name="eventDelegate">事件委托函数</param>
-            <param name="pUser">用户自定义数据</param>
-            <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CCallback.RegisterExceptionCallBack(MvFGCtrlC.NET.CCallback.ExceptionDelegate,System.IntPtr)">
-            <summary>
-            注册异常信息回调函数
-            </summary>
-            <param name="exceptionDelegate">异常委托函数</param>
-            <param name="pUser">用户自定义数据</param>
-            <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
-        </member>
-        <member name="T:MvFGCtrlC.NET.CCallback.EventDelegate">
-            <summary>
-            事件委托
-            </summary>
-            <param name="stBufferInfo">图像缓存信息</param>
-            <param name="pUser">用户自定义数据</param>
-        </member>
-        <member name="T:MvFGCtrlC.NET.CCallback.ExceptionDelegate">
-            <summary>
-            异常委托
-            </summary>
-            <param name="enExceptionType">异常类型</param>
-            <param name="pUser">用户自定义数据</param>
         </member>
         <member name="T:MvFGCtrlC.NET.CAdditional">
             <summary>
@@ -281,32 +208,11 @@
             <param name="stSaveJpegInfo">JPG图像信息</param>
             <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
         </member>
-        <member name="M:MvFGCtrlC.NET.CImageProcess.SaveTiffToFile(MvFGCtrlC.NET.MV_FG_SAVE_TIFF_TO_FILE_INFO@)">
-            <summary>
-            保存TIFF图像
-            </summary>
-            <param name="stSaveTiffInfo">TIFF图像信息</param>
-            <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CImageProcess.SavePngToFile(MvFGCtrlC.NET.MV_FG_SAVE_PNG_TO_FILE_INFO@)">
-            <summary>
-            保存PNG图像
-            </summary>
-            <param name="stSavePngInfo">PNG图像信息</param>
-            <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
-        </member>
         <member name="M:MvFGCtrlC.NET.CImageProcess.ConvertPixelType(MvFGCtrlC.NET.MV_FG_CONVERT_PIXEL_INFO@)">
             <summary>
             格式转换
             </summary>
             <param name="stConvertPixelInfo">像素格式转换信息</param>
-            <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CImageProcess.HB_Decode(MvFGCtrlC.NET.MV_FG_HB_DECODE_PARAM@)">
-            <summary>
-            无损解码
-            </summary>
-            <param name="stDecodeParam">无损解码参数</param>
             <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
         </member>
         <member name="M:MvFGCtrlC.NET.CImageProcess.ReconstructImage(MvFGCtrlC.NET.MV_FG_RECONSTRUCT_INFO@)">
@@ -326,11 +232,6 @@
             初始化
             </summary>
             <param name="ptrHandle">采集卡句柄</param>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CInterface.Finalize">
-            <summary>
-            析构函数
-            </summary>
         </member>
         <member name="M:MvFGCtrlC.NET.CInterface.GetHandle">
             <summary>
@@ -371,14 +272,6 @@
             打开设备
             </summary>
             <param name="nIndex">设备索引，从0开始</param>
-            <param name="cDevice">设备类</param>
-            <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CInterface.OpenDeviceByID(System.String,MvFGCtrlC.NET.CDevice@)">
-            <summary>
-            通过设备ID打开设备
-            </summary>
-            <param name="strDeviceID">设备ID</param>
             <param name="cDevice">设备类</param>
             <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
         </member>
@@ -1321,337 +1214,6 @@
             保留字段
             </summary>
         </member>
-        <member name="T:MvFGCtrlC.NET.MV_FG_EVENT_INFO">
-            <summary>
-            事件信息
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EVENT_INFO.strEventName">
-            <summary>
-            事件名称
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EVENT_INFO.nEventID">
-            <summary>
-            事件号
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EVENT_INFO.nBlockID">
-            <summary>
-            帧号，流事件有效
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EVENT_INFO.nTimestamp">
-            <summary>
-            时间戳
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EVENT_INFO.pEventData">
-            <summary>
-            事件数据，内部缓存，需要及时进行数据处理
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EVENT_INFO.nEventDataSize">
-            <summary>
-            事件数据长度
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EVENT_INFO.nReserved">
-            <summary>
-            保留字段
-            </summary>
-        </member>
-        <member name="T:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE">
-            <summary> 异常信息类型 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_SYSTEM_TEMPERATURE_UPLIMIT">
-            <summary> 温度上限 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_SYSTEM_TEMPERATURE_LOWLIMIT">
-            <summary> 温度下限限 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_SYSTEM_DDR_INIT">
-            <summary> DDR初始化失败 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_CARD_PACKETBUF_ERR">
-            <summary> 包缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_CARD_ACKPACKETBUF_ERR">
-            <summary> 响应包缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK0_STREAM_CRC_ERR">
-            <summary> Link0 流CRC校验错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK0_STREAM_PACKET_RESEND">
-            <summary> Link0 流重发包 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK0_STREAM_CTRLPACKET_ERR">
-            <summary> Link0 控制包错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK0_PRETREATBUF_ERR">
-            <summary> Link0 预处理缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK0_CAM_ACK_RECVBUF_ERR">
-            <summary> Link0 相机回包接收缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK0_CAM_ACK_TRANSMITBUF_ERR">
-            <summary> Link0 相机回包发送缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK1_STREAM_CRC_ERR">
-            <summary> Link1 流CRC校验错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK1_STREAM_PACKET_RESEND">
-            <summary> Link1 流重发包 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK1_STREAM_CTRLPACKET_ERR">
-            <summary> Link1 控制包错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK1_PRETREATBUF_ERR">
-            <summary> Link1 预处理缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK1_CAM_ACK_RECVBUF_ERR">
-            <summary> Link1 相机回包接收缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK1_CAM_ACK_TRANSMITBUF_ERR">
-            <summary> Link1 相机回包发送缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK2_STREAM_CRC_ERR">
-            <summary> Link2 流CRC校验错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK2_STREAM_PACKET_RESEND">
-            <summary> Link2 流重发包 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK2_STREAM_CTRLPACKET_ERR">
-            <summary> Link2 控制包错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK2_PRETREATBUF_ERR">
-            <summary> Link2 预处理缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK2_CAM_ACK_RECVBUF_ERR">
-            <summary> Link2 相机回包接收缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK2_CAM_ACK_TRANSMITBUF_ERR">
-            <summary> Link2 相机回包发送缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK3_STREAM_CRC_ERR">
-            <summary> Link3 流CRC校验错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK3_STREAM_PACKET_RESEND">
-            <summary> Link3 流重发包 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK3_STREAM_CTRLPACKET_ERR">
-            <summary> Link3 控制包错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK3_PRETREATBUF_ERR">
-            <summary> Link3 预处理缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK3_CAM_ACK_RECVBUF_ERR">
-            <summary> Link3 相机回包接收缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_LINK3_CAM_ACK_TRANSMITBUF_ERR">
-            <summary> Link3 相机回包发送缓存错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM0_DROP_FRAME_IMAGE">
-            <summary> STREAM0 卡端图像帧缓存丢弃 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM0_IMAGE_DATACOUNT_ERR">
-            <summary> STREAM0 接收图像（大小）计数异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM0_DROP_FRAME_TRIGGER">
-            <summary> STREAM0 卡端帧触发丢弃 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM0_QUEUEBUF_ERR">
-            <summary> STREAM0 QUEUE缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM0_WDMABUF_ERR">
-            <summary> STREAM0 WDMA缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM0_RDMABUF_ERR">
-            <summary> STREAM0 RDMA缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM0_PACKETBUF_ERR">
-            <summary> STREAM0 PACKET缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM0_WDMALENGTH_ERR">
-            <summary> STREAM0 WDMA长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM0_RDMALENGTH_ERR">
-            <summary> STREAM0 RDMA长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM1_DROP_FRAME_IMAGE">
-            <summary> STREAM1 卡端图像帧缓存丢弃 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM1_IMAGE_DATACOUNT_ERR">
-            <summary> STREAM1 接收图像（大小）计数异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM1_DROP_FRAME_TRIGGER">
-            <summary> STREAM1 卡端帧触发丢弃 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM1_QUEUEBUF_ERR">
-            <summary> STREAM1 QUEUE缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM1_WDMABUF_ERR">
-            <summary> STREAM1 WDMA缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM1_RDMABUF_ERR">
-            <summary> STREAM1 RDMA缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM1_PACKETBUF_ERR">
-            <summary> STREAM1 PACKET缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM1_WDMALENGTH_ERR">
-            <summary> STREAM1 WDMA长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM1_RDMALENGTH_ERR">
-            <summary> STREAM1 RDMA长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM2_DROP_FRAME_IMAGE">
-            <summary> STREAM2 卡端图像帧缓存丢弃 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM2_IMAGE_DATACOUNT_ERR">
-            <summary> STREAM2 接收图像（大小）计数异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM2_DROP_FRAME_TRIGGER">
-            <summary> STREAM2 卡端帧触发丢弃 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM2_QUEUEBUF_ERR">
-            <summary> STREAM2 QUEUE缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM2_WDMABUF_ERR">
-            <summary> STREAM2 WDMA缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM2_RDMABUF_ERR">
-            <summary> STREAM2 RDMA缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM2_PACKETBUF_ERR">
-            <summary> STREAM2 PACKET缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM2_WDMALENGTH_ERR">
-            <summary> STREAM2 WDMA长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM2_RDMALENGTH_ERR">
-            <summary> STREAM2 RDMA长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM3_DROP_FRAME_IMAGE">
-            <summary> STREAM3 卡端图像帧缓存丢弃 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM3_IMAGE_DATACOUNT_ERR">
-            <summary> STREAM3 接收图像（大小）计数异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM3_DROP_FRAME_TRIGGER">
-            <summary> STREAM3 卡端帧触发丢弃 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM3_QUEUEBUF_ERR">
-            <summary> STREAM3 QUEUE缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM3_WDMABUF_ERR">
-            <summary> STREAM3 WDMA缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM3_RDMABUF_ERR">
-            <summary> STREAM3 RDMA缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM3_PACKETBUF_ERR">
-            <summary> STREAM3 PACKET缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM3_WDMALENGTH_ERR">
-            <summary> STREAM3 WDMA长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_STREAM3_RDMALENGTH_ERR">
-            <summary> STREAM3 RDMA长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_SCHEDULEBUF_ERR">
-            <summary> 调度模块缓存异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_SCHEDULE_ERR">
-            <summary> 调度结果到异常值 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK0_RECVBUF_ERR">
-            <summary> Link0 缓存Link的buffer异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK0_LENGTH_ERR">
-            <summary> Link0 控制包长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK0_SOFT_RECVBUF_ERR">
-            <summary> Link0 缓存Link的buffer异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK0_SOFT_LENGTH_ERR">
-            <summary> Link0 控制包长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK1_RECVBUF_ERR">
-            <summary> Link1 缓存Link的buffer异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK1_LENGTH_ERR">
-            <summary> Link1 控制包长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK1_SOFT_RECVBUF_ERR">
-            <summary> Link1 缓存Link的buffer异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK1_SOFT_LENGTH_ERR">
-            <summary> Link1 控制包长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK2_RECVBUF_ERR">
-            <summary> Link2 缓存Link的buffer异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK2_LENGTH_ERR">
-            <summary> Link2 控制包长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK2_SOFT_RECVBUF_ERR">
-            <summary> Link2 缓存Link的buffer异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK2_SOFT_LENGTH_ERR">
-            <summary> Link2 控制包长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK3_RECVBUF_ERR">
-            <summary> Link3 缓存Link的buffer异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK3_LENGTH_ERR">
-            <summary> Link3 控制包长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK3_SOFT_RECVBUF_ERR">
-            <summary> Link3 缓存Link的buffer异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_LINK3_SOFT_LENGTH_ERR">
-            <summary> Link3 控制包长度异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM0_RECVBUF_ERR">
-            <summary> STREAM0 缓存Stream的fifo异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM0_LIST_ERR">
-            <summary> STREAM0 链表格式错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM0_SIZE_ERR">
-            <summary> STREAM0 图像大小与内存不匹配 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM1_RECVBUF_ERR">
-            <summary> STREAM1 缓存Stream的fifo异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM1_LIST_ERR">
-            <summary> STREAM1 链表格式错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM1_SIZE_ERR">
-            <summary> STREAM1 图像大小与内存不匹配 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM2_RECVBUF_ERR">
-            <summary> STREAM2 缓存Stream的fifo异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM2_LIST_ERR">
-            <summary> STREAM2 链表格式错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM2_SIZE_ERR">
-            <summary> STREAM2 图像大小与内存不匹配 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM3_RECVBUF_ERR">
-            <summary> STREAM3 缓存Stream的fifo异常 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM3_LIST_ERR">
-            <summary> STREAM3 链表格式错误 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_PCIE_STREAM3_SIZE_ERR">
-            <summary> STREAM3 图像大小与内存不匹配 </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_EXCEPTION_TYPE.EXCEPTION_TYPE_CAMERA_DISCONNECT_ERR">
-            <summary> CAMERA 相机掉线错误 </summary>
-        </member>
         <member name="T:MvFGCtrlC.NET.MV_FG_NODE_ACCESS_MODE">
             <summary>
             节点权限
@@ -2042,96 +1604,6 @@
             保留字段
             </summary>
         </member>
-        <member name="T:MvFGCtrlC.NET.MV_FG_RESOLUTION_UNIT">
-            <summary>
-            分辨率单位
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_RESOLUTION_UNIT.MV_FG_Resolution_Unit_None">
-            <summary>
-            无单位
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_RESOLUTION_UNIT.MV_FG_Resolution_Unit_Inch">
-            <summary>
-            英寸
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_RESOLUTION_UNIT.MV_FG_Resolution_Unit_CENTIMETER">
-            <summary>
-            厘米
-            </summary>
-        </member>
-        <member name="T:MvFGCtrlC.NET.MV_FG_SAVE_TIFF_TO_FILE_INFO">
-            <summary>
-            保存Tiff图像信息
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_TIFF_TO_FILE_INFO.stInputImageInfo">
-            <summary>
-            输入图像信息
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_TIFF_TO_FILE_INFO.strImagePath">
-            <summary>
-            输入文件路径
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_TIFF_TO_FILE_INFO.fXResolution">
-            <summary>
-            水平分辨率
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_TIFF_TO_FILE_INFO.fYResolution">
-            <summary>
-            垂直分辨率
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_TIFF_TO_FILE_INFO.enResolutionUnit">
-            <summary>
-            分辨率单位
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_TIFF_TO_FILE_INFO.enCfaMethod">
-            <summary>
-            插值方法
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_TIFF_TO_FILE_INFO.nReserved">
-            <summary>
-            保留字段
-            </summary>
-        </member>
-        <member name="T:MvFGCtrlC.NET.MV_FG_SAVE_PNG_TO_FILE_INFO">
-            <summary>
-            保存Png图像信息
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_PNG_TO_FILE_INFO.stInputImageInfo">
-            <summary>
-            输入图像信息
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_PNG_TO_FILE_INFO.strImagePath">
-            <summary>
-            输入文件路径
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_PNG_TO_FILE_INFO.nPngCompression">
-            <summary>
-            编码压缩率, [0-9]
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_PNG_TO_FILE_INFO.enCfaMethod">
-            <summary>
-            插值方法
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_SAVE_PNG_TO_FILE_INFO.nReserved">
-            <summary>
-            保留字段
-            </summary>
-        </member>
         <member name="T:MvFGCtrlC.NET.MV_FG_GAMMA_TYPE">
             <summary>
             Gamma类型
@@ -2257,126 +1729,6 @@
             </summary>
         </member>
         <member name="F:MvFGCtrlC.NET.MV_FG_CONVERT_PIXEL_INFO.nReserved">
-            <summary>
-            保留字段
-            </summary>
-        </member>
-        <member name="T:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO">
-            <summary>
-            水印信息
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nSecondCount">
-            <summary>
-            设备水印时标-秒数
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nCycleCount">
-            <summary>
-            设备水印时标-周期数
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nCycleOffset">
-            <summary>
-            设备水印时标-周期偏移量
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.fGain">
-            <summary>
-            增益
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.fExposureTime">
-            <summary>
-            曝光时间
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nAverageBrightness">
-            <summary>
-            平均亮度
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nRed">
-            <summary>
-            白平衡-红色
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nGreen">
-            <summary>
-            白平衡-绿色
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nBlue">
-            <summary>
-            白平衡-蓝色
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nFrameCounter">
-            <summary>
-            总帧数
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nTriggerIndex">
-            <summary>
-            触发计数
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nInput">
-            <summary>
-            输入
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nOutput">
-            <summary>
-            输出
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nOffsetX">
-            <summary>
-            ROI区域-水平偏移量
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nOffsetY">
-            <summary>
-            ROI区域-垂直偏移量
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nFrameWidth">
-            <summary>
-            水印宽
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nFrameHeight">
-            <summary>
-            水印高
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_FRAME_SPEC_INFO.nReserved">
-            <summary>
-            保留字段
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_HB_DECODE_PARAM.pSrcBuf">
-            <summary>
-            输入数据缓存
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_HB_DECODE_PARAM.nSrcLen">
-            <summary>
-            输入数据大小
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_HB_DECODE_PARAM.stOutputImageInfo">
-            <summary>
-            输出图像信息
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_HB_DECODE_PARAM.stFrameSpecInfo">
-            <summary>
-            水印信息（暂不支持）
-            </summary>
-        </member>
-        <member name="F:MvFGCtrlC.NET.MV_FG_HB_DECODE_PARAM.nReserved">
             <summary>
             保留字段
             </summary>
@@ -2567,16 +1919,6 @@
             函数原型：MV_FGCTRL_API int __stdcall MV_FG_RegisterFrameCallBack(IN STREAMHANDLE hStream, IN MV_FG_FrameCallBack cbFrame, IN void* pUser);
             </summary>
         </member>
-        <member name="M:MvFGCtrlC.NET.CMVFGRefC.MV_FG_RegisterEventCallBack(System.IntPtr,System.String,MvFGCtrlC.NET.CCallback.EventDelegate,System.IntPtr)">
-            <summary>
-            函数原型：MV_FGCTRL_API int __stdcall MV_FG_RegisterEventCallBack(IN PORTHANDLE hPort, IN const char* strEventName, IN MV_FG_EventCallBack cbEvent, IN void* pUser);
-            </summary>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CMVFGRefC.MV_FG_RegisterExceptionCallBack(System.IntPtr,MvFGCtrlC.NET.CCallback.ExceptionDelegate,System.IntPtr)">
-            <summary>
-            函数原型：MV_FGCTRL_API int __stdcall MV_FG_RegisterExceptionCallBack(IN PORTHANDLE hPort, IN MV_FG_ExceptionCallBack cbException, IN void* pUser);
-            </summary>
-        </member>
         <member name="M:MvFGCtrlC.NET.CMVFGRefC.MV_FG_GetFrameBuffer(System.IntPtr,MvFGCtrlC.NET.MV_FG_BUFFER_INFO@,System.UInt32)">
             <summary>
             函数原型: MV_FGCTRL_API int __stdcall MV_FG_GetFrameBuffer(IN STREAMHANDLE hStream, OUT MV_FG_BUFFER_INFO* pstBufferInfo, IN unsigned int nTimeout);
@@ -2615,24 +1957,9 @@
             函数原型: MV_FGCTRL_API int __stdcall MV_FG_SaveJpeg(IN IMAGEHANDLE hImage, IN OUT MV_FG_SAVE_JPEG_INFO *pstSaveJpegInfo);
             </summary>
         </member>
-        <member name="M:MvFGCtrlC.NET.CMVFGRefC.MV_FG_SaveTiffToFile(System.IntPtr,MvFGCtrlC.NET.MV_FG_SAVE_TIFF_TO_FILE_INFO@)">
-            <summary>
-            函数原型: MV_FGCTRL_API int __stdcall MV_FG_SaveTiffToFile(IN IMAGEHANDLE hImage, IN OUT MV_FG_SAVE_TIFF_TO_FILE_INFO *pstSaveTiffInfo);
-            </summary>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CMVFGRefC.MV_FG_SavePngToFile(System.IntPtr,MvFGCtrlC.NET.MV_FG_SAVE_PNG_TO_FILE_INFO@)">
-            <summary>
-            函数原型: MV_FGCTRL_API int __stdcall MV_FG_SavePngToFile(IN IMAGEHANDLE hImage, IN OUT MV_FG_SAVE_PNG_TO_FILE_INFO *pstSavePngInfo);
-            </summary>
-        </member>
         <member name="M:MvFGCtrlC.NET.CMVFGRefC.MV_FG_ConvertPixelType(System.IntPtr,MvFGCtrlC.NET.MV_FG_CONVERT_PIXEL_INFO@)">
             <summary>
             函数原型: MV_FGCTRL_API int __stdcall MV_FG_ConvertPixelType(IN IMAGEHANDLE hImage, IN OUT MV_FG_CONVERT_PIXEL_INFO *pstConvertPixelInfo);
-            </summary>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CMVFGRefC.MV_FG_HB_Decode(System.IntPtr,MvFGCtrlC.NET.MV_FG_HB_DECODE_PARAM@)">
-            <summary>
-            函数原型: MV_FGCTRL_API int __stdcall MV_FG_HB_Decode(IN IMAGEHANDLE hImage, IN OUT MV_FG_HB_DECODE_PARAM* pstDecodeParam);
             </summary>
         </member>
         <member name="M:MvFGCtrlC.NET.CMVFGRefC.MV_FG_ReconstructImage(System.IntPtr,MvFGCtrlC.NET.MV_FG_RECONSTRUCT_INFO@)">
@@ -2713,11 +2040,6 @@
             初始化
             </summary>
             <param name="streamHandle">流通道句柄</param>
-        </member>
-        <member name="M:MvFGCtrlC.NET.CStream.Finalize">
-            <summary>
-            析构函数
-            </summary>
         </member>
         <member name="M:MvFGCtrlC.NET.CStream.GetHandle">
             <summary>
@@ -3028,7 +2350,7 @@
             </summary>
             <param name="strFilePath">属性文件名，不支持中文路径</param>
             <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
-            <remarks>不支持CML相机</remarks>
+            <remarks>不支持CXP采集卡和CML相机</remarks>
         </member>
         <member name="M:MvFGCtrlC.NET.CParam.FeatureSave(System.String)">
             <summary>
@@ -3036,7 +2358,7 @@
             </summary>
             <param name="strFilePath">属性文件名，不支持中文路径</param>
             <returns>成功，返回MV_FG_SUCCESS；失败返回错误码</returns>
-            <remarks>不支持CML相机</remarks>
+            <remarks>不支持CXP采集卡和CML相机</remarks>
         </member>
     </members>
 </doc>

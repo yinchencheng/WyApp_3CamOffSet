@@ -11,10 +11,10 @@
   <SNReadAdd>D116</SNReadAdd>
   <预留地址>
     <string>D0200</string>
-    <string>D2200</string>
-    <string>D4200</string>
-    <string>D2200</string>
-    <string>D4200</string>
+    <string>D8098</string>
+    <string>D8100</string>
+    <string>D8802</string>
+    <string>D8810</string>
     <string>D4000</string>
     <string>D4001</string>
     <string>D4002</string>
@@ -51,8 +51,8 @@
     <string>D4093</string>
     <string>D4094</string>
     <string>D4095</string>
-    <string>D82200</string>
-    <string>D84200</string>
+    <string>D8200</string>
+    <string>D8199</string>
     <string>D86200</string>
     <string>D88200</string>
     <string>D90200</string>

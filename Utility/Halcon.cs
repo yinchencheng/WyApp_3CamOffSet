@@ -1,6 +1,7 @@
 ﻿using HalconDotNet;
 using OpenCvSharp;
 using SevenZip.Compression.LZ;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -149,7 +150,19 @@ namespace WY_App.Utility
                 return false;
             }
         }
-		//        //-----------------------------------------------------------------------------
+
+		public static bool ImgDisplayAlone(int index, string imgPath, HWindow Hwindow)
+		{
+			MainForm.hImage[index].Dispose();
+			HOperatorSet.GenEmptyObj(out MainForm.hImage[index]);
+
+			HOperatorSet.ReadImage(out MainForm.hImage[index], imgPath);//读取图片存入到HalconImage           
+			HOperatorSet.GetImageSize(MainForm.hImage[index], out hv_Width[index], out hv_Height[index]);//获取图片大小规格
+			HOperatorSet.SetPart(Hwindow, 0, 0, -1, -1);//设置窗体的规格
+			HOperatorSet.DispObj(MainForm.hImage[index], Hwindow);//显示图片
+			return true;
+		}
+
 		public static bool CloseFramegrabber(HTuple hv_AcqHandle)
 		{
 			HOperatorSet.CloseFramegrabber(hv_AcqHandle);
@@ -216,7 +229,69 @@ namespace WY_App.Utility
         {
             HOperatorSet.GrabImageStart(hv_AcqHandle, -1);
         }
-        public static void ImgZoom(HObject L_Img, HTuple Hwindow, int Delta = 1)
+
+		public static void ImgZoomTwo(HObject L_Img, HTuple Hwindow, HTuple HwindowTwo, int Delta = 1)
+		{
+			HTuple Zoom = new HTuple(), Row = new HTuple(), Col = new HTuple(), L_Button = new HTuple();
+			HTuple hv_Width = new HTuple(), hv_Height = new HTuple();
+			HTuple Row0 = new HTuple(), Column0 = new HTuple(), Row00 = new HTuple(), Column00 = new HTuple(), Ht = new HTuple(), Wt = new HTuple();
+			HTuple[] Now_Pos = new HTuple[4];
+			try
+			{
+
+				if (Delta > 0)//鼠标滚动格值，一般120
+				{
+					Zoom = 1.001;//向上滚动,放大倍数
+				}
+				else
+				{
+					Zoom = 0.999;//向下滚动,缩小倍数
+				}
+				HOperatorSet.GetMposition(Hwindow, out Row, out Col, out L_Button);//获取当前鼠标的位置
+				HOperatorSet.GetPart(Hwindow, out Row0, out Column0, out Row00, out Column00);//获取当前窗体的大小规格
+				HOperatorSet.GetImageSize(L_Img, out hv_Width, out hv_Height);//获取图片大小规格
+				Ht = Row00 - Row0;
+				Wt = Column00 - Column0;
+				if (Ht * Wt < 32000 * 32000 || Zoom == 1.2)
+				{
+					Now_Pos[0] = (Row0 + ((1 - (1.0 / Zoom)) * (Row - Row0)));
+					Now_Pos[1] = (Column0 + ((1 - (1.0 / Zoom)) * (Col - Column0)));
+					Now_Pos[2] = Now_Pos[0] + (Ht / Zoom);
+					Now_Pos[3] = Now_Pos[1] + (Wt / Zoom);
+
+					HOperatorSet.SetPart(Hwindow, Now_Pos[0], Now_Pos[1], Now_Pos[2], Now_Pos[3]);
+					HOperatorSet.ClearWindow(Hwindow);
+					HOperatorSet.DispObj(L_Img, Hwindow);
+
+					HOperatorSet.SetPart(HwindowTwo, Now_Pos[0], Now_Pos[1], Now_Pos[2], Now_Pos[3]);
+					HOperatorSet.ClearWindow(HwindowTwo);
+					HOperatorSet.DispObj(L_Img, HwindowTwo);
+
+					Now_Pos[0].Dispose();
+					Now_Pos[1].Dispose();
+					Now_Pos[2].Dispose();
+					Now_Pos[3].Dispose();
+				}
+				else
+				{
+					ImgIsNotStretchDisplay(L_Img, Hwindow);//不拉伸显示
+					ImgIsNotStretchDisplay(L_Img, HwindowTwo);//不拉伸显示
+				}
+				Zoom.Dispose();
+				Row.Dispose(); Col.Dispose(); L_Button.Dispose();
+				hv_Width.Dispose(); hv_Height.Dispose();
+				Row0.Dispose(); Column0.Dispose(); Row00.Dispose(); Column00.Dispose(); Ht.Dispose(); Wt.Dispose();
+
+			}
+			catch
+			{
+				Zoom.Dispose();
+				Row.Dispose(); Col.Dispose(); L_Button.Dispose();
+				hv_Width.Dispose(); hv_Height.Dispose();
+				Row0.Dispose(); Column0.Dispose(); Row00.Dispose(); Column00.Dispose(); Ht.Dispose(); Wt.Dispose();
+			}
+		}
+		public static void ImgZoom(HObject L_Img, HTuple Hwindow, int Delta = 1)
         {
             HTuple Zoom = new HTuple(), Row = new HTuple(), Col = new HTuple(), L_Button = new HTuple();
             HTuple hv_Width = new HTuple(), hv_Height = new HTuple();
@@ -270,7 +345,63 @@ namespace WY_App.Utility
                 Row0.Dispose(); Column0.Dispose(); Row00.Dispose(); Column00.Dispose(); Ht.Dispose(); Wt.Dispose();
             }
         }
-        public static void ImgIsNotStretchDisplay(HObject L_Img, HTuple Hwindow)
+
+		public static void ImgZoomDouble(HObject L_Img, HTuple Hwindow, int Delta = 1)
+		{
+			HTuple Zoom = new HTuple(), Row = new HTuple(), Col = new HTuple(), L_Button = new HTuple();
+			HTuple hv_Width = new HTuple(), hv_Height = new HTuple();
+			HTuple Row0 = new HTuple(), Column0 = new HTuple(), Row00 = new HTuple(), Column00 = new HTuple(), Ht = new HTuple(), Wt = new HTuple();
+			HTuple[] Now_Pos = new HTuple[4];
+			try
+			{
+
+				if (Delta > 0)//鼠标滚动格值，一般120
+				{
+					Zoom = 1.007;//向上滚动,放大倍数
+				}
+				else
+				{
+					Zoom = 0.993;//向下滚动,缩小倍数
+				}
+				HOperatorSet.GetMposition(Hwindow, out Row, out Col, out L_Button);//获取当前鼠标的位置
+				HOperatorSet.GetPart(Hwindow, out Row0, out Column0, out Row00, out Column00);//获取当前窗体的大小规格
+				HOperatorSet.GetImageSize(L_Img, out hv_Width, out hv_Height);//获取图片大小规格
+				Ht = Row00 - Row0;
+				Wt = Column00 - Column0;
+				if (Ht * Wt < 32000 * 32000 || Zoom == 1.2)
+				{
+					Now_Pos[0] = (Row0 + ((1 - (1.0 / Zoom)) * (Row - Row0)));
+					Now_Pos[1] = (Column0 + ((1 - (1.0 / Zoom)) * (Col - Column0)));
+					Now_Pos[2] = Now_Pos[0] + (Ht / Zoom);
+					Now_Pos[3] = Now_Pos[1] + (Wt / Zoom);
+					HOperatorSet.SetPart(Hwindow, Now_Pos[0], Now_Pos[1], Now_Pos[2], Now_Pos[3]);
+					HOperatorSet.ClearWindow(Hwindow);
+					HOperatorSet.DispObj(L_Img, Hwindow);
+					Now_Pos[0].Dispose();
+					Now_Pos[1].Dispose();
+					Now_Pos[2].Dispose();
+					Now_Pos[3].Dispose();
+				}
+				else
+				{
+					ImgIsNotStretchDisplay(L_Img, Hwindow);//不拉伸显示
+				}
+				Zoom.Dispose();
+				Row.Dispose(); Col.Dispose(); L_Button.Dispose();
+				hv_Width.Dispose(); hv_Height.Dispose();
+				Row0.Dispose(); Column0.Dispose(); Row00.Dispose(); Column00.Dispose(); Ht.Dispose(); Wt.Dispose();
+
+			}
+			catch
+			{
+				Zoom.Dispose();
+				Row.Dispose(); Col.Dispose(); L_Button.Dispose();
+				hv_Width.Dispose(); hv_Height.Dispose();
+				Row0.Dispose(); Column0.Dispose(); Row00.Dispose(); Column00.Dispose(); Ht.Dispose(); Wt.Dispose();
+			}
+		}
+
+		public static void ImgIsNotStretchDisplay(HObject L_Img, HTuple Hwindow)
         {
             HTuple hv_Width, hv_Height;
             HTuple win_Width, win_Height, win_Col, win_Row, cwin_Width, cwin_Height;
@@ -415,13 +546,16 @@ namespace WY_App.Utility
                 HOperatorSet.SetMetrologyModelImageSize(hv_MetrologyHandle, hv_Width[CamNum], hv_Height[CamNum]);
                 hv_Index.Dispose();
                 HOperatorSet.AddMetrologyObjectGeneric(hv_MetrologyHandle, "line", hv_shapeParam, rect1.MeasureLength1[BaseNum], rect1.MeasureLength2[BaseNum], rect1.MeasureSigma[BaseNum], rect1.MeasureThreshold[BaseNum], new HTuple(), new HTuple(), out hv_Index);
+                HOperatorSet.SetMetrologyObjectParam(hv_MetrologyHandle, "all", "measure_transition", rect1.MeasureTransition[BaseNum]);
+                HOperatorSet.SetMetrologyObjectParam(hv_MetrologyHandle, "all", "num_measures", 30);
+				HOperatorSet.SetMetrologyObjectParam(hv_MetrologyHandle, "all", "measure_select", rect1.MeasureDirection[BaseNum]);
 
-                //执行测量，获取边缘点集
-                HOperatorSet.SetColor(hWindow, "yellow");
+				//执行测量，获取边缘点集
+				HOperatorSet.SetColor(hWindow, "yellow");
                 HOperatorSet.ApplyMetrologyModel(hImage, hv_MetrologyHandle);
                 hv_Row.Dispose(); hv_Column.Dispose();
                 HOperatorSet.GetMetrologyObjectMeasures(out ho_Contours, hv_MetrologyHandle, "all", "all", out hv_Row, out hv_Column);
-                //HOperatorSet.DispObj(ho_Contours, hWindow);
+                HOperatorSet.DispObj(ho_Contours, hWindow);
                 HOperatorSet.SetColor(hWindow, "red");
                 HOperatorSet.GenCrossContourXld(out ho_Cross, hv_Row, hv_Column, 1, 0.785398);
                 //获取最终测量数据和轮廓线
@@ -433,7 +567,7 @@ namespace WY_App.Utility
                 HOperatorSet.FitLineContourXld(ho_Contour, "tukey", -1, 0, 5, 2, out PointXY.Row1, out PointXY.Colum1, out PointXY.Row2, out PointXY.Colum2, out hv_Nr, out hv_Nc, out hv_Dist);
 
                 HOperatorSet.DispObj(ho_Cross, hWindow);
-                HOperatorSet.SetColor(hWindow, "blue");
+                HOperatorSet.SetColor(hWindow, "red");
                 HOperatorSet.DispObj(ho_Contour, hWindow);
                 //释放测量句柄
                 HOperatorSet.ClearMetrologyModel(hv_MetrologyHandle);
@@ -468,216 +602,396 @@ namespace WY_App.Utility
             
             
         }
+		public static string HalconKind(int KindSelect)
+		{
+			string sKindSelect;
+			if (KindSelect % 7 == 0)
+			{
+				sKindSelect = "气泡";
+			}
+			else if (KindSelect % 7 == 1)
+			{
+				sKindSelect = "黑点";
+			}
+			else if (KindSelect % 7 == 2)
+			{
+				sKindSelect = "异物";
+			}
+			else if (KindSelect % 7 == 3)
+			{
+				sKindSelect = "裂纹";
+			}
+			else if (KindSelect % 7 == 4)
+			{
+				sKindSelect = "缺口";
+			}
+			else if (KindSelect % 7 == 5)
+			{
+				sKindSelect = "刮伤";
+			}
+			else
+			{
+				sKindSelect = "其他";
+			}
 
 
-        public static bool DetectionHalconRegion(int CamNum, int BaseNum, HWindow[] hWindow, HObject hImage, Parameters.DetectionSpec spec , HObject hObject ,ref List<DetectionResult>  detectionResult)
+			return sKindSelect;
+		}
+		public static void HalconColorSelect(int ColorSelect, HWindow hWindow)
+		{
+			if (ColorSelect % 7 == 0)
+			{
+				HOperatorSet.SetColor(hWindow, "blue");
+			}
+			else if (ColorSelect % 7 == 1)
+			{
+				HOperatorSet.SetColor(hWindow, "white");
+			}
+			else if (ColorSelect % 7 == 2)
+			{
+				HOperatorSet.SetColor(hWindow, "black");
+			}
+			else if (ColorSelect % 7 == 3)
+			{
+				HOperatorSet.SetColor(hWindow, "magenta");
+			}
+			else if (ColorSelect % 7 == 4)
+			{
+				HOperatorSet.SetColor(hWindow, "orange");
+			}
+			else if (ColorSelect % 7 == 5)
+			{
+				HOperatorSet.SetColor(hWindow, "gray");
+			}
+			else
+			{
+				HOperatorSet.SetColor(hWindow, "orange");
+			}
+		}
+
+		public static bool DetectionHalconRegion(int CamNum, int BaseNum, HWindow[] hWindow, HObject hImage, Parameters.DetectionSpec spec , HObject hObject ,ref List<DetectionResult>  detectionResult, bool bProductReport)
         {
-            if (Parameters.detectionSpec[CamNum].ThresholdLow[BaseNum] == 0 && Parameters.detectionSpec[CamNum].ThresholdHigh[BaseNum] == 0
-               || Parameters.detectionSpec[CamNum].AreaLow[BaseNum] == 0 && Parameters.detectionSpec[CamNum].AreaHigh[BaseNum] == 0
-               ||(Parameters.detectionSpec[CamNum].ThresholdLow[BaseNum] != 0 || Parameters.detectionSpec[CamNum].ThresholdHigh[BaseNum]!= 0)&& 
-               (Parameters.detectionSpec[CamNum].AreaLow[BaseNum] == 0 || Parameters.detectionSpec[CamNum].AreaHigh[BaseNum] == 0))
+
+
+            if(Parameters.detectionSpec[CamNum].DefectDetection[BaseNum]==false)
             {
-                LogHelper.WriteWarn("检测参数未设定，请检查");
-                return true;
-            }
-            // Local iconic variables             
-            HObject ho_ImageReduced, ho_Region, ho_ConnectedRegions;
-            HObject ho_SelectedRegions1, ho_ObjectSelected, ho_SelectedRegions;
-            HObject ho_Rectangle;
+				return true;
+			}
 
-            // Local control variables 
-
-            HTuple hv_Area = new HTuple(), hv_Area1 = new HTuple(), hv_Area2 = new HTuple(), hv_Row = new HTuple();
-            HTuple hv_Column = new HTuple(), hv_Indices = new HTuple();
-            HTuple hv_Length = new HTuple(), hvLength = new HTuple();
-            HTuple hv_Row1 = new HTuple(), hv_Column1 = new HTuple();
-            HTuple hv_Row2 = new HTuple(), hv_Column2 = new HTuple();
-            HTuple hv_Row12 = new HTuple(), hv_Column12 = new HTuple();
-            // Initialize local and output iconic variables 
-            HOperatorSet.GenEmptyObj(out ho_ImageReduced);
-            HOperatorSet.GenEmptyObj(out ho_Region);
-            HOperatorSet.GenEmptyObj(out ho_ConnectedRegions);
-            HOperatorSet.GenEmptyObj(out ho_SelectedRegions1);
-            HOperatorSet.GenEmptyObj(out ho_ObjectSelected);
-            HOperatorSet.GenEmptyObj(out ho_SelectedRegions);
-            HOperatorSet.GenEmptyObj(out ho_Rectangle);
-            //读取测试图
-            //阈值分割图像
-            HOperatorSet.SetDraw(hWindow[0], "margin");
-            HOperatorSet.SetColor(hWindow[0], "green");
-            HOperatorSet.DispObj(hObject, hWindow[0]);
-            HOperatorSet.ReduceDomain(hImage, hObject, out ho_ImageReduced);
-            
-            ho_Region.Dispose();
-            HOperatorSet.Threshold(ho_ImageReduced, out ho_Region, spec.ThresholdLow[BaseNum], spec.ThresholdHigh[BaseNum]);
-            ho_ConnectedRegions.Dispose();
-            HOperatorSet.Connection(ho_Region, out ho_ConnectedRegions);
-            ho_SelectedRegions1.Dispose();
-            HOperatorSet.SelectShape(ho_ConnectedRegions, out ho_SelectedRegions1, "area", "and", spec.AreaLow[BaseNum] / Parameters.detectionSpec[MainForm.CamNum].PixelResolutionRow / Parameters.detectionSpec[MainForm.CamNum].PixelResolutionRow, spec.AreaHigh[BaseNum] / Parameters.detectionSpec[MainForm.CamNum].PixelResolutionRow / Parameters.detectionSpec[MainForm.CamNum].PixelResolutionRow);
-            hv_Area.Dispose(); hv_Row.Dispose(); hv_Column.Dispose();
-            HOperatorSet.AreaCenter(ho_SelectedRegions1, out hv_Area, out hv_Row, out hv_Column);
-            HOperatorSet.CountObj(ho_SelectedRegions1, out hv_Length);
-            //对元组的元素进行排序并返回排序后的元组的索引
-            hv_Indices.Dispose();
-            HOperatorSet.TupleSortIndex(hv_Area, out hv_Indices);
-            //计算元组长度
-            
-            if (hv_Area.Length == 0)
+            if(Parameters.detectionSpec[CamNum].ThresholdLow[BaseNum] >=Parameters.detectionSpec[CamNum].ThresholdHigh[BaseNum]
+                || Parameters.detectionSpec[CamNum].AreaLow[BaseNum]>=Parameters.detectionSpec[CamNum].AreaHigh[BaseNum]
+                || Parameters.detectionSpec[CamNum].ThresholdLow[BaseNum]>255|| Parameters.detectionSpec[CamNum].ThresholdLow[BaseNum]<0
+                || Parameters.detectionSpec[CamNum].ThresholdHigh[BaseNum]>255|| Parameters.detectionSpec[CamNum].ThresholdHigh[BaseNum]<0
+                || Parameters.detectionSpec[CamNum].AreaLow[BaseNum]<0|| Parameters.detectionSpec[CamNum].AreaHigh[BaseNum]<0
+				)
             {
-                return true;
+				MessageBox.Show("相机"+CamNum.ToString()+"缺陷检测"+ BaseNum.ToString() + "参数设定有误，请检查");
+				LogHelper.WriteWarn("相机" + CamNum.ToString() + "缺陷检测" + BaseNum.ToString() + "参数设定有误，请检查");
+				return false;
             }
-            else if (hv_Area.Length == 1)
-            {                
-                HOperatorSet.SetColor(hWindow[0], "red");
-                HOperatorSet.DispObj(ho_SelectedRegions1, hWindow[0]);
-                HOperatorSet.SmallestRectangle1(ho_SelectedRegions1, out hv_Row1, out hv_Column1, out hv_Row2, out hv_Column2);
-                HOperatorSet.GenRectangle1(out ho_Rectangle, hv_Row1, hv_Column1, hv_Row2, hv_Column2);
-                HOperatorSet.SetColor(hWindow[0], "blue");
-                HOperatorSet.DispObj(ho_Rectangle, hWindow[0]);
-                HTuple Mean = new HTuple();
-                DetectionResult detectionResult1 = new DetectionResult();
-                HTuple hv_Value = new HTuple();
-                HOperatorSet.RegionFeatures(ho_SelectedRegions1, new HTuple("area").TupleConcat("row").TupleConcat("column").TupleConcat("width").TupleConcat("height").TupleConcat("rb").TupleConcat("rb"), out hv_Value);
-                HOperatorSet.GrayFeatures(ho_SelectedRegions1, hImage, "mean", out Mean);
-                detectionResult1.ResultdateTime = DateTime.Now;
-                detectionResult1.ResultGray = Mean.D;
-                detectionResult1.ResultLevel = BaseNum&7+1;
-                detectionResult1.ResultKind = (ImageErrorKind)BaseNum;
-                detectionResult1.ResultSize = hv_Value.TupleSelect(0).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum;
-                detectionResult1.ResultYPosition = hv_Value.TupleSelect(1).D * Parameters.detectionSpec[CamNum].PixelResolutionRow - Parameters.detectionSpec[CamNum].RowBase[0] + Parameters.detectionSpec[CamNum].RowBase[1]; ;
-                detectionResult1.ResultXPosition = hv_Value.TupleSelect(2).D * Parameters.detectionSpec[CamNum].PixelResolutionColum - Parameters.detectionSpec[CamNum].ColumBase[0] + Parameters.detectionSpec[CamNum].ColumBase[1]; ;
-                detectionResult1.ResultWidth = hv_Value.TupleSelect(3).D * Parameters.detectionSpec[CamNum].PixelResolutionColum;
-                detectionResult1.ResultHeight = hv_Value.TupleSelect(4).D * Parameters.detectionSpec[CamNum].PixelResolutionRow;
-                detectionResult1.ResultRa = hv_Value.TupleSelect(5).D;
-                detectionResult1.ResultRb = hv_Value.TupleSelect(6).D;
-                if (hv_Row < 500)
-                {
-                    hv_Row = 500;
-                }
-                else if (hv_Row > hv_Height[CamNum] - 500)
-                {
-                    hv_Row = hv_Height[CamNum] - 500;
-                }
-                if (hv_Column < 500)
-                {
-                    hv_Column = 500;
-                }
-                else if (hv_Column > hv_Width[CamNum] - 500)
-                {
-                    hv_Column = hv_Width[CamNum] - 500;
-                }
-                HOperatorSet.CropPart(hImage, out detectionResult1.NGAreahObject, hv_Row - 500, hv_Column -500, 1000, 1000);               
-                detectionResult.Add(detectionResult1);
-                HOperatorSet.SetColor(hWindow[0], "red");
-                HOperatorSet.SetTposition(hWindow[0], hv_Row, hv_Column);
-                HOperatorSet.WriteString(hWindow[0],( hv_Area.D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum).ToString("0.00"));
-                hv_Value.Dispose();
-                Mean.Dispose();
-            }
-            else
+
+			// Local iconic variables             
+			HObject ho_ImageReduced, ho_Region, ho_ConnectedRegions, ho_ConnectedRegionsed;
+			HObject ho_SelectedRegions1, ho_ObjectSelected, ho_SelectedRegions;
+			HObject ho_Rectangle;
+
+			// Local control variables 
+
+			HTuple hv_Area = new HTuple(), hv_Area1 = new HTuple(), hv_Area2 = new HTuple(), hv_Row = new HTuple();
+			HTuple hv_Column = new HTuple(), hv_Indices = new HTuple();
+			HTuple hv_Length = new HTuple(), hvLength = new HTuple();
+			HTuple hv_Row1 = new HTuple(), hv_Column1 = new HTuple();
+			HTuple hv_Row2 = new HTuple(), hv_Column2 = new HTuple();
+			HTuple hv_Row12 = new HTuple(), hv_Column12 = new HTuple();
+			
+			// Initialize local and output iconic variables 
+			try
             {
-                HOperatorSet.SetColor(hWindow[0], "red");
-                HOperatorSet.DispObj(ho_SelectedRegions1, hWindow[0]);
-                HOperatorSet.SmallestRectangle1(ho_SelectedRegions1, out hv_Row1, out hv_Column1, out hv_Row2, out hv_Column2);
-                HOperatorSet.GenRectangle1(out ho_Rectangle, hv_Row1, hv_Column1, hv_Row2, hv_Column2);
-                HOperatorSet.SetColor(hWindow[0], "blue");
-                HOperatorSet.DispObj(ho_Rectangle, hWindow[0]);
-                hv_Length.Dispose();
-                HOperatorSet.TupleLength(hv_Area, out hv_Length);
-                using (HDevDisposeHelper dh = new HDevDisposeHelper())
+				HOperatorSet.GenEmptyObj(out ho_ImageReduced);
+				HOperatorSet.GenEmptyObj(out ho_Region);
+				HOperatorSet.GenEmptyObj(out ho_ConnectedRegions);
+				HOperatorSet.GenEmptyObj(out ho_SelectedRegions1);
+				HOperatorSet.GenEmptyObj(out ho_ObjectSelected);
+				HOperatorSet.GenEmptyObj(out ho_SelectedRegions);
+				HOperatorSet.GenEmptyObj(out ho_Rectangle);
+				HOperatorSet.GenEmptyObj(out ho_ConnectedRegionsed);
+			}
+            catch
+            {
+				LogHelper.WriteWarn(CamNum.ToString()+ BaseNum.ToString()+"检测退出，请检查");
+				return false;
+            }
+
+            try
+            {
+				//读取测试图
+				//阈值分割图像
+				HOperatorSet.SetDraw(hWindow[0], "margin");
+				HOperatorSet.SetColor(hWindow[0], "green");
+				HOperatorSet.DispObj(hObject, hWindow[0]);
+				HOperatorSet.ReduceDomain(hImage, hObject, out ho_ImageReduced);
+
+				ho_Region.Dispose();
+				HOperatorSet.Threshold(ho_ImageReduced, out ho_Region, spec.ThresholdLow[BaseNum], spec.ThresholdHigh[BaseNum]);
+				ho_ConnectedRegions.Dispose();
+				HOperatorSet.Connection(ho_Region, out ho_ConnectedRegions);
+				ho_SelectedRegions1.Dispose();
+				HOperatorSet.SelectShape(ho_ConnectedRegions, out ho_SelectedRegions1, "area", "and", spec.AreaLow[BaseNum] / (Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum), spec.AreaHigh[BaseNum] / (Parameters.detectionSpec[MainForm.CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum));
+				hv_Area.Dispose(); hv_Row.Dispose(); hv_Column.Dispose();
+				HOperatorSet.AreaCenter(ho_SelectedRegions1, out hv_Area, out hv_Row, out hv_Column);
+				//对元组的元素进行排序并返回排序后的元组的索引
+				hv_Indices.Dispose();
+				HOperatorSet.TupleSortIndex(hv_Area, out hv_Indices);
+                HOperatorSet.TupleLength( hv_Area,out hvLength);
+			}
+            catch
+            {
+				return false;
+			}
+
+			//计算元组长度
+			
+			if (hvLength == 0)
+			{
+    //            try
+    //            {
+				//	DetectionResult detectionResul = new DetectionResult();
+    //                if(bProductReport)
+    //                {
+				//		MainForm.ProductReport(CamNum.ToString(), detectionResul, true, BaseNum);
+				//	}
+				//	return true;
+				//}
+    //            catch
+    //            {
+					return true;
+				//}				
+			}
+			else if (hvLength == 1)
+			{
+				HOperatorSet.SetColor(hWindow[0], "red");
+				HOperatorSet.DispObj(ho_SelectedRegions1, hWindow[0]);
+				HOperatorSet.SmallestRectangle1(ho_SelectedRegions1, out hv_Row1, out hv_Column1, out hv_Row2, out hv_Column2);
+				HOperatorSet.GenRectangle1(out ho_Rectangle, hv_Row1, hv_Column1, hv_Row2, hv_Column2);
+				HalconColorSelect(BaseNum, hWindow[0]);
+
+				//LogHelper.WriteSingal("框选坐标hv_Row1:" + hv_Row1.ToString() + "  hv_Column1：" + hv_Column1.ToString());
+
+				HOperatorSet.DispObj(ho_Rectangle, hWindow[0]);
+				HTuple Mean = new HTuple();
+				DetectionResult detectionResult1 = new DetectionResult();
+				HTuple hv_Value = new HTuple();
+				HOperatorSet.RegionFeatures(ho_SelectedRegions1, new HTuple("area").TupleConcat("row").TupleConcat("column").TupleConcat("width").TupleConcat("height").TupleConcat("ra").TupleConcat("rb"), out hv_Value);
+				HOperatorSet.GrayFeatures(ho_SelectedRegions1, hImage, "mean", out Mean);
+				detectionResult1.ResultdateTime = DateTime.Now;
+				detectionResult1.ResultGray = Mean.D;
+				detectionResult1.ResultLevel = BaseNum & 7 + 1;
+				detectionResult1.ResultKind = (ImageErrorKind)(BaseNum%7);
+				detectionResult1.ResultSize = hv_Value.TupleSelect(0).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum;
+				detectionResult1.ResultYPosition = hv_Value.TupleSelect(1).D * Parameters.detectionSpec[CamNum].PixelResolutionRow - Parameters.detectionSpec[CamNum].RowBase[0] + Parameters.detectionSpec[CamNum].RowBase[1];
+				detectionResult1.ResultXPosition = hv_Value.TupleSelect(2).D * Parameters.detectionSpec[CamNum].PixelResolutionColum - Parameters.detectionSpec[CamNum].ColumBase[0] + Parameters.detectionSpec[CamNum].ColumBase[1];
+				detectionResult1.ResultWidth = hv_Value.TupleSelect(3).D * Parameters.detectionSpec[CamNum].PixelResolutionColum;
+				detectionResult1.ResultHeight = hv_Value.TupleSelect(4).D * Parameters.detectionSpec[CamNum].PixelResolutionRow;
+				detectionResult1.ResultRa = hv_Value.TupleSelect(5).D;
+				detectionResult1.ResultRb = hv_Value.TupleSelect(6).D;
+
+				hv_Row = hv_Value.TupleSelect(1);
+				hv_Column = hv_Value.TupleSelect(2);
+				if (hv_Value.TupleSelect(1) < 500)
+				{
+					hv_Row = 500;
+				}
+				else if (hv_Value.TupleSelect(1) > hv_Height[CamNum] - 500)
+				{
+					hv_Row = hv_Height[CamNum] - 500;
+				}
+				if (hv_Value.TupleSelect(2) < 500)
+				{
+					hv_Column = 500;
+				}
+				else if (hv_Value.TupleSelect(2) > hv_Width[CamNum] - 500)
+				{
+					hv_Column = hv_Width[CamNum] - 500;
+				}
+
+				//if (hv_Row < 500)
+				//{
+				//	hv_Row = 500;
+				//}
+				//else if (hv_Row > hv_Height[CamNum] - 500)
+				//{
+				//	hv_Row = hv_Height[CamNum] - 500;
+				//}
+				//if (hv_Column < 500)
+				//{
+				//	hv_Column = 500;
+				//}
+				//else if (hv_Column > hv_Width[CamNum] - 500)
+				//{
+				//	hv_Column = hv_Width[CamNum] - 500;
+				//}
+				HOperatorSet.CropPart(hImage, out detectionResult1.NGAreahObject, hv_Row - 500, hv_Column - 500, 1000, 1000);
+				detectionResult.Add(detectionResult1);
+				//HOperatorSet.SetColor(hWindow[0], "red");
+				HalconColorSelect(BaseNum, hWindow[0]);
+				HOperatorSet.SetTposition(hWindow[0], hv_Row, hv_Column);
+			    HOperatorSet.WriteString(hWindow[0], "Area:" + (hv_Area.D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum).ToString("0.00"));
+				
+                HOperatorSet.SetTposition(hWindow[0], hv_Row + 500, hv_Column);
+				string Kind = HalconKind(BaseNum);
+				HOperatorSet.WriteString(hWindow[0], "缺陷：" + Kind);
+
+                try
                 {
-                    ho_ObjectSelected.Dispose();
-                    HOperatorSet.SelectObj(ho_SelectedRegions1, out ho_ObjectSelected, (hv_Indices.TupleSelect(hv_Length - 2)) + 1);
+					if (bProductReport)
+                    {
+						MainForm.ProductReport(CamNum.ToString(), detectionResult1, false, BaseNum);
+					}						
+				}
+				catch
+                {
+
                 }
 
-                //从对象元组中选择对象。这里选择倒5
+				hv_Value.Dispose();
+				Mean.Dispose();
+			}
+			else
+			{
+				HOperatorSet.SetColor(hWindow[0], "red");
+				HOperatorSet.DispObj(ho_SelectedRegions1, hWindow[0]);
+				
+                int iAreaNum = 0;
+                if (hv_Area.Length > 20)
+                {
+                    iAreaNum = 20;
+                }
+                else
+                {
+                    iAreaNum = hv_Area.Length;
+                }
 
-                //计算面积
-                hv_Area1.Dispose(); hv_Row1.Dispose(); hv_Column1.Dispose();
-                HOperatorSet.AreaCenter(ho_ObjectSelected, out hv_Area1, out hv_Row1, out hv_Column1);
                 //借助形状特征选择区域，这里选取前5
                 using (HDevDisposeHelper dh = new HDevDisposeHelper())
-                {
-                    ho_SelectedRegions.Dispose();
-                    HOperatorSet.SelectShape(ho_ConnectedRegions, out ho_SelectedRegions, "area", "and", hv_Area1, hv_Area.TupleMax());
+				{
+					ho_ObjectSelected.Dispose();
+					HOperatorSet.SelectObj(ho_SelectedRegions1, out ho_ObjectSelected, hv_Indices[hvLength - iAreaNum] +1);
+                    hv_Area1.Dispose(); hv_Row1.Dispose(); hv_Column1.Dispose();
+                    HOperatorSet.AreaCenter(ho_ObjectSelected, out hv_Area1, out hv_Row1, out hv_Column1);
+                    HOperatorSet.SelectShape(ho_SelectedRegions1, out ho_SelectedRegions,"area","and", hv_Area1, hv_Area.TupleMax());
+                    hv_Area1.Dispose(); hv_Row1.Dispose(); hv_Column1.Dispose();
+                    HOperatorSet.AreaCenter(ho_SelectedRegions, out hv_Area1, out hv_Row1, out hv_Column1);
                 }
-                //储存进元组
-                hv_Area2.Dispose(); hv_Row2.Dispose(); hv_Column2.Dispose();
-                HOperatorSet.AreaCenter(ho_SelectedRegions, out hv_Area2, out hv_Row12, out hv_Column12);
-                HTuple Mean = new HTuple();
-                for (int i = 0; i < 2; i++)
-                {
-                    DetectionResult detectionResult1 = new DetectionResult();
-                    HTuple hv_Value = new HTuple();
-                    HOperatorSet.RegionFeatures(ho_SelectedRegions, new HTuple("area").TupleConcat("row").TupleConcat("column").TupleConcat("width").TupleConcat("height").TupleConcat("rb").TupleConcat("rb"), out hv_Value);
-                    HOperatorSet.GrayFeatures(ho_SelectedRegions, hImage, "mean", out Mean);
-                    detectionResult1.ResultdateTime = DateTime.Now;
-                    detectionResult1.ResultGray = Mean.TupleSelect(i).D;
-                    detectionResult1.ResultLevel = BaseNum%7+1;
-                    detectionResult1.ResultKind = (ImageErrorKind)BaseNum;
-                    detectionResult1.ResultSize = hv_Value.TupleSelect(0 + i * 7).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum;
-                    detectionResult1.ResultYPosition = hv_Value.TupleSelect(1 + i * 7).D * Parameters.detectionSpec[CamNum].PixelResolutionRow - Parameters.detectionSpec[CamNum].RowBase[0]+ Parameters.detectionSpec[CamNum].RowBase[1];
-                    detectionResult1.ResultXPosition = hv_Value.TupleSelect(2 + i * 7).D * Parameters.detectionSpec[CamNum].PixelResolutionColum - Parameters.detectionSpec[CamNum].ColumBase[0]+ Parameters.detectionSpec[CamNum].ColumBase[1];
-                    detectionResult1.ResultWidth = hv_Value.TupleSelect(3 + i * 7).D * Parameters.detectionSpec[CamNum].PixelResolutionColum;
-                    detectionResult1.ResultHeight = hv_Value.TupleSelect(4 + i * 7).D * Parameters.detectionSpec[CamNum].PixelResolutionRow;
-                    detectionResult1.ResultRa = hv_Value.TupleSelect(5 + i * 7).D;
-                    detectionResult1.ResultRb = hv_Value.TupleSelect(6 + i * 7).D;
-                    if (hv_Row12[i] < 500)
-                    {
-                        hv_Row12[i] = 500;
-                    }
-                    else if (hv_Row12[i] > hv_Height[CamNum]-500)
-                    {
-                        hv_Row12[i] = hv_Height[CamNum]-500;
-                    }
-                    if (hv_Column12[i] < 500)
-                    {
-                        hv_Column12[i] = 500;
-                    }
-                    else if (hv_Column12[i] > hv_Width[CamNum] - 500)
-                    {
-                        hv_Column12[i] = hv_Width[CamNum] - 500;
-                    }
-                    HOperatorSet.CropPart(hImage, out detectionResult1.NGAreahObject, hv_Row12[i] - 500, hv_Column12[i]-500, 1000, 1000);
-                    string stfFileNameOut = "CAM" + CamNum + "-Area-" + i + MainForm.productSN + "-" + MainForm.strDateTime;  // 默认的图像保存名称
-                    string pathOut = Parameters.commministion.ImageSavePath + "/" + MainForm.strDateTimeDay + "/" + MainForm.productSN + "/";
-                    if (!System.IO.Directory.Exists(pathOut))
-                    {
-                        System.IO.Directory.CreateDirectory(pathOut);//不存在就创建文件夹
-                    }
-                    HOperatorSet.WriteImage(detectionResult1.NGAreahObject, "jpeg", 0, pathOut + stfFileNameOut + ".jpeg");
-                    detectionResult.Add(detectionResult1);
-                    HOperatorSet.SetColor(hWindow[0], "red");
-                    HOperatorSet.SetTposition(hWindow[0], hv_Row12[i], hv_Column12[i]);
-                    HOperatorSet.WriteString(hWindow[0], (hv_Area2[i].D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum).ToString("0.00"));
-                    hv_Value.Dispose();
-                    Mean.Dispose();
-                }
-            }         
-            //储存进元组
-            hv_Length.Dispose();
-            ho_ImageReduced.Dispose();
-            ho_Region.Dispose();
-            ho_ConnectedRegions.Dispose();
-            ho_SelectedRegions1.Dispose();
-            ho_ObjectSelected.Dispose();
-            ho_SelectedRegions.Dispose();
-            ho_Rectangle.Dispose();
+                HOperatorSet.CountObj(ho_SelectedRegions, out hvLength);
+                for (int i = 0; i < iAreaNum; i++)
+				{
+                    HTuple Mean = new HTuple();
+                    DetectionResult[] detectionResult1 = new DetectionResult[iAreaNum];
+					HTuple hv_Value = new HTuple();
+                    HOperatorSet.SelectObj(ho_SelectedRegions, out ho_ObjectSelected, i + 1);
+                    HOperatorSet.RegionFeatures(ho_ObjectSelected, new HTuple("area").TupleConcat("row").TupleConcat("column").TupleConcat("width").TupleConcat("height").TupleConcat("ra").TupleConcat("rb"), out hv_Value);
+                    HOperatorSet.SmallestRectangle1(ho_ObjectSelected, out hv_Row1, out hv_Column1, out hv_Row2, out hv_Column2);
+                    HOperatorSet.GenRectangle1(out ho_Rectangle, hv_Row1, hv_Column1, hv_Row2, hv_Column2);
 
-            hv_Area.Dispose();
-            hv_Area1.Dispose();
-            hv_Row.Dispose();
-            hv_Column.Dispose();
-            hv_Indices.Dispose();
-            hv_Length.Dispose();
-            hv_Row12.Dispose();
-            hv_Column12.Dispose();
-            hv_Row1.Dispose();
-            hv_Column1.Dispose();
-            hv_Row2.Dispose();
-            hv_Column2.Dispose();
-            return true;
-        }
+					//LogHelper.WriteSingal(i.ToString()+"  框选坐标hv_Row1:" + hv_Row1.ToString() + "  hv_Column1：" + hv_Column1.ToString());
+
+					HalconColorSelect(BaseNum, hWindow[0]);
+                    HOperatorSet.SetTposition(hWindow[0], hv_Row1, hv_Column1);
+                    HOperatorSet.WriteString(hWindow[0], "Area:" + (hv_Value.TupleSelect(0).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum).ToString("0.00"));
+                    HOperatorSet.SetTposition(hWindow[0], hv_Row1 + 500, hv_Column1);
+                    string Kind = HalconKind(BaseNum);
+                    HOperatorSet.WriteString(hWindow[0], "缺陷：" + Kind);
+
+					//LogHelper.WriteSingal(i.ToString() + "   显示坐标hv_Row1:" + hv_Row1.ToString() + "  hv_Column1：" + hv_Column1.ToString());
+
+					//HOperatorSet.SetColor(hWindow[0], "blue");
+					HalconColorSelect(BaseNum, hWindow[0]);
+                    HOperatorSet.DispObj(ho_Rectangle, hWindow[0]);
+                    HOperatorSet.GrayFeatures(ho_ObjectSelected, hImage, "mean", out Mean);
+					detectionResult1[i].ResultdateTime = DateTime.Now;
+					detectionResult1[i].ResultGray = Mean.D;
+					detectionResult1[i].ResultLevel = BaseNum % 7 + 1;
+					detectionResult1[i].ResultKind = (ImageErrorKind)(BaseNum%7);
+					detectionResult1[i].ResultSize = hv_Value.TupleSelect(0 ).D * Parameters.detectionSpec[CamNum].PixelResolutionRow * Parameters.detectionSpec[CamNum].PixelResolutionColum;
+					detectionResult1[i].ResultYPosition = hv_Value.TupleSelect(1 ).D * Parameters.detectionSpec[CamNum].PixelResolutionRow - Parameters.detectionSpec[CamNum].RowBase[0] + Parameters.detectionSpec[CamNum].RowBase[1];
+					detectionResult1[i].ResultXPosition = hv_Value.TupleSelect(2 ).D * Parameters.detectionSpec[CamNum].PixelResolutionColum - Parameters.detectionSpec[CamNum].ColumBase[0] + Parameters.detectionSpec[CamNum].ColumBase[1];
+					detectionResult1[i].ResultWidth = hv_Value.TupleSelect(3 ).D * Parameters.detectionSpec[CamNum].PixelResolutionColum;
+					detectionResult1[i].ResultHeight = hv_Value.TupleSelect(4 ).D * Parameters.detectionSpec[CamNum].PixelResolutionRow;
+					detectionResult1[i].ResultRa = hv_Value.TupleSelect(5 ).D;
+					detectionResult1[i].ResultRb = hv_Value.TupleSelect(6 ).D;
+                    hv_Row12 = hv_Value.TupleSelect(1);
+                    hv_Column12= hv_Value.TupleSelect(2);
+                    if (hv_Value.TupleSelect(1) < 500)
+					{
+						hv_Row12 = 500;
+					}
+					else if (hv_Value.TupleSelect(1) > hv_Height[CamNum] - 500)
+					{
+						hv_Row12 = hv_Height[CamNum] - 500;
+					}
+					if (hv_Value.TupleSelect(2) < 500)
+					{
+						hv_Column12 = 500;
+					}
+					else if (hv_Value.TupleSelect(2) > hv_Width[CamNum] - 500)
+					{
+						hv_Column12 = hv_Width[CamNum] - 500;
+					}
+					HOperatorSet.CropPart(hImage, out detectionResult1[i].NGAreahObject, hv_Row12 - 500, hv_Column12 - 500, 1000, 1000);
+
+					//LogHelper.WriteSingal(i.ToString() + "   截图坐标hv_Row12:" + hv_Row12.ToString() + "  hv_Column12：" + hv_Column12.ToString());
+
+
+					string stfFileNameOut = MainForm.productSheetNum+"-NG-"+i.ToString();  // 默认的图像保存名称
+					string pathOut = Parameters.commministion.ImageSavePath + "\\" + MainForm.strDateTimeDay + "\\" + MainForm.productSN + "\\"+ MainForm.productSheetNum+"\\"+"CAM-"+ CamNum + "\\"+"NG-"+"\\";
+					if (!System.IO.Directory.Exists(pathOut))
+					{
+						System.IO.Directory.CreateDirectory(pathOut);//不存在就创建文件夹
+					}
+					HOperatorSet.WriteImage(detectionResult1[i].NGAreahObject, "jpeg", 0, pathOut + stfFileNameOut + ".jpeg");
+					detectionResult.Add(detectionResult1[i]);
+
+                    try
+                    {
+						if (bProductReport)
+                        {
+							MainForm.ProductReport(CamNum.ToString(), detectionResult1[i], false, BaseNum);
+						}							
+					}
+                    catch
+                    {
+
+                    }
+                   
+
+					hv_Value.Dispose();
+					Mean.Dispose();
+				}
+			}
+			//储存进元组
+			hv_Length.Dispose();
+			ho_ImageReduced.Dispose();
+			ho_Region.Dispose();
+			ho_ConnectedRegions.Dispose();
+			ho_SelectedRegions1.Dispose();
+			ho_ObjectSelected.Dispose();
+			ho_SelectedRegions.Dispose();
+			ho_Rectangle.Dispose();
+
+			hv_Area.Dispose();
+			hv_Area1.Dispose();
+			hv_Row.Dispose();
+			hv_Column.Dispose();
+			hv_Indices.Dispose();
+			hv_Length.Dispose();
+			hv_Row12.Dispose();
+			hv_Column12.Dispose();
+			hv_Row1.Dispose();
+			hv_Column1.Dispose();
+			hv_Row2.Dispose();
+			hv_Column2.Dispose();
+			return true;
+		}
 
 
         public static bool DetectionHalconSlelct(HWindow hWindow, HObject hImage, Parameters.Rect1 rect1, Parameters.DetectionSpec spec, ref rent2[] result)
@@ -955,5 +1269,7 @@ namespace WY_App.Utility
 
             return true;
         }
-    }
+	}
 }
+
+

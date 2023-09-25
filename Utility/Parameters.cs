@@ -147,17 +147,21 @@ namespace WY_App.Utility
             public double[] MeasureSigma = new double[4];
             public uint[] MeasureThreshold = new uint[4];
             public string[] MeasureTransition = new string[4];
+            public string[] MeasureDirection = new string[4];
 
-            public double[] lengthWidthRatio = new double[28];
+
+			public double[] lengthWidthRatio = new double[28];
             public double[] min = new double[28];
             public double[] max = new double[28];
             public double[] adjust = new double[28];
             public double[] ThresholdLow = new double[28];
-            public double[] ThresholdHigh = new double[25];
+            public double[] ThresholdHigh = new double[28];
             public double[] AreaLow = new double[28];
             public double[] AreaHigh = new double[28];
+			public bool[] DefectDetection = new bool[28];
 
-            public DetectionSpec()
+
+			public DetectionSpec()
             {
                 PixelResolutionRow = 1;
                 PixelResolutionColum = 1;
@@ -175,9 +179,11 @@ namespace WY_App.Utility
                     MeasureSigma[i] = 3;
                     MeasureThreshold[i] = 40;
                     MeasureTransition[i] = "all";
-                }
+                    MeasureDirection[i] = "first";
 
-                for (int i = 0; i < 24; i++)
+				}
+
+                for (int i = 0; i < 28; i++)
                 {
                     lengthWidthRatio[i] = 0;
                     max[i] = 0;
@@ -187,7 +193,9 @@ namespace WY_App.Utility
                     ThresholdHigh[i] = 0;
                     AreaLow[i] = 0;
                     AreaHigh[i] = 0;
-                }
+                    DefectDetection[i] = false;
+
+				}
             }
         }
 
@@ -342,10 +350,55 @@ namespace WY_App.Utility
             /// </summary>
             public string ImageSavePath;
 
-            /// <summary>
-            /// path
-            /// </summary>
-            public string productName;
+			/// <summary>
+			/// 上传路径，当前检测的原图缺陷图一块上传
+			/// </summary>
+			public string ImageUploadOne;
+
+			/// <summary>
+			/// 上传路径，检测的缺陷图进行分区后上传
+			/// </summary>
+			public string ImageUploadTwo;
+
+			/// <summary>
+			/// 上传路径，检测的缺陷图进行分区后上传
+			/// </summary>
+			public string ImageUploadThree;
+
+			/// <summary>
+			/// 上传路径，当前检测的原图缺陷图一块上传
+			/// </summary>
+			public bool UploadOneEnable;
+
+			/// <summary>
+			/// 上传路径，检测的缺陷图进行分区后上传
+			/// </summary>
+			public bool UploadTwoEnable;
+
+			/// <summary>
+			/// 上传路径，检测的缺陷图进行分区后上传
+			/// </summary>
+			public bool UploadThreeEnable;
+
+			/// <summary>
+			/// 上传路径，当前检测的原图缺陷图一块上传
+			/// </summary>
+			public bool UploadOneTestEnable;
+
+			/// <summary>
+			/// 上传路径，检测的缺陷图进行分区后上传
+			/// </summary>
+			public bool UploadTwoTestEnable;
+
+			/// <summary>
+			/// 上传路径，检测的缺陷图进行分区后上传
+			/// </summary>
+			public bool UploadThreeTestEnable;
+
+			/// <summary>
+			/// path
+			/// </summary>
+			public string productName;
 
             /// <summary>
             /// path
@@ -392,9 +445,20 @@ namespace WY_App.Utility
 
                 ImagePath = @"D:\VisionDetect\InspectImage\";
                 ImageSavePath = @"D:\Image\";
-                productName = "55";
+                productName = "初始化";
                 DeviceID = "";
-;           }
+				ImageUploadOne = @"D:\Image\";
+				ImageUploadTwo = @"D:\Image\";
+				ImageUploadThree = @"D:\Image\";
+
+				UploadOneEnable = false;
+				UploadTwoEnable = false;
+				UploadThreeEnable = false;
+
+				UploadOneTestEnable = false;
+				UploadTwoTestEnable = false;
+				UploadThreeTestEnable = false;
+			}
         }
 
         public static Commministion commministion = new Commministion();

@@ -14,7 +14,9 @@ namespace WY_App.Utility
     public class LogHelper
     {
         public static ILogNet Log = new LogNetSingle(@"D:\\Logs\\"+System.DateTime.Now.ToString("yyyyMMddHH")+".txt");
-        public static void WriteError(string log )
+		public static ILogNet LogSingal = new LogNetSingle(@"D:\\输出信号集\\"  +System.DateTime.Now.ToString("yyyyMMdd") + ".txt");
+
+		public static void WriteError(string log )
         {
            MainForm.AlarmList.Add("Error" + System.DateTime.Now.ToString() + log);
            Log.WriteError(System.DateTime.Now.ToString() + log);
@@ -43,6 +45,11 @@ namespace WY_App.Utility
             MainForm.AlarmList.Add("Debug" + System.DateTime.Now.ToString() + log);
             Log.WriteDebug(System.DateTime.Now.ToString() + log);
         }
-    }
+		public static void WriteSingal(string log)
+		{
+			MainForm.AlarmList.Add("Info" + System.DateTime.Now.ToString() + log);
+			LogSingal.WriteInfo(System.DateTime.Now.ToString() + log);
+		}
+	}
     
 }

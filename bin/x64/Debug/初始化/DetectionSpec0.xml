@@ -226,7 +226,7 @@
   </ThresholdLow>
   <ThresholdHigh>
     <double>220</double>
-    <double>80</double>
+    <double>90</double>
     <double>0</double>
     <double>0</double>
     <double>200</double>

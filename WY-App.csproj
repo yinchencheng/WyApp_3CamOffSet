@@ -60,6 +60,9 @@
     <Prefer32Bit>true</Prefer32Bit>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AOI.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Charts.WinForms, Version=1.1.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -164,6 +167,18 @@
     <Compile Include="Forms\切换产品.designer.cs">
       <DependentUpon>切换产品.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\复检1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\复检1.Designer.cs">
+      <DependentUpon>复检1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\检测参数修改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\检测参数修改.Designer.cs">
+      <DependentUpon>检测参数修改.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\注册机器.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +274,12 @@
     <EmbeddedResource Include="Forms\切换产品.resx">
       <DependentUpon>切换产品.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\复检1.resx">
+      <DependentUpon>复检1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\检测参数修改.resx">
+      <DependentUpon>检测参数修改.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\注册机器.resx">
       <DependentUpon>注册机器.cs</DependentUpon>
     </EmbeddedResource>
@@ -340,6 +361,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AOI.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

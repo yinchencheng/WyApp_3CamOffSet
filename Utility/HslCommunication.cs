@@ -36,7 +36,7 @@ namespace WY_App
 
         public static bool plc_connect_result = false;
         public static ModbusRtu busRtuClient;
-		public static string STRproduct;                    //接收PLC发送料号
+		public static string STRproduct="6";                    //接收PLC发送料号
 		public static List<string> userList = new List<string>();                                  //已存在料号列表
 
 		public HslCommunication()
@@ -200,6 +200,7 @@ namespace WY_App
             {
                 ////心跳读写，判断PLC是否掉线，不建议线程对plc链接释放重连
                 Thread.Sleep(5000);
+                
                 if ("Omron.PMAC.CK3M".Equals(Parameters.commministion.PlcType))
                 {
                     try
@@ -274,57 +275,148 @@ namespace WY_App
 			{
 				if (plc_connect_result)
 				{
-					if ("Omron.PMAC.CK3M".Equals(Parameters.commministion.PlcType))
+					if (System.IO.File.Exists("fumiplc.txt"))
 					{
+						//存在 
+						Thread.Sleep(2000);
+						string SubStrProduct = _NetworkTcpDevice.ReadInt16(Parameters.plcParams.预留地址[2]).Content.ToString();
 
-					}
-					else if ("ModbusRut".Equals(Parameters.commministion.PlcType))
-					{
-						ReadProductXml(userList);
-						if (userList.Contains(STRproduct))
+						STRproduct = SubStrProduct;
+						if (STRproduct != null && STRproduct != "" && STRproduct != "0")
 						{
-							if (MainForm.Product != STRproduct)
+							if ("Omron.PMAC.CK3M".Equals(Parameters.commministion.PlcType))
 							{
-								if (MessageBox.Show("是否切换物料？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
+
+							}
+							else if ("ModbusRut".Equals(Parameters.commministion.PlcType))
+							{
+								ReadProductXml(userList);
+								if (userList.Contains(STRproduct))
 								{
-									MainForm.Product = STRproduct;
-									ChangeProduct(STRproduct);
+									if (MainForm.Product != STRproduct)
+									{
+										if (MessageBox.Show("是否切换物料？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
+										{
+											MainForm.Product = STRproduct;
+											ChangeProduct(STRproduct);
+										}
+
+									}
 								}
+								else
+								{
+
+									AddProductXml(MainForm.Product, STRproduct);
+									ChangeProduct(STRproduct);
+									MainForm.Product = STRproduct;
+								}
+								Thread.Sleep(1000);
+							}
+							else
+							{
+								ReadProductXml(userList);
+								if (userList.Contains(STRproduct))
+								{
+									if (MainForm.Product != STRproduct)
+									{
+										if (MessageBox.Show("是否切换物料？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
+										{
+											MainForm.Product = STRproduct;
+											ChangeProduct(STRproduct);
+										}
+
+									}
+								}
+								else
+								{
+
+									AddProductXml(MainForm.Product, STRproduct);
+									ChangeProduct(STRproduct);
+									MainForm.Product = STRproduct;
+								}
+								Thread.Sleep(1000);
 
 							}
 						}
-						else
-						{
-
-							AddProductXml(MainForm.Product, STRproduct);
-							ChangeProduct(STRproduct);
-							MainForm.Product = STRproduct;
-						}
-						Thread.Sleep(1000);
 					}
 					else
 					{
-						ReadProductXml(userList);
-						if (userList.Contains(STRproduct))
+						//不存在 
+						Thread.Sleep(2000);
+						Int16 iPruductLong = _NetworkTcpDevice.ReadInt16(Parameters.plcParams.预留地址[1]).Content;
+						int iProductNameLong;
+						if (iPruductLong % 2 == 1)
 						{
-							if (MainForm.Product != STRproduct)
-							{
-								if (MessageBox.Show("是否切换物料？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
-								{
-									MainForm.Product = STRproduct;
-									ChangeProduct(STRproduct);
-								}
-
-							}
+							iProductNameLong = iPruductLong / 2 + 1;
 						}
 						else
 						{
-
-							AddProductXml(MainForm.Product, STRproduct);
-							ChangeProduct(STRproduct);
-							MainForm.Product = STRproduct;
+							iProductNameLong = iPruductLong / 2;
 						}
+
+						string SubStrProduct = _NetworkTcpDevice.ReadString(Parameters.plcParams.预留地址[2], (ushort)iProductNameLong).Content;
+						if (SubStrProduct != null && SubStrProduct != "")
+						{
+							STRproduct = SubStrProduct.Substring(0, iPruductLong);
+						}
+
+						if (STRproduct != null && STRproduct != "")
+						{
+							if ("Omron.PMAC.CK3M".Equals(Parameters.commministion.PlcType))
+							{
+
+							}
+							else if ("ModbusRut".Equals(Parameters.commministion.PlcType))
+							{
+								ReadProductXml(userList);
+								if (userList.Contains(STRproduct))
+								{
+									if (MainForm.Product != STRproduct)
+									{
+										if (MessageBox.Show("是否切换物料？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
+										{
+											MainForm.Product = STRproduct;
+											ChangeProduct(STRproduct);
+										}
+
+									}
+								}
+								else
+								{
+
+									AddProductXml(MainForm.Product, STRproduct);
+									ChangeProduct(STRproduct);
+									MainForm.Product = STRproduct;
+								}
+								Thread.Sleep(1000);
+							}
+							else
+							{
+								ReadProductXml(userList);
+								if (userList.Contains(STRproduct))
+								{
+									if (MainForm.Product != STRproduct)
+									{
+										if (MessageBox.Show("是否切换物料？", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
+										{
+											MainForm.Product = STRproduct;
+											ChangeProduct(STRproduct);
+										}
+
+									}
+								}
+								else
+								{
+
+									AddProductXml(MainForm.Product, STRproduct);
+									ChangeProduct(STRproduct);
+									MainForm.Product = STRproduct;
+								}
+							}
+						}
+
 					}
+						
 				}
 				else
 				{
@@ -417,29 +509,31 @@ namespace WY_App
 		{
 			if (!Directory.Exists(destDir))//若目标文件夹不存在
 			{
-				string newPath;
-				FileInfo fileInfo;
-				Directory.CreateDirectory(destDir);//创建目标文件夹                                                  
-				string[] files = Directory.GetFiles(srcDir);//获取源文件夹中的所有文件完整路径
-				foreach (string path in files)          //遍历文件     
-				{
-					fileInfo = new FileInfo(path);
-					newPath = destDir + "/" + fileInfo.Name;
-					File.Copy(path, newPath, true);
-				}
-				string[] dirs = Directory.GetDirectories(srcDir);
-				foreach (string path in dirs)        //遍历文件夹
-				{
-					DirectoryInfo directory = new DirectoryInfo(path);
-					string newDir = destDir + "/" + directory.Name;
-					GetFilesAndDirs(path + "\\", newDir + "\\");
-				}
+
+                string newPath;
+                FileInfo fileInfo;
+                Directory.CreateDirectory(destDir);//创建目标文件夹                                                  
+                string[] files = Directory.GetFiles(srcDir);//获取源文件夹中的所有文件完整路径
+                foreach (string path in files)          //遍历文件     
+                {
+                    fileInfo = new FileInfo(path);
+                    newPath = destDir + "/" + fileInfo.Name;
+                    File.Copy(path, newPath, true);
+                }
+                string[] dirs = Directory.GetDirectories(srcDir);
+                foreach (string path in dirs)        //遍历文件夹
+                {
+                    DirectoryInfo directory = new DirectoryInfo(path);
+                    string newDir = destDir + "/" + directory.Name;
+                    GetFilesAndDirs(path + "\\", newDir + "\\");
+                }
 			}
 		}
 
 		//读取产品XML文件
 		public static void ReadProductXml(List<string> listProduct)
 		{
+            listProduct.Clear();
 			//加载指定路径的xml文件
 			XmlDocument xmlDoc = new XmlDocument();
 			XmlReaderSettings settings = new XmlReaderSettings();
@@ -464,6 +558,7 @@ namespace WY_App
 			reader.Close(); //读取完数据后需关闭
 		}
 
+		
 
 		//对终端操作的通用方法/
 		public static bool ReadWritePmacVariables(string command)

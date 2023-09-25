@@ -10,10 +10,18 @@ namespace WY_App.Utility
     {     
         public static void serialize<T>(T s, string path)
         {
-            FileStream fileStream = new FileStream(path, FileMode.Create);
-            XmlSerializer formatter = new XmlSerializer(typeof(T));
-            formatter.Serialize(fileStream, s);
-            fileStream.Close();
+            try
+            {
+                FileStream fileStream = new FileStream(path, FileMode.Create);
+                XmlSerializer formatter = new XmlSerializer(typeof(T));
+                formatter.Serialize(fileStream, s);
+                fileStream.Close();
+            }
+            catch
+            {
+
+            }
+            
         }
         public static T BackSerialize<T>(string path)
         {
