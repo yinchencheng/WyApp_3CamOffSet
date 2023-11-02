@@ -2,8 +2,8 @@
 <CameraParams xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ExposureTime>
     <double>40</double>
-    <double>40</double>
-    <double>40</double>
+    <double>38</double>
+    <double>45</double>
     <double>50</double>
   </ExposureTime>
   <GammaEnable>
@@ -43,8 +43,8 @@
     <int>50000</int>
   </AcquisitionLineRate>
   <PreampGain>
-    <int>2</int>
-    <int>2</int>
+    <int>3</int>
+    <int>3</int>
     <int>2</int>
     <int>0</int>
   </PreampGain>

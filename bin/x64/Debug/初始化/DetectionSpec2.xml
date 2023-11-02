@@ -1,79 +1,85 @@
 <?xml version="1.0"?>
 <DetectionSpec xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <PixelResolutionRow>1</PixelResolutionRow>
-  <PixelResolutionColum>1</PixelResolutionColum>
+  <PixelResolutionRow>0.02008</PixelResolutionRow>
+  <PixelResolutionColum>0.025941</PixelResolutionColum>
   <RowBase>
-    <double>0</double>
-    <double>0</double>
+    <double>135.00042790300162</double>
+    <double>37</double>
     <double>0</double>
     <double>0</double>
   </RowBase>
   <ColumBase>
     <double>0</double>
-    <double>0</double>
+    <double>693</double>
     <double>0</double>
     <double>0</double>
   </ColumBase>
   <Row1>
-    <double>12997.602466793169</double>
-    <double>6204.433586337761</double>
-    <double>33870.467741935485</double>
-    <double>34147.972419385776</double>
+    <double>14224.372231686542</double>
+    <double>6242.3842504743834</double>
+    <double>33202.225724020442</double>
+    <double>3</double>
   </Row1>
   <Colum1>
-    <double>10078.735494880546</double>
-    <double>1327.5546075085324</double>
-    <double>1131.8412969283277</double>
-    <double>1136.9929257795159</double>
+    <double>9910.9812286689412</double>
+    <double>5074.0665529010239</double>
+    <double>2306.1211604095565</double>
+    <double>3</double>
   </Colum1>
   <Row2>
-    <double>19790.771347248578</double>
-    <double>6318.2855787476283</double>
-    <double>33870.467741935485</double>
-    <double>34197.850385080485</double>
+    <double>19198.818568994888</double>
+    <double>6394.1869070208732</double>
+    <double>33100.011073253831</double>
+    <double>500</double>
   </Row2>
   <Colum2>
-    <double>10050.776450511945</double>
-    <double>4850.3941979522187</double>
-    <double>5549.3703071672353</double>
-    <double>5543.994449621001</double>
+    <double>9910.9812286689412</double>
+    <double>8680.783276450511</double>
+    <double>7814.0529010238906</double>
+    <double>1000</double>
   </Colum2>
   <OffSet>
-    <unsignedInt>230</unsignedInt>
-    <unsignedInt>300</unsignedInt>
     <unsignedInt>200</unsignedInt>
+    <unsignedInt>300</unsignedInt>
+    <unsignedInt>253</unsignedInt>
     <unsignedInt>0</unsignedInt>
   </OffSet>
   <MeasureLength1>
-    <unsignedInt>1000</unsignedInt>
-    <unsignedInt>1000</unsignedInt>
-    <unsignedInt>1000</unsignedInt>
+    <unsignedInt>2000</unsignedInt>
+    <unsignedInt>3000</unsignedInt>
+    <unsignedInt>3000</unsignedInt>
     <unsignedInt>1000</unsignedInt>
   </MeasureLength1>
   <MeasureLength2>
-    <unsignedInt>5</unsignedInt>
-    <unsignedInt>5</unsignedInt>
-    <unsignedInt>5</unsignedInt>
+    <unsignedInt>1</unsignedInt>
+    <unsignedInt>1</unsignedInt>
+    <unsignedInt>1</unsignedInt>
     <unsignedInt>5</unsignedInt>
   </MeasureLength2>
   <MeasureSigma>
-    <double>3</double>
-    <double>3</double>
-    <double>3</double>
+    <double>1</double>
+    <double>1</double>
+    <double>1</double>
     <double>3</double>
   </MeasureSigma>
   <MeasureThreshold>
-    <unsignedInt>40</unsignedInt>
-    <unsignedInt>40</unsignedInt>
-    <unsignedInt>40</unsignedInt>
+    <unsignedInt>30</unsignedInt>
+    <unsignedInt>30</unsignedInt>
+    <unsignedInt>30</unsignedInt>
     <unsignedInt>40</unsignedInt>
   </MeasureThreshold>
   <MeasureTransition>
-    <string />
-    <string />
-    <string />
+    <string>all</string>
+    <string>all</string>
+    <string>all</string>
     <string>all</string>
   </MeasureTransition>
+  <MeasureDirection>
+    <string>first</string>
+    <string>first</string>
+    <string>last</string>
+    <string>first</string>
+  </MeasureDirection>
   <lengthWidthRatio>
     <double>0</double>
     <double>0</double>
@@ -206,112 +212,142 @@
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>1</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>1</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
+    <double>1</double>
     <double>0</double>
     <double>0</double>
   </ThresholdLow>
   <ThresholdHigh>
     <double>0</double>
+    <double>80</double>
+    <double>110</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>80</double>
+    <double>0</double>
+    <double>0</double>
+    <double>70</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>80</double>
+    <double>0</double>
+    <double>0</double>
+    <double>70</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>80</double>
     <double>0</double>
     <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
+    <double>70</double>
     <double>0</double>
     <double>0</double>
   </ThresholdHigh>
   <AreaLow>
-   <double>0</double>
+    <double>0</double>
+    <double>0.001</double>
+    <double>0.01</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>0.001</double>
+    <double>0</double>
+    <double>0</double>
+    <double>0.01</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>0.001</double>
+    <double>0</double>
+    <double>0</double>
+    <double>0.01</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>0.001</double>
     <double>0</double>
     <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
+    <double>0.01</double>
     <double>0</double>
     <double>0</double>
   </AreaLow>
   <AreaHigh>
     <double>0</double>
+    <double>100000000</double>
+    <double>100000</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>10000000</double>
+    <double>0</double>
+    <double>0</double>
+    <double>100000</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>1000000</double>
+    <double>0</double>
+    <double>0</double>
+    <double>100000</double>
     <double>0</double>
     <double>0</double>
     <double>0</double>
+    <double>100000</double>
     <double>0</double>
     <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
-    <double>0</double>
+    <double>100000</double>
     <double>0</double>
     <double>0</double>
   </AreaHigh>
+  <DefectDetection>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+    <boolean>true</boolean>
+    <boolean>false</boolean>
+    <boolean>false</boolean>
+  </DefectDetection>
 </DetectionSpec>

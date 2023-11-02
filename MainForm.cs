@@ -50,7 +50,7 @@ namespace WY_App
         Thread[] MainThread = new Thread[3];
         //Thread ImageThread;
         //public static MVLineScanCam HivCam = new MVLineScanCam(); 
-        Halcon halcon = new Halcon();
+        
         public static Parameters.Rect1[] specifications;
         HWindow[] hWindows0;
         HWindow[] hWindows1;
@@ -79,6 +79,14 @@ namespace WY_App
         private delegate void SetTextValueCallBack(int i, HObject hObject, string path);
         //声明回调
         private SetTextValueCallBack setCallBack;
+
+        public static AutoResetEvent[] ImageEvent = new AutoResetEvent[3];
+        public static IKapCLineCam[] iKapCLineCam = new IKapCLineCam[3];
+
+        public static IKapCLineCam0 iKapCLineCam0;
+        public static IKapCLineCam1 iKapCLineCam1;
+        public static IKapCLineCam2 iKapCLineCam2;
+        //Halcon halcon = new Halcon();
 
         public MainForm()
         {
@@ -167,7 +175,9 @@ namespace WY_App
 
             Product = Parameters.commministion.productName;
             #endregion
-
+            ImageEvent[0] = new AutoResetEvent(false);
+            ImageEvent[1] = new AutoResetEvent(false);
+            ImageEvent[2] = new AutoResetEvent(false);
             HOperatorSet.ReadImage(out hImage[0], Parameters.commministion.productName + "/N0.jpeg");
             HOperatorSet.GetImageSize(MainForm.hImage[0], out Halcon.hv_Width[0], out Halcon.hv_Height[0]);//获取图片大小规格
             HOperatorSet.ReadImage(out hImage[1], Parameters.commministion.productName + "/N1.jpeg");
@@ -191,7 +201,22 @@ namespace WY_App
             HOperatorSet.SetPart(hWindows2[2], 0, 0, 1000, 1000);//设置窗体的规格
             HOperatorSet.DispObj(hImage[2], hWindows2[0]);
             pictureBox1.Load(Application.StartupPath + "/image/logo.png");
+            
+            try
+            {
+                iKapCLineCam0 = new IKapCLineCam0();
+                iKapCLineCam1 = new IKapCLineCam1();
+                iKapCLineCam2 = new IKapCLineCam2();
+                
+                IKapCLineCam0.OpenDevice(iKapCLineCam0);
+                IKapCLineCam1.OpenDevice(iKapCLineCam1);
+                IKapCLineCam2.OpenDevice(iKapCLineCam2);
 
+            }
+            catch
+            {
+
+            }
             myThread = new Thread(initAll);
             myThread.IsBackground = true;
             myThread.Start();
@@ -337,7 +362,7 @@ namespace WY_App
                         {
                             lst_LogInfos.Items.RemoveAt(0);
                         }
-                        if (Halcon.CamConnect[0])
+                        if (Halcon.CamConnect[0] || IKapCLineCam0.m_hCameraResult)
                         {
                             lab_Cam1.Text = "在线";
                             lab_Cam1.BackColor = Color.Green;
@@ -347,7 +372,7 @@ namespace WY_App
                             lab_Cam1.Text = "等待";
                             lab_Cam1.BackColor = Color.Red;
                         }
-                        if (Halcon.CamConnect[1])
+                        if (Halcon.CamConnect[1] || IKapCLineCam1.m_hCameraResult)
                         {
                             lab_Cam2.Text = "在线";
                             lab_Cam2.BackColor = Color.Green;
@@ -357,7 +382,7 @@ namespace WY_App
                             lab_Cam2.Text = "等待";
                             lab_Cam2.BackColor = Color.Red;
                         }
-                        if (Halcon.CamConnect[2])
+                        if (Halcon.CamConnect[2] || IKapCLineCam2.m_hCameraResult)
                         {
                             lab_Cam3.Text = "在线";
                             lab_Cam3.BackColor = Color.Green;
@@ -777,6 +802,10 @@ namespace WY_App
 
                         try
                         {
+                            if (IKapCLineCam0.m_hCameraResult)
+                            {
+                                ImageEvent[0].WaitOne();
+                            }
                             if (Halcon.CamConnect[0])
                             {
                                 hImage[0].Dispose();
@@ -953,6 +982,10 @@ namespace WY_App
                        
                         try
                         {
+                            if (IKapCLineCam1.m_hCameraResult)
+                            {
+                                ImageEvent[1].WaitOne();
+                            }
                             if (Halcon.CamConnect[1])
                             {
                                 hImage[1].Dispose();
@@ -1123,6 +1156,10 @@ namespace WY_App
                     {
                         try
                         {
+                            if (IKapCLineCam2.m_hCameraResult)
+                            {
+                                ImageEvent[2].WaitOne();
+                            }
                             if (Halcon.CamConnect[2])
                             {
                                 hImage[2].Dispose();
@@ -1434,9 +1471,19 @@ namespace WY_App
 			strDateTimeDay = dtNow.ToString("yyyy-MM-dd");
 			timer1.Enabled = true;
 
-
-
-			LogHelper.WriteInfo(System.DateTime.Now.ToString() + "初始化完成");
+            if (IKapCLineCam0.m_hCameraResult)
+            {
+                IKapCLineCam0.StartGrabImage(iKapCLineCam0);
+            }
+            if (IKapCLineCam1.m_hCameraResult)
+            {
+                IKapCLineCam1.StartGrabImage(iKapCLineCam1);
+            }
+            if (IKapCLineCam2.m_hCameraResult)
+            {
+                IKapCLineCam2.StartGrabImage(iKapCLineCam2);
+            }
+            LogHelper.WriteInfo(System.DateTime.Now.ToString() + "初始化完成");
         }
 
         #region 点击panel控件移动窗口
@@ -1491,7 +1538,6 @@ namespace WY_App
 			if (Halcon.CamConnect[1])
 			{
 				Halcon.SetFramegrabberParam(1, Halcon.hv_AcqHandle[1]);
-
 			}
 			if (Halcon.CamConnect[2])
 			{
@@ -1517,10 +1563,14 @@ namespace WY_App
 				HOperatorSet.GrabImageStart(Halcon.hv_AcqHandle[1], -1);
 				HOperatorSet.GrabImageStart(Halcon.hv_AcqHandle[2], -1);
 			}
+            else if (IKapCLineCam0.m_hCameraResult && IKapCLineCam1.m_hCameraResult && IKapCLineCam1.m_hCameraResult)
+            {
+
+            }
             else
             {
                 MessageBox.Show("相机链接异常，请检查!");
-                return;
+                //return;
             }
 			productSN = HslCommunication.STRproduct;
 			btn_Start.FillColor = Color.Red;

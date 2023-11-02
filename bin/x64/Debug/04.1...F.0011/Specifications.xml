@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Specifications xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SaveOrigalImage>false</SaveOrigalImage>
-  <SaveDefeatImage>false</SaveDefeatImage>
-  <SaveCropImage>false</SaveCropImage>
+  <SaveOrigalImage>true</SaveOrigalImage>
+  <SaveDefeatImage>true</SaveDefeatImage>
+  <SaveCropImage>true</SaveCropImage>
   <CropImagelength>500</CropImagelength>
-  <MeanImageEnabled>false</MeanImageEnabled>
+  <MeanImageEnabled>true</MeanImageEnabled>
   <ImageWidth>1000</ImageWidth>
   <ImageHeigth>800</ImageHeigth>
-  <meanImageEnum>0</meanImageEnum>
+  <meanImageEnum>2</meanImageEnum>
 </Specifications>

@@ -116,7 +116,7 @@ namespace WY_App
                         plc_connect_result = _connected.IsSuccess;
                     }
                     //汇川PLC Inovance.InovanceSerialOverTcp通讯
-                    else if ("Inovance.InovanceSerialOverTcp".Equals(Parameters.commministion.PlcType))
+                    else if ("InovanceSerialOverTcp".Equals(Parameters.commministion.PlcType))
                     {
                         InovanceSerialOverTcp Client = new InovanceSerialOverTcp();
                         Client.IpAddress = Parameters.commministion.PlcIpAddress;

@@ -98,6 +98,14 @@
     <Reference Include="HslCommunication, Version=10.6.1.0, Culture=neutral, PublicKeyToken=3d72ad3b6b5ec0e3, processorArchitecture=MSIL">
       <HintPath>packages\HslCommunication.10.6.1\lib\net451\HslCommunication.dll</HintPath>
     </Reference>
+    <Reference Include="IKapBoardClassLibrary, Version=1.8.5.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\IKapBoardClassLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="IKapC.NET, Version=1.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\IKapC.NET.dll</HintPath>
+    </Reference>
     <Reference Include="MvFGCtrlC.Net">
       <HintPath>C:\Program Files (x86)\MVS\Development\MVFG\DotNet\win64\MvFGCtrlC.Net.dll</HintPath>
     </Reference>
@@ -254,6 +262,10 @@
     <Compile Include="Utility\Halcon.cs" />
     <Compile Include="Utility\HalconTools.cs" />
     <Compile Include="Utility\HslCommunication.cs" />
+    <Compile Include="Utility\IKapCLineCam.cs" />
+    <Compile Include="Utility\IKapCLineCam1.cs" />
+    <Compile Include="Utility\IKapCLineCam2.cs" />
+    <Compile Include="Utility\IKapCLineCam0.cs" />
     <Compile Include="Utility\MVLineScanCam.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

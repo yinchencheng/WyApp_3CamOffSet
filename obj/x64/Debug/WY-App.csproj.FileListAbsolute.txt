@@ -1822,7 +1822,6 @@ D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Drawing.Common.dll
 D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Memory.dll
 D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Numerics.Vectors.dll
 D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\Prism.dll
 D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\HslCommunication.xml
 D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\MvFGCtrlC.Net.xml
 D:\Toptics\WyApp_3CamOffSet\bin\x64\Debug\Newtonsoft.Json.xml
@@ -3216,3 +3215,5 @@ D:\c#项目\08091\WyApp_3CamOffSet\obj\x64\Debug\WY-App.pdb
 D:\c#项目\3\WyApp_3CamOffSet\obj\x64\Debug\WY_App.Forms.复检1.resources
 D:\c#项目\3\WyApp_3CamOffSet\obj\x64\Debug\WY_App.Forms.检测参数修改.resources
 D:\c#项目\31\WyApp_3CamOffSet\obj\x64\Debug\WY_App.Forms.检测参数修改.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.Forms.复检1.resources
+D:\Toptics\WyApp_3CamOffSet\obj\x64\Debug\WY_App.Forms.检测参数修改.resources

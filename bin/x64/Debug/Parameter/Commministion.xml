@@ -4,8 +4,8 @@
   <LogFileExistDay>0</LogFileExistDay>
   <PlcEnable>true</PlcEnable>
   <PlcType>Melsec.MelsecMcNet</PlcType>
-  <PlcIpAddress>192.168.3.39</PlcIpAddress>
-  <PlcIpPort>1027</PlcIpPort>
+  <PlcIpAddress>127.0.0.1</PlcIpAddress>
+  <PlcIpPort>502</PlcIpPort>
   <PlcDevice>1</PlcDevice>
   <TcpClientEnable>false</TcpClientEnable>
   <TcpClientIpAddress>127.0.0.1</TcpClientIpAddress>
@@ -24,6 +24,6 @@
   <UploadOneTestEnable>false</UploadOneTestEnable>
   <UploadTwoTestEnable>false</UploadTwoTestEnable>
   <UploadThreeTestEnable>false</UploadThreeTestEnable>
-  <productName>04.1...F.0011</productName>
+  <productName>6</productName>
   <DeviceID>955A54B7DE2A0866AAA5F99EE136F07E9076E479E27F5DDD23A084DDFED82795</DeviceID>
 </Commministion>
